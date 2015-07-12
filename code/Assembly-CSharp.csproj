@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Camera\AutoFollowCamera.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraSwitch.cs" />
      <Compile Include="Assets\Scripts\Camera\ControllableFollowCam.cs" />
+     <Compile Include="Assets\Scripts\Camera\RoamingCamera.cs" />
      <Compile Include="Assets\Scripts\Spider.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>

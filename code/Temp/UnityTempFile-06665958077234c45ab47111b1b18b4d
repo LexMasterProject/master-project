@@ -71,7 +71,8 @@
 -define:UNITY_PRO_LICENSE
 'Assets/Scripts/Camera/AutoFollowCamera.cs'
 'Assets/Scripts/Camera/CameraSwitch.cs'
-'Assets/Scripts/ControllableFollowCam.cs'
+'Assets/Scripts/Camera/ControllableFollowCam.cs'
+'Assets/Scripts/Camera/RoamingCamera.cs'
 'Assets/Scripts/Spider.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
