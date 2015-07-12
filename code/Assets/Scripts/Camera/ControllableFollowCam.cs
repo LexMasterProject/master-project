@@ -7,7 +7,7 @@ public class ControllableFollowCam : MonoBehaviour {
 	public float dist;//distance between spider and camera
 	public Vector3 directionSTC;//spider to camera
 	public Vector3 targetPos;
-	public float zoomSpeed;
+	public float zoomSpeed=10;
 	public float rotateSpeed;
 
 
@@ -15,7 +15,7 @@ public class ControllableFollowCam : MonoBehaviour {
 	void Start () {
 		directionSTC = new Vector3 (0, 1, -1);
 		directionSTC.Normalize ();
-		dist = 30;
+		dist = 50;
 		zoomSpeed = 10;
 		rotateSpeed = 30;
 	}
@@ -23,7 +23,7 @@ public class ControllableFollowCam : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (enabled) {
-			float distDiff = Input.GetAxis ("Vertical") * zoomSpeed * Time.deltaTime;
+			float distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
 			dist-=distDiff;
 			float leftRight= -Input.GetAxis("RotateLR")*rotateSpeed*Time.deltaTime;
 			float upDown=Input.GetAxis("RotateUD")*rotateSpeed*Time.deltaTime;
@@ -43,6 +43,6 @@ public class ControllableFollowCam : MonoBehaviour {
 
 		transform.position = targetPos;
 		transform.LookAt (follow);
-		Debug.DrawLine (follow.position, targetPos, Color.green);
+		//Debug.DrawLine (follow.position, targetPos, Color.green);
 	}
 }
