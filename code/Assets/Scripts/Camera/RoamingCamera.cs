@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class RoamingCamera : MonoBehaviour {
@@ -16,14 +16,20 @@ public class RoamingCamera : MonoBehaviour {
 	public int numberOfObjects = 20;
 	public float radius = 5f;
 	public float zoomSpeed=15;
+	public float rotateSpeed=10;
+	public float moveSpeed=10;
 
+	private RaycastHit hit;
 	private float edgeXLength;
 	private float edgeZLength;
 	private Vector3[] resetPosArr; 
 	private float distDiff;
+	private float leftRighRotation;
+	private float upDownRotation;
+	private float forwardDiff;
+	private float rightDiff;
 
-
-
+	
 	// Use this for initialization
 	void Start () {
 
@@ -47,6 +53,7 @@ public class RoamingCamera : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.Alpha1))
 		{
 			transform.position = resetPosArr[0];
+
 			transform.LookAt (Vector3.zero);
 		}
 		else if(Input.GetKeyDown(KeyCode.Alpha2))
@@ -64,7 +71,13 @@ public class RoamingCamera : MonoBehaviour {
 			transform.position = resetPosArr[3];
 			transform.LookAt (Vector3.zero);
 		}
-		 distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
+		distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
+		rightDiff = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
+		forwardDiff = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
+		leftRighRotation= -Input.GetAxis("RotateLR")*rotateSpeed*Time.deltaTime;
+		upDownRotation=Input.GetAxis("RotateUD")*rotateSpeed*Time.deltaTime;
+
+		 
 
 
 
@@ -72,7 +85,13 @@ public class RoamingCamera : MonoBehaviour {
 
 	void LateUpdate()
 	{
-		RaycastHit hit;
+		transform.Translate (rightDiff, 0, 0);
+		Vector3 vforwardDirection = new Vector3 (transform.forward.x, 0, transform.forward.z);
+		Debug.Log (vforwardDirection);
+		vforwardDirection.Normalize ();
+		transform.Translate (vforwardDirection * forwardDiff,Space.World);
+
+		//transform.Translate (xDiff, 0, zDiff,Space.World);
 		if (Physics.Raycast (transform.position, transform.forward,out hit, 1000)) {
 
 			for (int i = 0; i < numberOfObjects; i++) {
@@ -82,6 +101,10 @@ public class RoamingCamera : MonoBehaviour {
 				prefabHolders[i]=(GameObject)Instantiate(prefab, pos+hit.point, Quaternion.identity);
 			}
 		}
+
+//		transform.Translate (xDiff,0,zDiff);
 		transform.position = Vector3.MoveTowards (transform.position, hit.point, distDiff);
+		transform.RotateAround (hit.point, Vector3.up, leftRighRotation);
+		transform.RotateAround (hit.point, transform.right, upDownRotation);
 	}
 }
