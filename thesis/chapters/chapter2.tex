@@ -1,3 +1,4 @@
+% !TEX root = ../main_standard.tex
 \chapter{Literature Review}
 In this chapter, previous research and techniques relevant to the
 project are reviewed. The first part of the chapter basically describes
@@ -7,8 +8,12 @@ fundamentals of animation such as how to represent an object and
 manipulate these objects are also included in this part. The second
 part mainly focus on rendering techniques and animation techniques
 specifically for the arthropods.
+\section{Arthropods}
+
+\subsection{Attributes of a spider}
+
 \section{Representing an object} 
-There are many alternative representations of an object in computer graphics, such as polygons, parametric patches, constructive solid geometry, etc. Among these representations, the most popular method is using polygonal facets, usually a mesh of triangles which referred as a Boundary representation \cite{alan3D}.This section will discuss how to use polygon meshes to represent an object and how to manipulate them. There are three subsections in this section. In the first subsection, a simple cube model using face-vertex will be introduced. In the second subsection, a robot model made of basic geometric shapes such as sphere and cylinder will be built with the help of scene graph. How to manipulate the robots into different postures with scene graph will also be included in this subsection. The final subsection will generally describe the control techniques(rigging and skinning) for more complex mesh models such as a human model.
+There are many alternative representations of an object in computer graphics, such as polygons, parametric patches, constructive solid geometry, etc. Among these representations, the most popular method is using polygonal facets, usually a mesh of triangles which referred as a Boundary representation \cite{alan3D}.This section will discuss how to use polygon meshes to represent an object and how to manipulate them. There are three subsections in this section. In the first subsection, a simple cube model using face-vertex will be introduced. The second subsection will generally describe the control techniques(rigging and skinning) for more complex mesh models such as a human model. In the final subsection, a robot model made of basic geometric shapes such as sphere and cylinder will be built with the help of scene graph. How to manipulate the robots into different postures with scene graph will also be included in this subsection. 
 \subsection{A simple mesh model}
 Polygon meshes also could be represented in various ways by using different methods to store the vertex, edge and data. 
 One most widely used is face-vertex meshes\cite{facevertex}.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.11)  14 JUL 2015 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.11)  14 JUL 2015 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,7 +477,7 @@ LaTeX Info: Redefining \nameref on input line 39.
 \openout3 = `main_standard.out'.
 
 
-<images/tuoslogo.png, id=136, 78.2925pt x 79.2561pt>
+<images/tuoslogo.png, id=144, 78.2925pt x 79.2561pt>
 File: images/tuoslogo.png Graphic file (type png)
  <use images/tuoslogo.png>
 Package pdftex.def Info: images/tuoslogo.png used on input line 51.
@@ -519,19 +519,14 @@ l.2 \chapter
 ]
 (./chapters/chapter1.tex
 Chapter 1.
-<figures/realSpider.png, id=296, 629.35126pt x 361.35pt>
+<figures/realSpider.png, id=306, 629.35126pt x 361.35pt>
 File: figures/realSpider.png Graphic file (type png)
 
 <use figures/realSpider.png>
 Package pdftex.def Info: figures/realSpider.png used on input line 14.
 (pdftex.def)             Requested size: 398.33858pt x 228.71034pt.
 
-Underfull \hbox (badness 3826) in paragraph at lines 19--19
-[][][]\OT1/cmr/m/n/9 Gary Beilby.(2012).Wolf Spi-der[Online].Available:[][]$\OT
-1/cmtt/m/n/9 http : / / photos . beilby . com / index . php ? showimage =
- []
-
-<figures/spiderModel.png, id=300, 474.77374pt x 271.0125pt>
+<figures/spiderModel.png, id=310, 474.77374pt x 271.0125pt>
 File: figures/spiderModel.png Graphic file (type png)
 
 <use figures/spiderModel.png>
@@ -541,7 +536,7 @@ Package pdftex.def Info: figures/spiderModel.png used on input line 23.
 
 
 ]
-<figures/rift.jpg, id=323, 552.0625pt x 395.4775pt>
+<figures/rift.jpg, id=332, 552.0625pt x 395.4775pt>
 File: figures/rift.jpg Graphic file (type jpg)
  <use figures/rift.jpg>
 Package pdftex.def Info: figures/rift.jpg used on input line 38.
@@ -563,159 +558,159 @@ t briefly sum-ma-rizes work done for the back-ground
 
 ) (./chapters/chapter2.tex [3 <./figures/rift.jpg>]
 Chapter 2.
-<figures/figure1.jpg, id=342, 702.625pt x 444.66125pt>
+<figures/figure1.jpg, id=351, 702.625pt x 444.66125pt>
 File: figures/figure1.jpg Graphic file (type jpg)
 
 <use figures/figure1.jpg>
-Package pdftex.def Info: figures/figure1.jpg used on input line 25.
+Package pdftex.def Info: figures/figure1.jpg used on input line 30.
 (pdftex.def)             Requested size: 369.88582pt x 234.08844pt.
  [4
 
 ]
-<figures/rigging.png, id=353, 452.69125pt x 305.14pt>
+<figures/rigging.png, id=362, 452.69125pt x 305.14pt>
 File: figures/rigging.png Graphic file (type png)
 
 <use figures/rigging.png>
-Package pdftex.def Info: figures/rigging.png used on input line 35.
+Package pdftex.def Info: figures/rigging.png used on input line 40.
 (pdftex.def)             Requested size: 337.70093pt x 227.62204pt.
 
-Overfull \hbox (5.51768pt too wide) in paragraph at lines 32--49
+Overfull \hbox (5.51768pt too wide) in paragraph at lines 37--54
 \OT1/cmr/m/n/10.95 ap-proach where the skele-ton is more com-pat-i-ble with mos
 t ex-ist-ing pop-u-lar an-i-ma-tion soft-ware. 
  []
 
-[5 <./figures/figure1.jpg>] <figures/figure3.png, id=367, 377.41pt x 184.69pt>
+[5 <./figures/figure1.jpg>] <figures/figure3.png, id=376, 377.41pt x 184.69pt>
 File: figures/figure3.png Graphic file (type png)
 
 <use figures/figure3.png>
-Package pdftex.def Info: figures/figure3.png used on input line 86.
+Package pdftex.def Info: figures/figure3.png used on input line 91.
 (pdftex.def)             Requested size: 341.4338pt x 142.26526pt.
 
-<figures/scenegraph2.png, id=369, 422.2977pt x 168.3891pt>
+<figures/scenegraph2.png, id=378, 422.2977pt x 168.3891pt>
 File: figures/scenegraph2.png Graphic file (type png)
 
 <use figures/scenegraph2.png>
-Package pdftex.def Info: figures/scenegraph2.png used on input line 92.
+Package pdftex.def Info: figures/scenegraph2.png used on input line 97.
 (pdftex.def)             Requested size: 341.44066pt x 142.27321pt.
  [6 <./figures/rigging.png>] [7 <./figures/figure3.png> <./figures/scenegraph2.
 png>]
-<figures/rb1.png, id=394, 547.04375pt x 323.2075pt>
+<figures/rb1.png, id=403, 547.04375pt x 323.2075pt>
 File: figures/rb1.png Graphic file (type png)
  <use figures/rb1.png>
-Package pdftex.def Info: figures/rb1.png used on input line 109.
+Package pdftex.def Info: figures/rb1.png used on input line 114.
 (pdftex.def)             Requested size: 180.67523pt x 108.40463pt.
 
-<figures/rb2.png, id=395, 509.905pt x 344.28625pt>
+<figures/rb2.png, id=404, 509.905pt x 344.28625pt>
 File: figures/rb2.png Graphic file (type png)
  <use figures/rb2.png>
-Package pdftex.def Info: figures/rb2.png used on input line 110.
+Package pdftex.def Info: figures/rb2.png used on input line 115.
 (pdftex.def)             Requested size: 180.67908pt x 108.40346pt.
 
-<figures/rb3.png, id=396, 455.7025pt x 271.0125pt>
+<figures/rb3.png, id=405, 455.7025pt x 271.0125pt>
 File: figures/rb3.png Graphic file (type png)
  <use figures/rb3.png>
-Package pdftex.def Info: figures/rb3.png used on input line 111.
+Package pdftex.def Info: figures/rb3.png used on input line 116.
 (pdftex.def)             Requested size: 180.67847pt x 108.40306pt.
 
-<figures/rb4.png, id=397, 495.8525pt x 282.05376pt>
+<figures/rb4.png, id=406, 495.8525pt x 282.05376pt>
 File: figures/rb4.png Graphic file (type png)
  <use figures/rb4.png>
-Package pdftex.def Info: figures/rb4.png used on input line 112.
+Package pdftex.def Info: figures/rb4.png used on input line 117.
 (pdftex.def)             Requested size: 180.67065pt x 108.40381pt.
 
-<figures/cows.png, id=400, 344.28625pt x 252.945pt>
+<figures/cows.png, id=409, 344.28625pt x 252.945pt>
 File: figures/cows.png Graphic file (type png)
  <use figures/cows.png>
-Package pdftex.def Info: figures/cows.png used on input line 119.
+Package pdftex.def Info: figures/cows.png used on input line 124.
 (pdftex.def)             Requested size: 309.82323pt x 227.62204pt.
 
-<figures/mario.png, id=409, 382.42876pt x 218.8175pt>
+<figures/mario.png, id=418, 382.42876pt x 218.8175pt>
 File: figures/mario.png Graphic file (type png)
  <use figures/mario.png>
-Package pdftex.def Info: figures/mario.png used on input line 138.
+Package pdftex.def Info: figures/mario.png used on input line 143.
 (pdftex.def)             Requested size: 298.36324pt x 170.71652pt.
 
 [8] [9 <./figures/rb1.png> <./figures/rb2.png> <./figures/rb3.png> <./figures/r
 b4.png> <./figures/cows.png>] [10 <./figures/mario.png>]
-<figures/leg_animation.png, id=438, 1003.75pt x 1432.35126pt>
+<figures/leg_animation.png, id=447, 1003.75pt x 1432.35126pt>
 File: figures/leg_animation.png Graphic file (type png)
 
 <use figures/leg_animation.png>
-Package pdftex.def Info: figures/leg_animation.png used on input line 157.
+Package pdftex.def Info: figures/leg_animation.png used on input line 162.
 (pdftex.def)             Requested size: 341.43896pt x 142.26pt.
  [11 <./figures/leg_animation.png>]
-<figures/twolink.png, id=456, 381.425pt x 250.9375pt>
+<figures/twolink.png, id=466, 381.425pt x 250.9375pt>
 File: figures/twolink.png Graphic file (type png)
 
 <use figures/twolink.png>
-Package pdftex.def Info: figures/twolink.png used on input line 180.
+Package pdftex.def Info: figures/twolink.png used on input line 185.
 (pdftex.def)             Requested size: 216.25049pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--197
+Underfull \hbox (badness 10000) in paragraph at lines 198--202
 
  []
 
 [12 <./figures/twolink.png (PNG copy)>] [13]
-Overfull \hbox (0.48756pt too wide) in paragraph at lines 280--283
+Overfull \hbox (0.48756pt too wide) in paragraph at lines 285--288
 \OT1/cmr/m/n/10.95 to syn-the-sis the in-sect mo-tion. The sys-tem used track-i
 ng tech-niques and a 3D point gen-er-at-ing
  []
 
-<figures/spider_module.png, id=508, 617.30624pt x 430.60875pt>
+<figures/spider_module.png, id=517, 617.30624pt x 430.60875pt>
 File: figures/spider_module.png Graphic file (type png)
 
 <use figures/spider_module.png>
-Package pdftex.def Info: figures/spider_module.png used on input line 287.
+Package pdftex.def Info: figures/spider_module.png used on input line 292.
 (pdftex.def)             Requested size: 326.31358pt x 227.62204pt.
 
-<figures/seek.png, id=512, 437.635pt x 293.095pt>
+<figures/seek.png, id=521, 437.635pt x 293.095pt>
 File: figures/seek.png Graphic file (type png)
  <use figures/seek.png>
-Package pdftex.def Info: figures/seek.png used on input line 294.
+Package pdftex.def Info: figures/seek.png used on input line 299.
 (pdftex.def)             Requested size: 254.9036pt x 170.71652pt.
 
-<figures/spiderIK.png, id=520, 856.19875pt x 654.445pt>
+<figures/spiderIK.png, id=529, 856.19875pt x 654.445pt>
 File: figures/spiderIK.png Graphic file (type png)
 
 <use figures/spiderIK.png>
-Package pdftex.def Info: figures/spiderIK.png used on input line 303.
+Package pdftex.def Info: figures/spiderIK.png used on input line 308.
 (pdftex.def)             Requested size: 372.23442pt x 284.52756pt.
 
-<figures/stride.png, id=524, 731.73375pt x 430.60875pt>
+<figures/stride.png, id=533, 731.73375pt x 430.60875pt>
 File: figures/stride.png Graphic file (type png)
 
 <use figures/stride.png>
-Package pdftex.def Info: figures/stride.png used on input line 310.
+Package pdftex.def Info: figures/stride.png used on input line 315.
 (pdftex.def)             Requested size: 290.09795pt x 170.71652pt.
  [14] [15 <./figures/spider_module.png> <./figures/seek.png>] [16 <./figures/sp
 iderIK.png>]
-<figures/fur.png, id=554, 794.97pt x 276.03125pt>
+<figures/fur.png, id=563, 794.97pt x 276.03125pt>
 File: figures/fur.png Graphic file (type png)
  <use figures/fur.png>
-Package pdftex.def Info: figures/fur.png used on input line 338.
+Package pdftex.def Info: figures/fur.png used on input line 343.
 (pdftex.def)             Requested size: 409.73558pt x 142.26378pt.
 
-<figures/fins.png, id=560, 1052.93375pt x 764.8575pt>
+<figures/fins.png, id=569, 1052.93375pt x 764.8575pt>
 File: figures/fins.png Graphic file (type png)
  <use figures/fins.png>
-Package pdftex.def Info: figures/fins.png used on input line 356.
+Package pdftex.def Info: figures/fins.png used on input line 361.
 (pdftex.def)             Requested size: 470.02412pt x 341.43306pt.
 
-Overfull \hbox (29.17667pt too wide) in paragraph at lines 356--357
+Overfull \hbox (29.17667pt too wide) in paragraph at lines 361--362
  [][] 
  []
 
 ) (./chapters/chapter3.tex [17 <./figures/stride.png> <./figures/fur.png>]
 [18 <./figures/fins.png>]
 Chapter 3.
-<figures/spiderMesh.png, id=577, 509.905pt x 345.29pt>
+<figures/spiderMesh.png, id=586, 509.905pt x 345.29pt>
 File: figures/spiderMesh.png Graphic file (type png)
 
 <use figures/spiderMesh.png>
 Package pdftex.def Info: figures/spiderMesh.png used on input line 9.
 (pdftex.def)             Requested size: 252.1042pt x 170.71652pt.
 
-<figures/spiderRigging.png, id=582, 442.65375pt x 294.09875pt>
+<figures/spiderRigging.png, id=591, 442.65375pt x 294.09875pt>
 File: figures/spiderRigging.png Graphic file (type png)
 
 <use figures/spiderRigging.png>
@@ -724,14 +719,14 @@ Package pdftex.def Info: figures/spiderRigging.png used on input line 17.
  [19
 
 ]
-<figures/triGait.png, id=595, 597.23125pt x 668.4975pt>
+<figures/triGait.png, id=605, 597.23125pt x 668.4975pt>
 File: figures/triGait.png Graphic file (type png)
 
 <use figures/triGait.png>
 Package pdftex.def Info: figures/triGait.png used on input line 28.
 (pdftex.def)             Requested size: 152.51521pt x 170.71652pt.
 
-<figures/timing.png, id=602, 1062.97125pt x 709.65125pt>
+<figures/timing.png, id=612, 1062.97125pt x 709.65125pt>
 File: figures/timing.png Graphic file (type png)
 
 <use figures/timing.png>
@@ -758,14 +753,14 @@ sickness[[]]. It is com-mon in first-person
 
 [24] [25]
 Chapter 4.
-<figures/gantTable.png, id=646, 823.075pt x 502.87875pt>
+<figures/gantTable.png, id=655, 823.075pt x 502.87875pt>
 File: figures/gantTable.png Graphic file (type png)
 
 <use figures/gantTable.png>
 Package pdftex.def Info: figures/gantTable.png used on input line 11.
 (pdftex.def)             Requested size: 426.79134pt x 260.76181pt.
 
-<figures/gant.png, id=647, 1115.16624pt x 497.86pt>
+<figures/gant.png, id=656, 1115.16624pt x 497.86pt>
 File: figures/gant.png Graphic file (type png)
  <use figures/gant.png>
 Package pdftex.def Info: figures/gant.png used on input line 17.
@@ -775,7 +770,7 @@ Package pdftex.def Info: figures/gant.png used on input line 17.
 
 ] [27 <./figures/gantTable.png> <./figures/gant.png>]
 Chapter 5.
-<figures/fw.png, id=658, 269.3262pt x 262.0992pt>
+<figures/fw.png, id=667, 269.3262pt x 262.0992pt>
 File: figures/fw.png Graphic file (type png)
  <use figures/fw.png>
 Package pdftex.def Info: figures/fw.png used on input line 9.
@@ -823,14 +818,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `main_standard.out' has not changed.
-(rerunfilecheck)             Checksum: 4B7323072EABDBC3795BB95CE736ED4E;2115.
+(rerunfilecheck)             Checksum: 1D4EB8D01B84BB723A8CBDD3CB61F0DF;2248.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 9500 strings out of 493089
- 143060 string characters out of 6134842
+ 9504 strings out of 493089
+ 143118 string characters out of 6134842
  247221 words of memory out of 5000000
- 12620 multiletter control sequences out of 15000+600000
+ 12622 multiletter control sequences out of 15000+600000
  13749 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,47p,1246b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -861,10 +856,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on main_standard.pdf (42 pages, 6003640 bytes).
+Output written on main_standard.pdf (42 pages, 6003822 bytes).
 PDF statistics:
- 823 PDF objects out of 1000 (max. 8388607)
- 702 compressed objects within 8 object streams
- 180 named destinations out of 1000 (max. 500000)
- 410 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 834 PDF objects out of 1000 (max. 8388607)
+ 713 compressed objects within 8 object streams
+ 182 named destinations out of 1000 (max. 500000)
+ 426 words of extra memory for PDF output out of 10000 (max. 10000000)
 
