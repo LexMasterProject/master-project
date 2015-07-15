@@ -87,7 +87,6 @@ public class RoamingCamera : MonoBehaviour {
 	{
 		transform.Translate (rightDiff, 0, 0);
 		Vector3 vforwardDirection = new Vector3 (transform.forward.x, 0, transform.forward.z);
-		Debug.Log (vforwardDirection);
 		vforwardDirection.Normalize ();
 		transform.Translate (vforwardDirection * forwardDiff,Space.World);
 
