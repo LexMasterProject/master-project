@@ -16,7 +16,7 @@
 		public float maxSmallTurn;
 
 		//env paras
-		public float edgeWarningDist;
+		public float edgeWarningDist=30;
 		private float edgeXLength;
 		private float edgeYLength;
 		
@@ -63,7 +63,7 @@
 			direction = Direction.NONE;
 
 			//init env paras
-			edgeWarningDist = 20.0f;
+			
 			edgeXLength = plane.GetComponent<Renderer> ().bounds.size.x;
 			edgeYLength = plane.GetComponent<Renderer> ().bounds.size.z;
 
@@ -182,7 +182,7 @@
 		int edgeHintRet = 0;//0 nothing, 1 clockwise,-1 anticlockwise
 
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
-
+			Debug.Log("too close");
 			if (headingDirection.y >= 0) {
 
 				edgeHintRet=1;
@@ -191,7 +191,7 @@
 				edgeHintRet=-1;
 			}
 		} else if (edgeWarningDist >= edgeDists [1] && headingDirection.x > 0) {
-		
+			Debug.Log("too close");
 			if (headingDirection.y > 0) {
 
 				edgeHintRet=-1;
@@ -200,7 +200,7 @@
 		
 			}
 		} else if (edgeWarningDist >= edgeDists [2] && headingDirection.y < 0) {
-
+			Debug.Log("too close");
 			if (headingDirection.x > 0) {
 				edgeHintRet=-1;
 
@@ -209,7 +209,7 @@
 			
 			}
 		} else if (edgeWarningDist >= edgeDists [3] && headingDirection.y > 0) {
-
+			Debug.Log("too close");
 			if (headingDirection.x > 0) {
 				edgeHintRet=1;
 		
