@@ -1,0 +1,15 @@
+* work today
+** spider movement without changing distance
+*** run
+*** walk
+*** walk right/walk left
+*** turn around 
+** read one paper and write notes
+** revise thesi
+  
+
+* work basket
+** Some extra reading:
+google search: Behaviour-based robotics, subsumption architecture.
+** revise thesis under the supervisor's requirements
+** different behaviours
