@@ -1,61 +1,61 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Spider : MonoBehaviour
+public class Spiderbak : MonoBehaviour
 {
-			
-
+	
+	
 	//objects----view all 
 	public Transform plane;
-
+	
 	//spider paras
 	public float speed;
-	public float maxWalkDuration; //when spider walk max, it should enter into idle state.
+	public float maxWalkDuration; //when spider waZlk max, it should enter into idle state.
 	public float minWalkDuration; //the random walk period should be bigger than minWalk
 	public float maxIdleDuration;
 	public float minIdleDuration;
 	public float maxSmallTurn;
-
+	
 	//env paras
 	public float edgeWarningDist;
 	private float edgeXLength;
 	private float edgeYLength;
-			
+	
 	//changing randoms
 	public float walkDuration;
 	public float idleDuration;
 	private Rigidbody rb;
 	private Animator anim;
 	private GameObject head;
-
+	
 	//records
 	private float timeRecord;
 	private Direction direction;
 	private float turn;
 	private int edgeHint;
-
+	
 	enum Direction
 	{
 		FORWARD,
 		LEFT,
 		RIGHT,
 		NONE
-			}
+	}
 	;
-
-
+	
+	
 	//private Animation animation;
-
+	
 	// Use this for initialization
 	void Start ()
 	{
-
-
+		
+		
 		anim = gameObject.GetComponent<Animator> ();
 		rb = GetComponent<Rigidbody> ();
 		debugSetLayerWeight ();
 		setWalkGaitPattern ();
-
+		
 		//init spider paras
 		speed = 5.0f;
 		maxIdleDuration = 5.0f;
@@ -66,23 +66,23 @@ public class Spider : MonoBehaviour
 		direction = Direction.NONE;
 		edgeHint = 0;
 		edgeWarningDist = 30.0f;
-
+		
 		//init env paras
-				
+		
 		edgeXLength = plane.GetComponent<Renderer> ().bounds.size.x;
 		edgeYLength = plane.GetComponent<Renderer> ().bounds.size.z;
-
-
+		
+		
 		//set default state as IDLE
 		anim.SetBool ("_isMoving", false);
 		idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
 		direction = getRandomDirection ();
-				
-
-
-
+		
+		
+		
+		
 	}
-			
+	
 	// Update is called once per frame
 	void Update ()
 	{
@@ -99,7 +99,7 @@ public class Spider : MonoBehaviour
 				walkDuration = Random.Range (minWalkDuration, maxWalkDuration);
 				direction = getRandomDirection ();
 			}
-
+			
 		} else if (anim.GetBool ("_isMoving")) {
 			//moving state
 			if (timeRecord > walkDuration) {
@@ -108,13 +108,13 @@ public class Spider : MonoBehaviour
 				anim.SetBool ("_isMoving", false);
 				idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
 			}
-
+			
 			//the spider's heading direction
 			Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
 			headingDirection.Normalize ();
 			edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
 		}
-
+		
 		//handle velocity
 		if (anim.GetBool ("_isMoving")) {
 			Vector3 velocity = rb.transform.forward;
@@ -122,7 +122,7 @@ public class Spider : MonoBehaviour
 			velocity = velocity * speed;
 			velocity.y = rb.velocity.y;
 			rb.velocity = velocity;
-
+			
 			if (Direction.FORWARD == direction) {
 				turn = 0;
 			} else if (Direction.RIGHT == direction) {
@@ -130,24 +130,24 @@ public class Spider : MonoBehaviour
 			} else if (Direction.LEFT == direction) {
 				turn = -0.2f;
 			} else if (edgeHint == 0) {
-					
+				
 			} else if (edgeHint == 1) {
 				turn = 0.4f;
 			} else {
 				turn = -0.4f;
 			}
-
+			
 			rb.angularVelocity = transform.up * turn;
 		}
-
-
-
-
+		
+		
+		
+		
 		//get the heading direction
-
+		
 	}
-
-
+	
+	
 	/*
 			 * The edgeWarning will be triggered when A&&B
 			 * Condition A:
@@ -161,47 +161,47 @@ public class Spider : MonoBehaviour
 		 	*/
 	int edgeWarning (float x, float y, Vector2 headingDirection)
 	{
-
+		
 		/*
 				 * has to calc the heading direction
 					*/
 		float [] edgeDists = new float[4];
-
+		
 		edgeDists [0] = Mathf.Abs (x + edgeXLength / 2);//left x dist
 		edgeDists [1] = Mathf.Abs (x - edgeXLength / 2);//right x dist
 		edgeDists [2] = Mathf.Abs (y + edgeYLength / 2);//down y dist
 		edgeDists [3] = Mathf.Abs (y - edgeYLength / 2);//up y dist
-
+		
 		//Debug.Log ("closest length:" + Mathf.Min (edgeDists));
-
+		
 		Debug.Log ("in edgeWarning");
 		Debug.Log (edgeWarningDist);
-				
+		
 		int edgeHintRet = 0;//0 nothing, 1 clockwise,-1 anticlockwise
-
+		
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
 			Debug.Log ("too close to left");
 			if (headingDirection.y >= 0) {
-
+				
 				edgeHintRet = 1;
 			} else {
-
+				
 				edgeHintRet = -1;
 			}
 		} else if (edgeWarningDist >= edgeDists [1] && headingDirection.x > 0) {
 			Debug.Log ("too close to right");
 			if (headingDirection.y > 0) {
-
+				
 				edgeHintRet = -1;
 			} else {
 				edgeHintRet = 1;
-			
+				
 			}
 		} else if (edgeWarningDist >= edgeDists [2] && headingDirection.y < 0) {
 			Debug.Log ("too close to down");
 			if (headingDirection.x > 0) {
 				edgeHintRet = -1;
-
+				
 			} else {
 				edgeHintRet = 1;
 				
@@ -210,18 +210,18 @@ public class Spider : MonoBehaviour
 			Debug.Log ("too close to up");
 			if (headingDirection.x > 0) {
 				edgeHintRet = 1;
-			
+				
 			} else {
 				edgeHintRet = -1;
 				
 			}
 		}
-
-
+		
+		
 		return edgeHintRet;
-
+		
 	}
-
+	
 	/*
 			 * the spider random direction:
 			 * probability allocation:
@@ -247,13 +247,13 @@ public class Spider : MonoBehaviour
 		}
 		return ret;
 	}
-
+	
 	/*
 			 * set timings of different limbs
 		 	*/
 	void setWalkGaitPattern ()
 	{
-
+		
 		//first R1-R4 then L1-L4
 		float [] timing = new float[8];
 		timing [0] = -0.3f;   //R1----------4
@@ -264,7 +264,7 @@ public class Spider : MonoBehaviour
 		timing [5] = -0.2f;   //L2----------3
 		timing [6] = -0.6f;   //L3----------6
 		timing [7] = 0;       //L4----------1
-
+		
 		//fixed, don't change
 		//change upwards to achieve effects
 		float offset = 0.5f;
@@ -276,9 +276,9 @@ public class Spider : MonoBehaviour
 		anim.SetFloat ("L3_sf_offset", getFractionPart (timing [6] + offset));//6
 		anim.SetFloat ("R2_sf_offset", getFractionPart (timing [1] + offset));//7
 		anim.SetFloat ("L1_sf_offset", getFractionPart (timing [4] + offset));//8
-
+		
 	}
-
+	
 	/*
 			 * assisting functions 
 			*/
@@ -297,13 +297,13 @@ public class Spider : MonoBehaviour
 		}
 		return ret;
 	}
-
-
-
-
+	
+	
+	
+	
 	/* following code for debug purposes
 			*/
-
+	
 	/*
 			 * this function is meant to disable or enable part of 
 			 * layers to see animations of particular layers
@@ -318,15 +318,15 @@ public class Spider : MonoBehaviour
 		int R2index = anim.GetLayerIndex ("R2");
 		int R3index = anim.GetLayerIndex ("R3");
 		int R4index = anim.GetLayerIndex ("R4");
-
+		
 		//set all layers weight to 0
 		//int layerNum = 9;
 		for (int i=0; i<9; i++) {
 			anim.SetLayerWeight (i, 0);
 		}
-
+		
 		//enable certain layers
-
+		
 		//enable L4-R3-L2-R1
 		anim.SetLayerWeight (L4index, 1);
 		anim.SetLayerWeight (R3index, 1);
@@ -338,6 +338,6 @@ public class Spider : MonoBehaviour
 		anim.SetLayerWeight (L3index, 1);
 		anim.SetLayerWeight (R2index, 1);
 		anim.SetLayerWeight (L1index, 1);
-
+		
 	}
 }
