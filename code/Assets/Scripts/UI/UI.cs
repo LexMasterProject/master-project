@@ -36,16 +36,16 @@ public class UI : MonoBehaviour {
 	void Update () {
 		switch (CameraSwitch.activeIndex) {
 		case 0:
-			cameraText.text="AutoFollowCamera";
+			cameraText.text="Camera:AutoFollowCamera";
 			break;
 		case 1:
-			cameraText.text="ControllableFollowCamera";
+			cameraText.text="Camera:ControllableFollowCamera";
 			break;
 		case 2:
-			cameraText.text="WorldCamera";
+			cameraText.text="Camera:WorldCamera";
 			break;
 		default:
-			cameraText.text="AutoFollowCamera";
+			cameraText.text="Camera:AutoFollowCamera";
 			break;
 		}
 	}

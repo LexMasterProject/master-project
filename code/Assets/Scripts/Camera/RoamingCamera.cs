@@ -50,33 +50,27 @@ public class RoamingCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Alpha1))
-		{
-			transform.position = resetPosArr[0];
+		if (enabled) {
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				transform.position = resetPosArr [0];
 
-			transform.LookAt (Vector3.zero);
+				transform.LookAt (Vector3.zero);
+			} else if (Input.GetKeyDown (KeyCode.Alpha2)) {
+				transform.position = resetPosArr [1];
+				transform.LookAt (Vector3.zero);
+			} else if (Input.GetKeyDown (KeyCode.Alpha3)) {
+				transform.position = resetPosArr [2];
+				transform.LookAt (Vector3.zero);
+			} else if (Input.GetKeyDown (KeyCode.Alpha4)) {
+				transform.position = resetPosArr [3];
+				transform.LookAt (Vector3.zero);
+			}
+			distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
+			rightDiff = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
+			forwardDiff = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
+			leftRighRotation = -Input.GetAxis ("RotateLR") * rotateSpeed * Time.deltaTime;
+			upDownRotation = Input.GetAxis ("RotateUD") * rotateSpeed * Time.deltaTime;
 		}
-		else if(Input.GetKeyDown(KeyCode.Alpha2))
-		{
-			transform.position = resetPosArr[1];
-			transform.LookAt (Vector3.zero);
-		}
-		else if(Input.GetKeyDown(KeyCode.Alpha3))
-		{
-			transform.position = resetPosArr[2];
-			transform.LookAt (Vector3.zero);
-		}
-		else if(Input.GetKeyDown(KeyCode.Alpha4))
-		{
-			transform.position = resetPosArr[3];
-			transform.LookAt (Vector3.zero);
-		}
-		distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
-		rightDiff = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
-		forwardDiff = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
-		leftRighRotation= -Input.GetAxis("RotateLR")*rotateSpeed*Time.deltaTime;
-		upDownRotation=Input.GetAxis("RotateUD")*rotateSpeed*Time.deltaTime;
-
 		 
 
 
