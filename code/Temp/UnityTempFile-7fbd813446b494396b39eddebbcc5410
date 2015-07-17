@@ -74,6 +74,7 @@
 'Assets/Scripts/Camera/ControllableFollowCam.cs'
 'Assets/Scripts/Camera/RoamingCamera.cs'
 'Assets/Scripts/Spider/Spider.cs'
+'Assets/Scripts/Spider/spider_bak.cs'
 'Assets/Scripts/UI/UI.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
