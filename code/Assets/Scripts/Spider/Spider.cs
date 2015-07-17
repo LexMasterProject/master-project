@@ -65,7 +65,7 @@ public class Spider : MonoBehaviour
 		maxSmallTurn = 0.2f;
 		direction = Direction.NONE;
 		edgeHint = 0;
-		edgeWarningDist = 30.0f;
+		edgeWarningDist = 15.0f;
 		
 		//init env paras
 		
@@ -131,11 +131,39 @@ public class Spider : MonoBehaviour
 				turn = -0.2f;
 			} 
 
-				
-			if (edgeHint == 1) {
-				turn = 0.4f;
-			} else if(edgeHint==-1) {
-				turn = -0.4f;
+			Vector3 randomVec= getRandomVector();
+			Vector3 newDir;
+			switch(edgeHint)
+			{
+			case 0:
+				if(randomVec.x<0)
+				randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
+				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+				Debug.DrawRay(transform.position, newDir, Color.red);
+				transform.rotation = Quaternion.LookRotation(newDir);
+				break;
+			case 1:
+				if(randomVec.x>0)
+					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
+				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+				Debug.DrawRay(transform.position, newDir, Color.red);
+				transform.rotation = Quaternion.LookRotation(newDir);
+				break;
+			case 2:
+				if(randomVec.z<0)
+					randomVec.Set(randomVec.x,randomVec.y,-randomVec.z);
+				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+				Debug.DrawRay(transform.position, newDir, Color.red);
+				transform.rotation = Quaternion.LookRotation(newDir);
+				break;
+			case 3:
+				if(randomVec.z>0)
+					randomVec.Set(-randomVec.x,randomVec.y,-randomVec.z);
+				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+				Debug.DrawRay(transform.position, newDir, Color.red);
+				transform.rotation = Quaternion.LookRotation(newDir);
+				break;
+
 			}
 			Debug.Log(turn);
 			
@@ -178,42 +206,47 @@ public class Spider : MonoBehaviour
 		
 
 		
-		int edgeHintRet = 0;//0 nothing, 1 clockwise,-1 anticlockwise
+		int edgeHintRet = -1;//0 left,1 right,2 down,3 up
 		
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
 			Debug.Log ("too close to left");
+			edgeHintRet=0;
+
 			if (headingDirection.y >= 0) {
 				
-				edgeHintRet = 1;
+				//edgeHintRet = 1;
 			} else {
 				
-				edgeHintRet = -1;
+				//edgeHintRet = -1;
 			}
 		} else if (edgeWarningDist >= edgeDists [1] && headingDirection.x > 0) {
 			Debug.Log ("too close to right");
+			edgeHintRet=1;
 			if (headingDirection.y > 0) {
 				
-				edgeHintRet = -1;
+				//edgeHintRet = -1;
 			} else {
-				edgeHintRet = 1;
+				//edgeHintRet = 1;
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [2] && headingDirection.y < 0) {
 			Debug.Log ("too close to down");
+			edgeHintRet=2;
 			if (headingDirection.x > 0) {
-				edgeHintRet = -1;
+				//edgeHintRet = -1;
 				
 			} else {
-				edgeHintRet = 1;
+				//edgeHintRet = 1;
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [3] && headingDirection.y > 0) {
 			Debug.Log ("too close to up");
+			edgeHintRet=3;
 			if (headingDirection.x > 0) {
-				edgeHintRet = 1;
+				//edgeHintRet = 1;
 				
 			} else {
-				edgeHintRet = -1;
+				//edgeHintRet = -1;
 				
 			}
 		}
@@ -248,6 +281,16 @@ public class Spider : MonoBehaviour
 		} else {
 			ret = Direction.FORWARD;
 		}
+		return ret;
+	}
+
+
+	Vector2 getRandomVector()
+	{
+		float x = Random.Range (-1.0f, 1.0f);
+		float z= Random.Range (-1.0f, 1.0f);
+		Vector3 ret = new Vector3 (x,0, z);
+		ret.Normalize ();
 		return ret;
 	}
 	
