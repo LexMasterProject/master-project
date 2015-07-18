@@ -9,7 +9,7 @@ public class AutoFollowCamera : MonoBehaviour {
 	public float smooth;
 
 	private Vector3 targetPosition;
-
+	private Camera camSelf;
 	// Use this for initialization
 	void Start () {
 
@@ -17,6 +17,7 @@ public class AutoFollowCamera : MonoBehaviour {
 		distanceAway = 10.0f;
 		distanceUp = 30.0f;
 		smooth = 0.1f;
+		camSelf = GetComponent<Camera> ();
 	}
 	
 	// Update is called once per frame
@@ -25,15 +26,11 @@ public class AutoFollowCamera : MonoBehaviour {
 	}
 	void LateUpdate()
 	{
-
+		if (camSelf.enabled) {
 			targetPosition = follow.position + Vector3.up * distanceUp - follow.forward * distanceAway;
-
-//			Debug.DrawRay (follow.position, Vector3.up * distanceUp, Color.red);
-//			Debug.DrawRay (follow.position, -1f * follow.forward * distanceAway, Color.blue);
-//			Debug.DrawLine (follow.position, targetPosition, Color.green);
-
 			transform.position = Vector3.Lerp (transform.position, targetPosition, Time.deltaTime * smooth);
 			transform.LookAt (follow);
+		}
 
 	}
 }

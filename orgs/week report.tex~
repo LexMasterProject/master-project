@@ -1,4 +1,4 @@
-% Created 2015-07-17 Fri 21:34
+% Created 2015-07-17 Fri 21:35
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -36,20 +36,25 @@
 \subsection{Cameras}
 \label{sec-1-1}
 press v to switch cameras
-\begin{enumerate}
-\item auto follow camera
-\item controllable follow camera
+
+\subsubsection{auto follow camera}
+\label{sec-1-1-1}
+
+\subsubsection{controllable follow camera}
+\label{sec-1-1-2}
 operation instructions:
 \begin{enumerate}
 \item use > or < key to change the dist between the spider and the camera
 \item use w/a/s/d to rotate
 \end{enumerate}
-\item world camera
-\end{enumerate}
 
+\subsubsection{world came}
+\label{sec-1-1-3}
 There are two kinds of world cameras.
-First one is just operating the cameras. 
-Second one is cast a ray from the camera to gameobjects.
+\begin{enumerate}
+\item First one is just operating the cameras.
+\item Second one is cast a ray from the camera to gameobjects.
+\end{enumerate}
 The difference is the rotating operations:
 \begin{enumerate}
 \item the first one rotates the camera itself

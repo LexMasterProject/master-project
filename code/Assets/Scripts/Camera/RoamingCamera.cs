@@ -9,7 +9,7 @@ public class RoamingCamera : MonoBehaviour {
 	public Vector3 initPos;
 
 
-
+	public GameObject fly;
 	public GameObject prefab;
 
 	public GameObject []prefabHolders;
@@ -28,11 +28,11 @@ public class RoamingCamera : MonoBehaviour {
 	private float upDownRotation;
 	private float forwardDiff;
 	private float rightDiff;
+	private Camera camSelf;
 
 	
 	// Use this for initialization
 	void Start () {
-
 		prefabHolders = new GameObject[numberOfObjects];
 		edgeXLength = plane.GetComponent<Renderer> ().bounds.size.x;
 		edgeZLength = plane.GetComponent<Renderer> ().bounds.size.z;
@@ -45,12 +45,14 @@ public class RoamingCamera : MonoBehaviour {
 
 		transform.position = resetPosArr[0];
 		transform.LookAt (Vector3.zero);
+		camSelf = GetComponent<Camera> ();
+
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (enabled) {
+		if (camSelf.enabled) {
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
 				transform.position = resetPosArr [0];
 
@@ -64,6 +66,11 @@ public class RoamingCamera : MonoBehaviour {
 			} else if (Input.GetKeyDown (KeyCode.Alpha4)) {
 				transform.position = resetPosArr [3];
 				transform.LookAt (Vector3.zero);
+			}
+
+			if(Input.GetKeyDown(KeyCode.Space))
+			{
+				Debug.Log("hit space bar");
 			}
 			distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
 			rightDiff = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
@@ -79,25 +86,26 @@ public class RoamingCamera : MonoBehaviour {
 
 	void LateUpdate()
 	{
-		transform.Translate (rightDiff, 0, 0);
-		Vector3 vforwardDirection = new Vector3 (transform.forward.x, 0, transform.forward.z);
-		vforwardDirection.Normalize ();
-		transform.Translate (vforwardDirection * forwardDiff,Space.World);
+		if (camSelf.enabled) {
+			transform.Translate (rightDiff, 0, 0);
+			Vector3 vforwardDirection = new Vector3 (transform.forward.x, 0, transform.forward.z);
+			vforwardDirection.Normalize ();
+			transform.Translate (vforwardDirection * forwardDiff, Space.World);
 
-		//transform.Translate (xDiff, 0, zDiff,Space.World);
-		if (Physics.Raycast (transform.position, transform.forward,out hit, 1000)) {
+			//transform.Translate (xDiff, 0, zDiff,Space.World);
+			if (Physics.Raycast (transform.position, transform.forward, out hit, 1000)) {
 
-			for (int i = 0; i < numberOfObjects; i++) {
-				Destroy(prefabHolders[i]);
-				float angle = i * Mathf.PI * 2 / numberOfObjects;
-				Vector3 pos = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * radius;
-				prefabHolders[i]=(GameObject)Instantiate(prefab, pos+hit.point, Quaternion.identity);
+				for (int i = 0; i < numberOfObjects; i++) {
+					Destroy (prefabHolders [i]);
+					float angle = i * Mathf.PI * 2 / numberOfObjects;
+					Vector3 pos = new Vector3 (Mathf.Cos (angle), 0, Mathf.Sin (angle)) * radius;
+					prefabHolders [i] = (GameObject)Instantiate (prefab, pos + hit.point, Quaternion.identity);
+				}
 			}
-		}
 
-//		transform.Translate (xDiff,0,zDiff);
-		transform.position = Vector3.MoveTowards (transform.position, hit.point, distDiff);
-		transform.RotateAround (hit.point, Vector3.up, leftRighRotation);
-		transform.RotateAround (hit.point, transform.right, upDownRotation);
+			transform.position = Vector3.MoveTowards (transform.position, hit.point, distDiff);
+			transform.RotateAround (hit.point, Vector3.up, leftRighRotation);
+			transform.RotateAround (hit.point, transform.right, upDownRotation);
+		}
 	}
 }

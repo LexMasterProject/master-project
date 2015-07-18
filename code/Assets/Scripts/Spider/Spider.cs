@@ -64,7 +64,7 @@ public class Spider : MonoBehaviour
 		maxWalkDuration = 20.0f;
 		maxSmallTurn = 0.2f;
 		direction = Direction.NONE;
-		edgeHint = 0;
+		edgeHint = -1;
 		edgeWarningDist = 15.0f;
 		
 		//init env paras
@@ -165,8 +165,7 @@ public class Spider : MonoBehaviour
 				break;
 
 			}
-			Debug.Log(turn);
-			
+
 			rb.angularVelocity = transform.up * turn;
 		}
 		
@@ -202,8 +201,7 @@ public class Spider : MonoBehaviour
 		edgeDists [2] = Mathf.Abs (y + edgeYLength / 2);//down y dist
 		edgeDists [3] = Mathf.Abs (y - edgeYLength / 2);//up y dist
 		
-		//Debug.Log ("closest length:" + Mathf.Min (edgeDists));
-		
+
 
 		
 		int edgeHintRet = -1;//0 left,1 right,2 down,3 up
@@ -250,9 +248,6 @@ public class Spider : MonoBehaviour
 				
 			}
 		}
-
-		Debug.Log ("edgeHint return value" + edgeHintRet);
-		
 		
 		return edgeHintRet;
 		
