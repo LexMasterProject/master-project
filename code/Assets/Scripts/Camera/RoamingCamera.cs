@@ -70,7 +70,6 @@ public class RoamingCamera : MonoBehaviour {
 
 			if(Input.GetKeyDown(KeyCode.Space))
 			{
-				Debug.Log("hit space bar");
 				Instantiate (fly,  hit.point, Quaternion.identity);
 			}
 			distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;

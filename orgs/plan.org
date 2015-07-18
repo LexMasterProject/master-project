@@ -19,3 +19,5 @@ google search: Behaviour-based robotics, subsumption architecture.
 * now 
 
 ** easy seeing ability
+
+*** add three rays to the spider

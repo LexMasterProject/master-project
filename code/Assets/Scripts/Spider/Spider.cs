@@ -88,6 +88,15 @@ public class Spider : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		normalResponse ();
+		edgeResponse ();
+	}
+
+
+
+
+	void normalResponse()
+	{
 		//for changing states
 		timeRecord += Time.deltaTime;
 		if (!anim.GetBool ("_isMoving")) {
@@ -111,10 +120,7 @@ public class Spider : MonoBehaviour
 				idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
 			}
 			
-			//the spider's heading direction
-			Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
-			headingDirection.Normalize ();
-			edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
+			
 		}
 		
 		//handle velocity
@@ -124,7 +130,7 @@ public class Spider : MonoBehaviour
 			velocity = velocity * speed;
 			velocity.y = rb.velocity.y;
 			rb.velocity = velocity;
-
+			
 			switch(direction)
 			{
 			case Direction.FORWARD:
@@ -136,18 +142,28 @@ public class Spider : MonoBehaviour
 			case Direction.LEFT:
 				turn=-0.2f;
 				break;
-
+				
 			}
 			rb.angularVelocity = transform.up * turn;
-			if(edgeHint!=Direction.NONE)
-			{
+		}
+
+	}
+
+	void edgeResponse()
+	{
+		//the spider's heading direction
+		Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
+		headingDirection.Normalize ();
+		edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
+		if(edgeHint!=Direction.NONE)
+		{
 			Vector3 randomVec= getRandomVector();
 			Vector3 newDir=Vector3.zero;
 			switch(edgeHint)
 			{
 			case Direction.LEFT:
 				if(randomVec.x<0)
-				randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
+					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
 				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
 				break;
 			case Direction.RIGHT:
@@ -165,21 +181,13 @@ public class Spider : MonoBehaviour
 					randomVec.Set(-randomVec.x,randomVec.y,-randomVec.z);
 				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
 				break;
-
+				
 			}
-
+			
 			transform.rotation=Quaternion.LookRotation(newDir);
-			}
-
-
 		}
-		
-		
-		
-		
-		//get the heading direction
-		
 	}
+
 	
 	
 	/*
@@ -212,7 +220,7 @@ public class Spider : MonoBehaviour
 		Direction edgeHintRet = Direction.NONE;//0 left,1 right,2 down,3 up
 		
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
-			Debug.Log ("too close to left");
+			//Debug.Log ("too close to left");
 			edgeHintRet=Direction.LEFT;
 
 			if (headingDirection.y >= 0) {
@@ -223,7 +231,7 @@ public class Spider : MonoBehaviour
 				//edgeHintRet = -1;
 			}
 		} else if (edgeWarningDist >= edgeDists [1] && headingDirection.x > 0) {
-			Debug.Log ("too close to right");
+			//Debug.Log ("too close to right");
 			edgeHintRet=Direction.RIGHT;
 			if (headingDirection.y > 0) {
 				
@@ -233,7 +241,7 @@ public class Spider : MonoBehaviour
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [2] && headingDirection.y < 0) {
-			Debug.Log ("too close to down");
+			//Debug.Log ("too close to down");
 			edgeHintRet=Direction.DOWN;
 			if (headingDirection.x > 0) {
 				//edgeHintRet = -1;
@@ -243,7 +251,7 @@ public class Spider : MonoBehaviour
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [3] && headingDirection.y > 0) {
-			Debug.Log ("too close to up");
+			//Debug.Log ("too close to up");
 			edgeHintRet=Direction.UP;
 			if (headingDirection.x > 0) {
 				//edgeHintRet = 1;
