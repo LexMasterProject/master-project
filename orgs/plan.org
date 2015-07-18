@@ -16,8 +16,21 @@ google search: Behaviour-based robotics, subsumption architecture.
 ** revise thesi
 
 
+
 * now 
 
 ** easy seeing ability
 
+
+
 *** add three rays to the spider
+
+
+
+
+* Tasks
+
+** DONE draw 5 eye ray
+   CLOSED: [2015-07-18 Sat 23:58]
+
+** TODO detect fly

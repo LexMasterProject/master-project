@@ -15,6 +15,7 @@ public class Spider : MonoBehaviour
 	public float maxIdleDuration;
 	public float minIdleDuration;
 	public float maxSmallTurn;
+	public float eyeScope;
 	
 	//env paras
 	public float edgeWarningDist;
@@ -68,6 +69,7 @@ public class Spider : MonoBehaviour
 		direction = Direction.NONE;
 		edgeHint = Direction.NONE;
 		edgeWarningDist = 15.0f;
+		eyeScope = 40.0f;
 		
 		//init env paras
 		
@@ -90,7 +92,34 @@ public class Spider : MonoBehaviour
 	{
 		normalResponse ();
 		edgeResponse ();
+		debugDrawEyeRays ();
+
+
 	}
+
+
+	void debugDrawEyeRays()
+	{
+		Vector3 defaultV = transform.forward;
+		Vector3 [] eyeRays=new Vector3[5];
+		eyeRays[0]=defaultV;
+		eyeRays[1]= Quaternion.AngleAxis (20, transform.up)*defaultV;
+		eyeRays[2]= Quaternion.AngleAxis (-20, transform.up)*defaultV;
+		eyeRays[3]= Quaternion.AngleAxis (15, transform.right)*defaultV;
+		eyeRays[4]= Quaternion.AngleAxis (-15, transform.right)*defaultV;
+
+
+
+
+		for (int i=0; i<eyeRays.Length; i++) {
+			Debug.DrawRay (transform.position,eyeRays[i]*eyeScope,Color.green,0,false);		
+		}
+	  
+
+
+
+	}
+
 
 
 
