@@ -33,4 +33,11 @@ google search: Behaviour-based robotics, subsumption architecture.
 ** DONE draw 5 eye ray
    CLOSED: [2015-07-18 Sat 23:58]
 
-** TODO detect fly
+** DONE detect fly
+   CLOSED: [2015-07-19 Sun 00:12]
+
+** eat fly
+
+** TODO eat flys when collide
+
+** TODO add score after eat flys

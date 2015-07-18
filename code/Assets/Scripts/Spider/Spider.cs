@@ -109,12 +109,25 @@ public class Spider : MonoBehaviour
 		eyeRays[4]= Quaternion.AngleAxis (-15, transform.right)*defaultV;
 
 
-
-
 		for (int i=0; i<eyeRays.Length; i++) {
 			Debug.DrawRay (transform.position,eyeRays[i]*eyeScope,Color.green,0,false);		
 		}
-	  
+
+		RaycastHit hit;
+
+
+
+		for (int i=0; i<eyeRays.Length; i++) {
+			if (Physics.Raycast (transform.position, eyeRays[i], out hit, eyeScope)) {
+				if(hit.collider.gameObject.tag=="fly")
+				{
+					Debug.Log("seeing fly!");
+				}
+			}
+
+		}
+
+
 
 
 
