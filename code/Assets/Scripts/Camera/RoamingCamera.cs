@@ -68,7 +68,7 @@ public class RoamingCamera : MonoBehaviour {
 				transform.LookAt (Vector3.zero);
 			}
 
-			if(Input.GetKeyDown(KeyCode.Space))
+			if(Input.GetKeyDown(KeyCode.F))
 			{
 				Instantiate (fly,  hit.point, Quaternion.identity);
 			}
