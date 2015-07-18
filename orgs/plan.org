@@ -1,4 +1,12 @@
-* work today
+
+
+
+* work basket
+** Some extra reading:
+google search: Behaviour-based robotics, subsumption architecture.
+** revise thesis under the supervisor's requirements
+** different behaviours
+
 ** spider movement without changing distance
 *** run
 *** walk
@@ -6,10 +14,8 @@
 *** turn around 
 ** read one paper and write notes
 ** revise thesi
-  
 
-* work basket
-** Some extra reading:
-google search: Behaviour-based robotics, subsumption architecture.
-** revise thesis under the supervisor's requirements
-** different behaviours
+
+* now 
+
+** easy seeing ability

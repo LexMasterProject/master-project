@@ -32,13 +32,15 @@ public class Spider : MonoBehaviour
 	private float timeRecord;
 	private Direction direction;
 	private float turn;
-	private int edgeHint;
+	private Direction edgeHint;
 	
 	enum Direction
 	{
 		FORWARD,
 		LEFT,
 		RIGHT,
+		UP,
+		DOWN,
 		NONE
 	}
 	;
@@ -64,7 +66,7 @@ public class Spider : MonoBehaviour
 		maxWalkDuration = 20.0f;
 		maxSmallTurn = 0.2f;
 		direction = Direction.NONE;
-		edgeHint = -1;
+		edgeHint = Direction.NONE;
 		edgeWarningDist = 15.0f;
 		
 		//init env paras
@@ -122,51 +124,54 @@ public class Spider : MonoBehaviour
 			velocity = velocity * speed;
 			velocity.y = rb.velocity.y;
 			rb.velocity = velocity;
-			
-			if (Direction.FORWARD == direction) {
-				turn = 0;
-			} else if (Direction.RIGHT == direction) {
-				turn = 0.2f;
-			} else if (Direction.LEFT == direction) {
-				turn = -0.2f;
-			} 
 
+			switch(direction)
+			{
+			case Direction.FORWARD:
+				turn=0;
+				break;
+			case Direction.RIGHT:
+				turn=0.2f;
+				break;
+			case Direction.LEFT:
+				turn=-0.2f;
+				break;
+
+			}
+			rb.angularVelocity = transform.up * turn;
+			if(edgeHint!=Direction.NONE)
+			{
 			Vector3 randomVec= getRandomVector();
-			Vector3 newDir;
+			Vector3 newDir=Vector3.zero;
 			switch(edgeHint)
 			{
-			case 0:
+			case Direction.LEFT:
 				if(randomVec.x<0)
 				randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
 				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				Debug.DrawRay(transform.position, newDir, Color.red);
-				transform.rotation = Quaternion.LookRotation(newDir);
 				break;
-			case 1:
+			case Direction.RIGHT:
 				if(randomVec.x>0)
 					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
 				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				Debug.DrawRay(transform.position, newDir, Color.red);
-				transform.rotation = Quaternion.LookRotation(newDir);
 				break;
-			case 2:
+			case Direction.DOWN:
 				if(randomVec.z<0)
 					randomVec.Set(randomVec.x,randomVec.y,-randomVec.z);
 				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				Debug.DrawRay(transform.position, newDir, Color.red);
-				transform.rotation = Quaternion.LookRotation(newDir);
 				break;
-			case 3:
+			case Direction.UP:
 				if(randomVec.z>0)
 					randomVec.Set(-randomVec.x,randomVec.y,-randomVec.z);
 				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				Debug.DrawRay(transform.position, newDir, Color.red);
-				transform.rotation = Quaternion.LookRotation(newDir);
 				break;
 
 			}
 
-			rb.angularVelocity = transform.up * turn;
+			transform.rotation=Quaternion.LookRotation(newDir);
+			}
+
+
 		}
 		
 		
@@ -188,7 +193,7 @@ public class Spider : MonoBehaviour
 			 * if the spider are very close to one edge but heading reverse
 			 * direction, then the function won't be triggered.
 		 	*/
-	int edgeWarning (float x, float y, Vector2 headingDirection)
+	Direction edgeWarning (float x, float y, Vector2 headingDirection)
 	{
 		
 		/*
@@ -204,11 +209,11 @@ public class Spider : MonoBehaviour
 
 
 		
-		int edgeHintRet = -1;//0 left,1 right,2 down,3 up
+		Direction edgeHintRet = Direction.NONE;//0 left,1 right,2 down,3 up
 		
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
 			Debug.Log ("too close to left");
-			edgeHintRet=0;
+			edgeHintRet=Direction.LEFT;
 
 			if (headingDirection.y >= 0) {
 				
@@ -219,7 +224,7 @@ public class Spider : MonoBehaviour
 			}
 		} else if (edgeWarningDist >= edgeDists [1] && headingDirection.x > 0) {
 			Debug.Log ("too close to right");
-			edgeHintRet=1;
+			edgeHintRet=Direction.RIGHT;
 			if (headingDirection.y > 0) {
 				
 				//edgeHintRet = -1;
@@ -229,7 +234,7 @@ public class Spider : MonoBehaviour
 			}
 		} else if (edgeWarningDist >= edgeDists [2] && headingDirection.y < 0) {
 			Debug.Log ("too close to down");
-			edgeHintRet=2;
+			edgeHintRet=Direction.DOWN;
 			if (headingDirection.x > 0) {
 				//edgeHintRet = -1;
 				
@@ -239,7 +244,7 @@ public class Spider : MonoBehaviour
 			}
 		} else if (edgeWarningDist >= edgeDists [3] && headingDirection.y > 0) {
 			Debug.Log ("too close to up");
-			edgeHintRet=3;
+			edgeHintRet=Direction.UP;
 			if (headingDirection.x > 0) {
 				//edgeHintRet = 1;
 				
