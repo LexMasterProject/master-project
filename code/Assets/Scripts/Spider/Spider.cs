@@ -95,8 +95,15 @@ public class Spider : MonoBehaviour
 		debugDrawEyeRays ();
 
 
+
 	}
 
+	void OnTriggerEnter(Collider other) {
+		//Destroy(other.gameObject);
+		if (other.gameObject.CompareTag ("fly")) {
+			Destroy(other.gameObject);
+		}
+	}
 
 	void debugDrawEyeRays()
 	{
