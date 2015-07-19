@@ -14,33 +14,27 @@ google search: Behaviour-based robotics, subsumption architecture.
 *** turn around 
 ** read one paper and write notes
 ** revise thesi
+* extra reading list
+1. Brooks, R. (1986). A robust layered control system for a mobile robot
+2. Rodney Brooks’s paper on “Fast, Cheap, and Out of Control”
+3. Behaviour-based robotics
+4. subsumption architecture
+* Tasks 
+** reading tasks
+know the difference between traditional AI and behaviour AI
+main task reading-- A robust layered control system for a mobile robot
+
+additonal methods: watch relevant materials on youtube.
+** Practical Tasks
+*** run towards fly[0%]
+- [ ] 
+- [ ] 
+- [ ]
+** Thesis tasks
 
 
 
-* now 
-
-** easy seeing ability
-
-
-
-*** add three rays to the spider
-
-
-
-
-* Tasks
-
-** DONE draw 5 eye ray
-   CLOSED: [2015-07-18 Sat 23:58]
-
-** DONE detect fly
-   CLOSED: [2015-07-19 Sun 00:12]
-
-** DONE eat flys when collide
-   CLOSED: [2015-07-19 Sun 00:55]
-
-** DONE rotate the fly itself
-   CLOSED: [2015-07-19 Sun 01:21]
-** TODO add score after eat flys
-
-
+* leisure
+** novels
+1. [[http://www.93hhxs.org/sj0/][star]]
+2. [[http://www.boxuexs.org/wqz/][god]]

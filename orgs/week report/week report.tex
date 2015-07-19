@@ -1,0 +1,102 @@
+% Created 2015-07-19 Sun 02:49
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{Wuhao Wei}
+\date{\today}
+\title{July 20 week report}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Work done:}
+\label{sec-1}
+
+
+\subsection{Cameras}
+\label{sec-1-1}
+press v to switch cameras
+
+\subsubsection{auto follow camera}
+\label{sec-1-1-1}
+
+\subsubsection{controllable follow camera}
+\label{sec-1-1-2}
+operation instructions:
+\begin{enumerate}
+\item use > or < key to change the dist between the spider and the camera
+\item use w/a/s/d to rotate
+\end{enumerate}
+
+\subsubsection{world camera}
+\label{sec-1-1-3}
+There are two kinds of world cameras.
+\begin{enumerate}
+\item First one is just operating the cameras.
+\item Second one is cast a ray from the camera to gameobjects.
+\end{enumerate}
+The difference is the rotating operations:
+\begin{enumerate}
+\item the first one rotates the camera itself
+\item the second one rotates the camera around the ray hit point.
+\end{enumerate}
+Cons\&pros:
+\begin{enumerate}
+\item The first one is hard to operate.
+\item The second one is easy to operate. Besides, I could shoot food or bombs towards the hit point. However, the ray must hit at least one objects. And one problem here is how to deal with the condition that the ray hit nothing(need some suggestion here).
+\end{enumerate}
+operation instructions:
+\begin{enumerate}
+\item 1,2,3,4 to reset the camera position and orientation
+\item w/s/a/d to rotate
+\item > or < to change the dist between hit point and camera
+\item arrow keys to change the position of the camera
+\end{enumerate}
+
+Additionally, in world camera state, press f to place a fly.
+
+\subsection{add simple spider eye sensor}
+\label{sec-1-2}
+See the green rays in scene in play mode.
+
+
+\section{Report revision}
+\label{sec-2}
+\begin{enumerate}
+\item add footnote. need some suggestion on the permission part.
+\end{enumerate}
+e.g. figure1
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./img/permission_sample.png}
+\caption{\label{mylabel}permission.}
+\end{figure}
+
+
+\section{Extra reading}
+\label{sec-3}
+
+\section{Different behaviours}
+\label{sec-4}
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

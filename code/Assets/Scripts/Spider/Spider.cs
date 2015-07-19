@@ -102,6 +102,7 @@ public class Spider : MonoBehaviour
 		//Destroy(other.gameObject);
 		if (other.gameObject.CompareTag ("fly")) {
 			Destroy(other.gameObject);
+			UI.score+=1;
 		}
 	}
 
