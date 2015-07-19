@@ -35,6 +35,7 @@ public class Spider : MonoBehaviour
 	private Direction direction;
 	private float turn;
 	private Direction edgeHint;
+	private Vector3 flyPos;
 	
 	enum Direction
 	{
@@ -79,6 +80,7 @@ public class Spider : MonoBehaviour
 		edgeXLength = plane.GetComponent<Renderer> ().bounds.size.x;
 		edgeYLength = plane.GetComponent<Renderer> ().bounds.size.z;
 		findFlys = false;
+		flyPos = Vector3.zero;
 		
 		
 		//set default state as IDLE
@@ -93,7 +95,7 @@ public class Spider : MonoBehaviour
 	{
 		//always detect edge
 		edgeResponse ();
-		Vector3 flyPos = Vector3.zero;
+	
 
 		if (!findFlys) {
 			findFlys=EyeRays (ref flyPos);
@@ -101,6 +103,13 @@ public class Spider : MonoBehaviour
 			//run towards
 		if (findFlys) {
 			Debug.Log (flyPos);
+			Vector3 targetDir = flyPos-transform.position;
+			targetDir.y=0;
+			Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 1.0f, 0.0F);
+			transform.rotation=Quaternion.LookRotation(newDir);
+			changeVelocityInXZ(flyPos-transform.position);
+			anim.SetBool ("_isMoving", true);
+		
 
 		} else {
 			normalResponse ();
@@ -109,6 +118,7 @@ public class Spider : MonoBehaviour
 
 	void changeVelocityInXZ(Vector3 directionInXZ)
 	{
+
 		Vector3 velocity = directionInXZ;
 		velocity.Normalize ();
 		velocity = velocity * speed;

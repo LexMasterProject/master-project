@@ -60,6 +60,18 @@ e.g. figure1
     Still need some extra efforts on implementation
     (Since the robotics works differently. e.g. aims, difference between animation and
     robotics, hardware.).
-    One big chanllenge here is how to implement parallel layers.
-
+    One big chanllenge here is how to implement parallel layers.(one possible solution 
+    is to implement a schedule system with para priority)
+    
 2.  stuck in how to make the clips and movement consistent.
+3.  similar to problem2. Direct control and indirect control.
+    One way to control the spider is to manipulate:
+    | target position  | velocity         | limb frequency |
+    | target direction | angular velocity | limb turn      |
+  
+    The other way is 
+    | target | transform | limb |
+
+4.  action sequence
+    
+
