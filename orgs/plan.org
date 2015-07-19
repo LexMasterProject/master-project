@@ -26,9 +26,9 @@ know the difference between traditional AI and behaviour AI
 main task reading-- A robust layered control system for a mobile robot
 
 ** Practical Tasks
-*** run towards fly[0%]
-- [ ] run towards a certain point
-- [ ] 
+*** run towards fly[33%]
+- [X] run towards a certain point
+- [ ] run towards without losing sight
 - [ ]
 ** Thesis tasks
 

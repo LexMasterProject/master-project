@@ -10,6 +10,7 @@ public class Spider : MonoBehaviour
 	
 	//spider paras
 	public float speed;
+	public float runSpeed;
 	public float maxWalkDuration; //when spider waZlk max, it should enter into idle state.
 	public float minWalkDuration; //the random walk period should be bigger than minWalk
 	public float maxIdleDuration;
@@ -21,7 +22,7 @@ public class Spider : MonoBehaviour
 	public float edgeWarningDist;
 	private float edgeXLength;
 	private float edgeYLength;
-	private bool findFlys;
+
 	
 	//changing randoms
 	public float walkDuration;
@@ -66,6 +67,7 @@ public class Spider : MonoBehaviour
 		
 		//init spider paras
 		speed = 5.0f;
+
 		maxIdleDuration = 5.0f;
 		minIdleDuration = 3.0f;
 		minWalkDuration = 10.0f;
@@ -80,7 +82,7 @@ public class Spider : MonoBehaviour
 		
 		edgeXLength = plane.GetComponent<Renderer> ().bounds.size.x;
 		edgeYLength = plane.GetComponent<Renderer> ().bounds.size.z;
-		findFlys = false;
+
 		flyPos = Vector3.zero;
 		fly = null;
 		
@@ -99,26 +101,30 @@ public class Spider : MonoBehaviour
 		edgeResponse ();
 	
 
-		if (!findFlys) {
-			findFlys=EyeRays (ref flyPos);
-		}
-			//run towards
-		if (findFlys) {
-			Debug.Log (flyPos);
-			Vector3 targetDir = flyPos-transform.position;
-			targetDir.y=0;
-			Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 1.0f, 0.0F);
-			transform.rotation=Quaternion.LookRotation(newDir);
-			changeVelocityInXZ(flyPos-transform.position);
-			anim.SetBool ("_isMoving", true);
-			if(fly==null)
-			{
-				findFlys=false;
-			}
 
+	   EyeRays (ref flyPos);
+
+			//run towards
+		if (fly!=null) {
+			runTowards(flyPos);
 		} else {
 			normalResponse ();
 		}
+	}
+
+	void resetRunTowards()
+	{
+		speed = 10.0f;
+	}
+	void runTowards(Vector3 pos)
+	{
+		resetRunTowards ();
+		Vector3 targetDir = pos-transform.position;
+		targetDir.y=0;
+		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 1.0f, 0.0F);
+		transform.rotation=Quaternion.LookRotation(newDir);
+		changeVelocityInXZ(pos-transform.position);
+		anim.SetBool ("_isMoving", true);
 	}
 
 	void changeVelocityInXZ(Vector3 directionInXZ)
@@ -178,10 +184,14 @@ public class Spider : MonoBehaviour
 
 
 
-
+	void resetNormalState()
+	{
+		speed = 5.0f;
+	}
 
 	void normalResponse()
 	{
+		resetNormalState ();
 		//for changing states
 		timeRecord += Time.deltaTime;
 		if (!anim.GetBool ("_isMoving")) {
