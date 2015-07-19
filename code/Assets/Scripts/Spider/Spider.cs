@@ -98,19 +98,22 @@ public class Spider : MonoBehaviour
 		if (!findFlys) {
 			findFlys=EyeRays (ref flyPos);
 		}
-
-
 			//run towards
 		if (findFlys) {
 			Debug.Log (flyPos);
-			rb.velocity=Vector3.zero;
+
 		} else {
 			normalResponse ();
 		}
+	}
 
-	
-
-		
+	void changeVelocityInXZ(Vector3 directionInXZ)
+	{
+		Vector3 velocity = directionInXZ;
+		velocity.Normalize ();
+		velocity = velocity * speed;
+		velocity.y = rb.velocity.y;
+		rb.velocity = velocity;
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -126,8 +129,8 @@ public class Spider : MonoBehaviour
 		Vector3 defaultV = transform.forward;
 		Vector3 [] eyeRays=new Vector3[5];
 		eyeRays[0]=defaultV;
-		eyeRays[1]= Quaternion.AngleAxis (20, transform.up)*defaultV;
-		eyeRays[2]= Quaternion.AngleAxis (-20, transform.up)*defaultV;
+		eyeRays[1]= Quaternion.AngleAxis (30, transform.up)*defaultV;
+		eyeRays[2]= Quaternion.AngleAxis (-30, transform.up)*defaultV;
 		eyeRays[3]= Quaternion.AngleAxis (15, transform.right)*defaultV;
 		eyeRays[4]= Quaternion.AngleAxis (-15, transform.right)*defaultV;
 
@@ -188,11 +191,7 @@ public class Spider : MonoBehaviour
 		
 		//handle velocity
 		if (anim.GetBool ("_isMoving")) {
-			Vector3 velocity = rb.transform.forward;
-			velocity.Normalize ();
-			velocity = velocity * speed;
-			velocity.y = rb.velocity.y;
-			rb.velocity = velocity;
+			changeVelocityInXZ(rb.transform.forward);
 			
 			switch(direction)
 			{
