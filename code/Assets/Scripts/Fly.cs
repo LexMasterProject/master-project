@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Fly : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 	
@@ -10,5 +11,6 @@ public class Fly : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		transform.RotateAround (transform.position, transform.up, 5);
 	}
 }

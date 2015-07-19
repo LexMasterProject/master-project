@@ -36,11 +36,11 @@ google search: Behaviour-based robotics, subsumption architecture.
 ** DONE detect fly
    CLOSED: [2015-07-19 Sun 00:12]
 
-** eat fly
-
 ** DONE eat flys when collide
    CLOSED: [2015-07-19 Sun 00:55]
 
-** TODO rotate the fly itself
-
+** DONE rotate the fly itself
+   CLOSED: [2015-07-19 Sun 01:21]
 ** TODO add score after eat flys
+
+
