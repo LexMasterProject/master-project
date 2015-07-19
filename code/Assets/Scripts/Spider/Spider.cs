@@ -21,6 +21,7 @@ public class Spider : MonoBehaviour
 	public float edgeWarningDist;
 	private float edgeXLength;
 	private float edgeYLength;
+	private bool findFlys;
 	
 	//changing randoms
 	public float walkDuration;
@@ -77,6 +78,7 @@ public class Spider : MonoBehaviour
 		
 		edgeXLength = plane.GetComponent<Renderer> ().bounds.size.x;
 		edgeYLength = plane.GetComponent<Renderer> ().bounds.size.z;
+		findFlys = false;
 		
 		
 		//set default state as IDLE
@@ -93,14 +95,21 @@ public class Spider : MonoBehaviour
 		edgeResponse ();
 		Vector3 flyPos = Vector3.zero;
 
-		bool find=EyeRays (ref flyPos);
+		if (!findFlys) {
+			findFlys=EyeRays (ref flyPos);
+		}
+
+
 			//run towards
-		if (find) {
-			Debug.Log(flyPos);
+		if (findFlys) {
+			Debug.Log (flyPos);
+			rb.velocity=Vector3.zero;
+		} else {
+			normalResponse ();
 		}
 
 	
-		normalResponse ();
+
 		
 	}
 
