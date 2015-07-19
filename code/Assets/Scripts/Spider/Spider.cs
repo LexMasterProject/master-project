@@ -36,6 +36,7 @@ public class Spider : MonoBehaviour
 	private float turn;
 	private Direction edgeHint;
 	private Vector3 flyPos;
+	private GameObject fly;
 	
 	enum Direction
 	{
@@ -81,6 +82,7 @@ public class Spider : MonoBehaviour
 		edgeYLength = plane.GetComponent<Renderer> ().bounds.size.z;
 		findFlys = false;
 		flyPos = Vector3.zero;
+		fly = null;
 		
 		
 		//set default state as IDLE
@@ -109,7 +111,10 @@ public class Spider : MonoBehaviour
 			transform.rotation=Quaternion.LookRotation(newDir);
 			changeVelocityInXZ(flyPos-transform.position);
 			anim.SetBool ("_isMoving", true);
-		
+			if(fly==null)
+			{
+				findFlys=false;
+			}
 
 		} else {
 			normalResponse ();
@@ -137,13 +142,16 @@ public class Spider : MonoBehaviour
 	bool EyeRays(ref Vector3 targetPos)
 	{
 		Vector3 defaultV = transform.forward;
-		Vector3 [] eyeRays=new Vector3[5];
+		Vector3 [] eyeRays=new Vector3[7];
 		eyeRays[0]=defaultV;
 		eyeRays[1]= Quaternion.AngleAxis (30, transform.up)*defaultV;
 		eyeRays[2]= Quaternion.AngleAxis (-30, transform.up)*defaultV;
-		eyeRays[3]= Quaternion.AngleAxis (15, transform.right)*defaultV;
-		eyeRays[4]= Quaternion.AngleAxis (-15, transform.right)*defaultV;
-
+		//eyeRays[3]= Quaternion.AngleAxis (15, transform.right)*defaultV;
+		//eyeRays[4]= Quaternion.AngleAxis (-15, transform.right)*defaultV;
+		eyeRays[3]= Quaternion.AngleAxis (45, transform.up)*defaultV;
+		eyeRays[4]= Quaternion.AngleAxis (-45, transform.up)*defaultV;
+		eyeRays[5]= Quaternion.AngleAxis (15, transform.up)*defaultV;
+		eyeRays[6]= Quaternion.AngleAxis (-15, transform.up)*defaultV;
 
 		for (int i=0; i<eyeRays.Length; i++) {
 			Debug.DrawRay (transform.position,eyeRays[i]*eyeScope,Color.green,0,false);		
@@ -158,6 +166,7 @@ public class Spider : MonoBehaviour
 				if(hit.collider.gameObject.tag=="fly")
 				{
 					targetPos=hit.collider.gameObject.transform.position;
+					fly=hit.collider.gameObject;
 					return true;
 				}
 			}
