@@ -45,6 +45,8 @@ public class Spider : MonoBehaviour
 		NONE
 	}
 	;
+
+
 	
 	
 	//private Animation animation;
@@ -82,20 +84,24 @@ public class Spider : MonoBehaviour
 		idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
 		direction = getRandomDirection ();
 		
-		
-		
-		
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		normalResponse ();
+		//always detect edge
 		edgeResponse ();
-		debugDrawEyeRays ();
+		Vector3 flyPos = Vector3.zero;
 
+		bool find=EyeRays (ref flyPos);
+			//run towards
+		if (find) {
+			Debug.Log(flyPos);
+		}
 
-
+	
+		normalResponse ();
+		
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -106,7 +112,7 @@ public class Spider : MonoBehaviour
 		}
 	}
 
-	void debugDrawEyeRays()
+	bool EyeRays(ref Vector3 targetPos)
 	{
 		Vector3 defaultV = transform.forward;
 		Vector3 [] eyeRays=new Vector3[5];
@@ -129,16 +135,14 @@ public class Spider : MonoBehaviour
 			if (Physics.Raycast (transform.position, eyeRays[i], out hit, eyeScope)) {
 				if(hit.collider.gameObject.tag=="fly")
 				{
-					Debug.Log("seeing fly!");
+					targetPos=hit.collider.gameObject.transform.position;
+					return true;
 				}
 			}
 
 		}
 
-
-
-
-
+		return false;
 	}
 
 

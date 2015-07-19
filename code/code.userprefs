@@ -1,12 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spider/Spider.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Camera/RoamingCamera.cs">
     <Files>
-      <File FileName="Assets/Scripts/Spider/Spider.cs" Line="98" Column="3" />
+      <File FileName="Assets/Scripts/Spider/Spider.cs" Line="95" Column="23" />
       <File FileName="Assets/Scripts/Camera/RoamingCamera.cs" Line="100" Column="42" />
       <File FileName="Assets/Scripts/Camera/ControllableFollowCam.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Camera/CameraSwitch.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Camera/AutoFollowCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Fly.cs" Line="14" Column="62" />
+      <File FileName="Assets/Scripts/UI/UI.cs" Line="8" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

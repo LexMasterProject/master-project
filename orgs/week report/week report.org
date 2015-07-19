@@ -34,6 +34,8 @@ Additionally, in world camera state, press f to place a fly.
 
 ** add simple spider eye sensor 
 See the green rays in scene in play mode.
+** add simple UI 
+
 
 
 * Report revision
@@ -46,5 +48,18 @@ e.g. figure1
 
 
 * Extra reading
+1. read materials about Behaviour-based robotics
+   subsumption architecture(most reading are slides and blogs)
+2. Brooks, R. (1986). A robust layered control system for a mobile robot
+3. Rodney Brooks’s paper on “Fast, Cheap, and Out of Control”
 
 * Different behaviours
+
+* Problems
+1.  understand behaviour-based and subsumption architecture. 
+    Still need some extra efforts on implementation
+    (Since the robotics works differently. e.g. aims, difference between animation and
+    robotics, hardware.).
+    One big chanllenge here is how to implement parallel layers.
+
+2.  stuck in how to make the clips and movement consistent.
