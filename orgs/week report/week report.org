@@ -23,7 +23,8 @@ The difference is the rotating operations:
 2. the second one rotates the camera around the ray hit point. 
 Cons&pros:
 1. The first one is hard to operate.
-2. The second one is easy to operate. Besides, I could shoot food or bombs towards the hit point. However, the ray must hit at least one objects. And one problem here is how to deal with the condition that the ray hit nothing(need some suggestion here).
+2. The second one is easy to operate. Besides, I could shoot food or bombs towards the hit point. 
+   However, the ray must hit at least one objects. And one problem here is how to deal with the condition that the ray hit nothing.
 operation instructions:
 1. 1,2,3,4 to reset the camera position and orientation
 2. w/s/a/d to rotate
@@ -32,19 +33,26 @@ operation instructions:
 
 Additionally, in world camera state, press f to place a fly.
 
-** add simple spider eye sensor 
-See the green rays in scene in play mode.
+** add different behaviours
+run towards after the spider sense a fly
 ** add simple UI 
 
 
-
 * Report revision
-1. add footnote. need some suggestion on the permission part.
-e.g. figure1
+have done some some revision. 
+add footnote. need some suggestion on the permission part.
+e.g. 
 #+CAPTION: permission.
 #+LABEL: mylabel
 #+ATTR_LATEX: width=5cm
 [[./img/permission_sample.png]]
+
+#+CAPTION: bg_report.
+#+LABEL: mylabel
+#+ATTR_LATEX: width=5cm
+[[./img/how_to_add.png]]
+
+
 
 
 * Extra reading
@@ -53,7 +61,6 @@ e.g. figure1
 2. Brooks, R. (1986). A robust layered control system for a mobile robot
 3. Rodney Brooks’s paper on “Fast, Cheap, and Out of Control”
 
-* Different behaviours
 
 * Problems
 1.  understand behaviour-based and subsumption architecture. 
@@ -63,7 +70,7 @@ e.g. figure1
     One big chanllenge here is how to implement parallel layers.(one possible solution 
     is to implement a schedule system with para priority)
     
-2.  stuck in how to make the clips and movement consistent.
+2.  how to make the clips and movement consistent.
 3.  similar to problem2. Direct control and indirect control.
     One way to control the spider is to manipulate:
     | target position  | velocity         | limb frequency |
@@ -75,3 +82,9 @@ e.g. figure1
 4.  action sequence
     
 
+* Todo
+
+1. revise the bg report(will mainly focus on chapter2 literature review)
+2. add full details(e.g. turn around process. For the moment, cases are simplified. e.g. directly rotate the spider without process)
+3. add new behaviours
+4. refactor the main code(spider.cs see details in scratch) 

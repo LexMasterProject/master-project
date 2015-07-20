@@ -1,4 +1,4 @@
-% Created 2015-07-19 Sun 21:45
+% Created 2015-07-20 Mon 11:20
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -75,25 +75,31 @@ operation instructions:
 
 Additionally, in world camera state, press f to place a fly.
 
-\subsection{add simple spider eye sensor}
+\subsection{add different behaviours}
 \label{sec-1-2}
-See the green rays in scene in play mode.
+run towards after the spider sense a fly
 \subsection{add simple UI}
 \label{sec-1-3}
 
 
-
 \section{Report revision}
 \label{sec-2}
-\begin{enumerate}
-\item add footnote. need some suggestion on the permission part.
-\end{enumerate}
-e.g. figure1
+have done some some revision. 
+add footnote. need some suggestion on the permission part.
+e.g. 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=.9\linewidth]{./img/permission_sample.png}
 \caption{\label{mylabel}permission.}
 \end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=.9\linewidth]{./img/how_to_add.png}
+\caption{\label{mylabel}bg$_{\text{report}}$.}
+\end{figure}
+
+
 
 
 \section{Extra reading}
@@ -105,20 +111,46 @@ subsumption architecture(most reading are slides and blogs)
 \item Rodney Brooks’s paper on “Fast, Cheap, and Out of Control”
 \end{enumerate}
 
-\section{Different behaviours}
-\label{sec-4}
 
 \section{Problems}
-\label{sec-5}
+\label{sec-4}
 \begin{enumerate}
-\item understand behaviour-based and subsumption architecture.
-\end{enumerate}
+\item understand behaviour-based and subsumption architecture. 
 Still need some extra efforts on implementation
 (Since the robotics works differently. e.g. aims, difference between animation and
 robotics, hardware.).
+One big chanllenge here is how to implement parallel layers.(one possible solution 
+is to implement a schedule system with para priority)
+
+\item how to make the clips and movement consistent.
+\item similar to problem2. Direct control and indirect control.
+One way to control the spider is to manipulate:
+\begin{center}
+\begin{tabular}{lll}
+target position & velocity & limb frequency\\
+target direction & angular velocity & limb turn\\
+\end{tabular}
+\end{center}
+
+The other way is 
+\begin{center}
+\begin{tabular}{lll}
+target & transform & limb\\
+\end{tabular}
+\end{center}
+
+\item action sequence
+\end{enumerate}
+
+
+\section{Todo}
+\label{sec-5}
 
 \begin{enumerate}
-\item stuck in how to make the clips and movement consistent.
+\item revise the bg report(will mainly focus on chapter2 literature review)
+\item add full details(e.g. turn around process. For the moment, cases are simplified. e.g. directly rotate the spider without process)
+\item add new behaviours
+\item refactor the main code(spider.cs see details in scratch)
 \end{enumerate}
 % Emacs 24.5.1 (Org mode 8.2.10)
 \end{document}
