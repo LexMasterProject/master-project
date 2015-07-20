@@ -54,7 +54,7 @@ e.g. figure1
 3. Rodney Brooks’s paper on “Fast, Cheap, and Out of Control”
 
 * Different behaviours
-
+  
 * Problems
 1.  understand behaviour-based and subsumption architecture. 
     Still need some extra efforts on implementation
