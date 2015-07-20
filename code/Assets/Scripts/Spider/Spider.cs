@@ -97,11 +97,10 @@ public class Spider : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		updateLimbFreq ();
 		//always detect edge
-		edgeResponse ();
+	   edgeResponse ();
 	
-
-
 	   EyeRays (ref flyPos);
 
 			//run towards
@@ -109,6 +108,15 @@ public class Spider : MonoBehaviour
 			runTowards(flyPos);
 		} else {
 			normalResponse ();
+		}
+	}
+
+	void updateLimbFreq()
+	{
+		if (speed == 5) {
+			anim.SetFloat ("_speed", 0);
+		} else {
+			anim.SetFloat("_speed",1);
 		}
 	}
 

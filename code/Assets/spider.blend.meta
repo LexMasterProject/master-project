@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e482f879981f62b4ab3768352dbc4a16
-timeCreated: 1435811533
+guid: 664731dac4c4a4c8ea8e93c9bcb0778a
+timeCreated: 1437349683
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
@@ -98,20 +98,16 @@ ModelImporter:
     4300000: spider_body
     7400000: Default Take
     7400002: Idle
-    7400004: run
-    7400006: walk
-    7400008: walk_left
-    7400010: L1
-    7400012: R1
-    7400014: L1_sf
+    7400004: L1_bf
+    7400006: L1_sf
+    7400008: L2_sf
+    7400010: L3_sf
+    7400012: L4_sf
+    7400014: R1_bf
     7400016: R1_sf
     7400018: R2_sf
-    7400020: L2_sf
-    7400022: L3_sf
-    7400024: R3_sf
-    7400026: R4_sf
-    7400028: L4_sf
-    7400030: R1_bf
+    7400020: R3_sf
+    7400022: R4_sf
     9500000: //RootNode
     13700000: spider_body
   materials:
@@ -135,10 +131,242 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/head
+        weight: 1
+      - path: Armature/head/Bone_002
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
+        weight: 1
+      - path: Armature/head/Bone_008
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
+        weight: 1
+      - path: Armature/head/Bone_014
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
+        weight: 1
+      - path: Armature/head/Bone_026
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
+        weight: 1
+      - path: Armature/head/Bone_032
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
+        weight: 1
+      - path: Armature/head/Bone_038
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
+        weight: 1
+      - path: Armature/head/bottom
+        weight: 1
+      - path: Armature/head/leg1d_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
+        weight: 1
+      - path: Armature/head/leg1d_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
+        weight: 1
+      - path: spider_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
       name: Idle
       takeName: Idle
       firstFrame: 0
       lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/head
+        weight: 1
+      - path: Armature/head/Bone_002
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
+        weight: 1
+      - path: Armature/head/Bone_008
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
+        weight: 1
+      - path: Armature/head/Bone_014
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
+        weight: 1
+      - path: Armature/head/Bone_026
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
+        weight: 1
+      - path: Armature/head/Bone_032
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
+        weight: 1
+      - path: Armature/head/Bone_038
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
+        weight: 1
+      - path: Armature/head/bottom
+        weight: 1
+      - path: Armature/head/leg1d_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
+        weight: 1
+      - path: Armature/head/leg1d_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
+        weight: 1
+      - path: spider_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: L1_bf
+      takeName: L1_bf
+      firstFrame: 0
+      lastFrame: 16
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -260,239 +488,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/head
-        weight: 1
-      - path: Armature/head/Bone_002
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
-        weight: 1
-      - path: Armature/head/Bone_008
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
-        weight: 1
-      - path: Armature/head/Bone_014
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
-        weight: 1
-      - path: Armature/head/Bone_026
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
-        weight: 1
-      - path: Armature/head/Bone_032
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
-        weight: 1
-      - path: Armature/head/Bone_038
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
-        weight: 1
-      - path: Armature/head/bottom
-        weight: 1
-      - path: Armature/head/leg1d_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
-        weight: 1
-      - path: Armature/head/leg1d_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
-        weight: 1
-      - path: spider_body
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: R1_sf
-      takeName: R1_sf
-      firstFrame: 0
-      lastFrame: 16
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/head
-        weight: 1
-      - path: Armature/head/Bone_002
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
-        weight: 1
-      - path: Armature/head/Bone_008
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
-        weight: 1
-      - path: Armature/head/Bone_014
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
-        weight: 1
-      - path: Armature/head/Bone_026
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
-        weight: 1
-      - path: Armature/head/Bone_032
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
-        weight: 1
-      - path: Armature/head/Bone_038
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
-        weight: 1
-      - path: Armature/head/bottom
-        weight: 1
-      - path: Armature/head/leg1d_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
-        weight: 1
-      - path: Armature/head/leg1d_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
-        weight: 1
-      - path: spider_body
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: R2_sf
-      takeName: R2_sf
-      firstFrame: 0
-      lastFrame: 16
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -608,7 +604,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -724,239 +720,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/head
-        weight: 1
-      - path: Armature/head/Bone_002
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
-        weight: 1
-      - path: Armature/head/Bone_008
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
-        weight: 1
-      - path: Armature/head/Bone_014
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
-        weight: 1
-      - path: Armature/head/Bone_026
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
-        weight: 1
-      - path: Armature/head/Bone_032
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
-        weight: 1
-      - path: Armature/head/Bone_038
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
-        weight: 1
-      - path: Armature/head/bottom
-        weight: 1
-      - path: Armature/head/leg1d_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
-        weight: 1
-      - path: Armature/head/leg1d_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
-        weight: 1
-      - path: spider_body
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: R3_sf
-      takeName: R3_sf
-      firstFrame: 0
-      lastFrame: 16
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/head
-        weight: 1
-      - path: Armature/head/Bone_002
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
-        weight: 1
-      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
-        weight: 1
-      - path: Armature/head/Bone_008
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
-        weight: 1
-      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
-        weight: 1
-      - path: Armature/head/Bone_014
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
-        weight: 1
-      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
-        weight: 1
-      - path: Armature/head/Bone_026
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
-        weight: 1
-      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
-        weight: 1
-      - path: Armature/head/Bone_032
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
-        weight: 1
-      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
-        weight: 1
-      - path: Armature/head/Bone_038
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
-        weight: 1
-      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
-        weight: 1
-      - path: Armature/head/bottom
-        weight: 1
-      - path: Armature/head/leg1d_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
-        weight: 1
-      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
-        weight: 1
-      - path: Armature/head/leg1d_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
-        weight: 1
-      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
-        weight: 1
-      - path: spider_body
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: R4_sf
-      takeName: R4_sf
-      firstFrame: 0
-      lastFrame: 16
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1072,7 +836,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1188,7 +952,471 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/head
+        weight: 1
+      - path: Armature/head/Bone_002
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
+        weight: 1
+      - path: Armature/head/Bone_008
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
+        weight: 1
+      - path: Armature/head/Bone_014
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
+        weight: 1
+      - path: Armature/head/Bone_026
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
+        weight: 1
+      - path: Armature/head/Bone_032
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
+        weight: 1
+      - path: Armature/head/Bone_038
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
+        weight: 1
+      - path: Armature/head/bottom
+        weight: 1
+      - path: Armature/head/leg1d_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
+        weight: 1
+      - path: Armature/head/leg1d_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
+        weight: 1
+      - path: spider_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: R1_sf
+      takeName: R1_sf
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/head
+        weight: 1
+      - path: Armature/head/Bone_002
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
+        weight: 1
+      - path: Armature/head/Bone_008
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
+        weight: 1
+      - path: Armature/head/Bone_014
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
+        weight: 1
+      - path: Armature/head/Bone_026
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
+        weight: 1
+      - path: Armature/head/Bone_032
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
+        weight: 1
+      - path: Armature/head/Bone_038
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
+        weight: 1
+      - path: Armature/head/bottom
+        weight: 1
+      - path: Armature/head/leg1d_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
+        weight: 1
+      - path: Armature/head/leg1d_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
+        weight: 1
+      - path: spider_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: R2_sf
+      takeName: R2_sf
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/head
+        weight: 1
+      - path: Armature/head/Bone_002
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
+        weight: 1
+      - path: Armature/head/Bone_008
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
+        weight: 1
+      - path: Armature/head/Bone_014
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
+        weight: 1
+      - path: Armature/head/Bone_026
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
+        weight: 1
+      - path: Armature/head/Bone_032
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
+        weight: 1
+      - path: Armature/head/Bone_038
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
+        weight: 1
+      - path: Armature/head/bottom
+        weight: 1
+      - path: Armature/head/leg1d_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
+        weight: 1
+      - path: Armature/head/leg1d_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
+        weight: 1
+      - path: spider_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: R3_sf
+      takeName: R3_sf
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/head
+        weight: 1
+      - path: Armature/head/Bone_002
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
+        weight: 1
+      - path: Armature/head/Bone_008
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
+        weight: 1
+      - path: Armature/head/Bone_014
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
+        weight: 1
+      - path: Armature/head/Bone_026
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
+        weight: 1
+      - path: Armature/head/Bone_032
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
+        weight: 1
+      - path: Armature/head/Bone_038
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
+        weight: 1
+      - path: Armature/head/bottom
+        weight: 1
+      - path: Armature/head/leg1d_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
+        weight: 1
+      - path: Armature/head/leg1d_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
+        weight: 1
+      - path: spider_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: R4_sf
+      takeName: R4_sf
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
