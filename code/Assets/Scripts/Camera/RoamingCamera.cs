@@ -74,9 +74,9 @@ public class RoamingCamera : MonoBehaviour {
 			}
 			distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
 			rightDiff = Input.GetAxis ("Horizontal") * moveSpeed * Time.deltaTime;
-			forwardDiff = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
+			forwardDiff = -Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
 			leftRighRotation = -Input.GetAxis ("RotateLR") * rotateSpeed * Time.deltaTime;
-			upDownRotation = Input.GetAxis ("RotateUD") * rotateSpeed * Time.deltaTime;
+			upDownRotation = -Input.GetAxis ("RotateUD") * rotateSpeed * Time.deltaTime;
 		}
 		 
 

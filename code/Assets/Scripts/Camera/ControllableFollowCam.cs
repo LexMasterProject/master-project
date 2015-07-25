@@ -28,7 +28,7 @@ public class ControllableFollowCam : MonoBehaviour {
 			float distDiff = Input.GetAxis ("Zoom") * zoomSpeed * Time.deltaTime;
 			dist-=distDiff;
 			float leftRight= -Input.GetAxis("RotateLR")*rotateSpeed*Time.deltaTime;
-			float upDown=Input.GetAxis("RotateUD")*rotateSpeed*Time.deltaTime;
+			float upDown=-Input.GetAxis("RotateUD")*rotateSpeed*Time.deltaTime;
 			transform.RotateAround (follow.position, follow.up, leftRight);
 			transform.RotateAround (follow.position, transform.right, upDown);
 		}

@@ -97,7 +97,6 @@ public class Spider : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-
 		updateLimbFreq ();
 		//always detect edge
 		edgeResponse ();

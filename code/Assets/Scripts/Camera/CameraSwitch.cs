@@ -17,17 +17,17 @@ public class CameraSwitch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.V) && autoFollowCam.enabled) {
+		if (Input.GetButtonDown("ChangeCam") && autoFollowCam.enabled) {
 			activeIndex=1;
 			controllableFollowCam.enabled = true;
 			autoFollowCam.enabled = false;
 			roamingCam.enabled = false;
-		} else if (Input.GetKeyDown (KeyCode.V) && controllableFollowCam.enabled) {
+		} else if (Input.GetButtonDown("ChangeCam") && controllableFollowCam.enabled) {
 			activeIndex=2;
 			roamingCam.enabled = true;
 			controllableFollowCam.enabled = false;
 			autoFollowCam.enabled = false;
-		} else if (Input.GetKeyDown (KeyCode.V) && roamingCam.enabled) {
+		} else if (Input.GetButtonDown("ChangeCam") && roamingCam.enabled) {
 			activeIndex=0;
 			autoFollowCam.enabled=true;
 			roamingCam.enabled=false;

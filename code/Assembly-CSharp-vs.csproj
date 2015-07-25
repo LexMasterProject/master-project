@@ -50,7 +50,6 @@
      <Compile Include="Assets\Scripts\Camera\CameraSwitch.cs" />
      <Compile Include="Assets\Scripts\Camera\ControllableFollowCam.cs" />
      <Compile Include="Assets\Scripts\Camera\RoamingCamera.cs" />
-     <Compile Include="Assets\Scripts\Fly.cs" />
      <Compile Include="Assets\Scripts\Spider\Spider.cs" />
      <Compile Include="Assets\Scripts\Spider\spider_bak.cs" />
      <Compile Include="Assets\Scripts\UI\UI.cs" />
