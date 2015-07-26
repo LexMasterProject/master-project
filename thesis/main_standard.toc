@@ -7,15 +7,15 @@
 \contentsline {section}{\numberline {2.2}Representing an object}{4}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}A simple mesh model}{4}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}A complex surface mesh model}{5}{subsection.2.2.2}
-\contentsline {subsubsection}{Skinning}{6}{section*.10}
+\contentsline {subsubsection}{Skinning}{6}{section*.11}
 \contentsline {subsection}{\numberline {2.2.3}A complex object built from pieces}{6}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Animation}{8}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Keyframe Animation}{8}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Procedural animation}{10}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Kinematic animation}{10}{subsection.2.3.3}
-\contentsline {subsubsection}{Forward Kinematics}{11}{section*.16}
-\contentsline {subsubsection}{Inverse Kinematics}{12}{section*.19}
-\contentsline {subsubsection}{Jacobian}{12}{section*.20}
+\contentsline {subsubsection}{Forward Kinematics}{11}{section*.17}
+\contentsline {subsubsection}{Inverse Kinematics}{12}{section*.20}
+\contentsline {subsubsection}{Jacobian}{12}{section*.21}
 \contentsline {subsection}{\numberline {2.3.4}Dynamics and Physics-based animation}{13}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Arthropod Simulation}{14}{section.2.4}
 \contentsline {section}{\numberline {2.5}Arthropod Rendering}{17}{section.2.5}
@@ -34,6 +34,6 @@
 \contentsline {section}{\numberline {4.1}Risk analysis}{26}{section.4.1}
 \contentsline {section}{\numberline {4.2}Project plan}{26}{section.4.2}
 \contentsline {chapter}{\numberline {5}Conclusions}{28}{chapter.5}
-\contentsline {chapter}{Appendices}{33}{section*.35}
+\contentsline {chapter}{Appendices}{33}{section*.36}
 \contentsline {chapter}{\numberline {A}An appendix of some kind}{34}{Appendix.a.A}
 \contentsline {chapter}{\numberline {B}Another appendix}{35}{Appendix.a.B}

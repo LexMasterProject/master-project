@@ -1,10 +1,10 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main_standard.aux
 The style file: acm.bst
 Database file #1: mybibliography.bib
-Warning--I didn't find a database entry for "spiderModel"
-Warning--I didn't find a database entry for "rift1"
+Warning--to sort, need author or key in realSpider
+Warning--to sort, need author or key in rift1
 Warning--to sort, need author or key in fv
 Warning--to sort, need author or key in leganima
 Warning--to sort, need author or key in linkpic
@@ -14,45 +14,45 @@ Warning--to sort, need author or key in ushuman
 Warning--to sort, need author or key in ukhuman
 Warning--to sort, need author or key in humanPro
 Warning--empty journal in fur
-You've used 37 entries,
+You've used 40 entries,
             2253 wiz_defined-function locations,
-            728 strings with 9082 characters,
-and the built_in function-call counts, 10603 in all, are:
-= -- 1024
-> -- 371
+            737 strings with 9399 characters,
+and the built_in function-call counts, 11125 in all, are:
+= -- 1070
+> -- 380
 < -- 0
-+ -- 160
-- -- 122
-* -- 744
-:= -- 1583
-add.period$ -- 97
-call.type$ -- 37
-change.case$ -- 166
++ -- 165
+- -- 124
+* -- 761
+:= -- 1648
+add.period$ -- 104
+call.type$ -- 40
+change.case$ -- 176
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 421
-empty$ -- 1003
-format.name$ -- 122
-if$ -- 2290
+cite$ -- 51
+duplicate$ -- 443
+empty$ -- 1072
+format.name$ -- 124
+if$ -- 2413
 int.to.chr$ -- 0
-int.to.str$ -- 37
+int.to.str$ -- 40
 missing$ -- 27
-newline$ -- 174
-num.names$ -- 58
-pop$ -- 273
+newline$ -- 187
+num.names$ -- 60
+pop$ -- 306
 preamble$ -- 1
-purify$ -- 135
+purify$ -- 142
 quote$ -- 0
-skip$ -- 298
+skip$ -- 316
 stack$ -- 0
-substring$ -- 671
-swap$ -- 115
+substring$ -- 686
+swap$ -- 119
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 142
-warning$ -- 9
-while$ -- 98
-width$ -- 39
-write$ -- 340
+type$ -- 154
+warning$ -- 11
+while$ -- 100
+width$ -- 42
+write$ -- 363
 (There were 11 warnings)
