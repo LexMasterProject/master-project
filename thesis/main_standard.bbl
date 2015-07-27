@@ -4,36 +4,10 @@
 Leg animation script from:
   \url{http://commons.wikimedia.org/wiki/File:Leg_animation_script_de.svg}.
 
-\bibitem{ushuman}
-American Psychological Association Official Website
-  \url{http://www.apa.org/science/programs/testing/index.aspx}.
-
-\bibitem{ukhuman}
-The British Psychological Society Official Website
-  \url{http://www.bps.org.uk/}.
-
-\bibitem{humanPro}
-Human Research Protections Program Official Website
-  \url{http://www.apa.org/science/programs/testing/index.aspx}.
-
-\bibitem{realSpider}
-{An image of a real wolf spider}.
-\newblock accessed from
-  \url{http://photos.beilby.com/index.php?showimage=1117}.
-
 \bibitem{linkpic}
 {Animating Articulated Structures}.
 \newblock
   \url{http://web.cs.wpi.edu/~matt/courses/cs563/talks/animhtml/anim.html}.
-
-\bibitem{rift1}
-{Oculus Rift}.
-\newblock Oculus Rift Official Website \url{https://www.oculus.com/rift/}.
-
-\bibitem{motionSick}
-{Oculus warns Sony to solve motion sickness before launching a VR headset}.
-\newblock Oculus Rift Official Website
-  \url{http://www.theguardian.com/technology/2014/nov/04/oculus-sony-motion-sickness-virtual-reality}.
 
 \bibitem{fv}
 {Polygon mesh - Wikipedia, the free encyclopedia}.
@@ -65,12 +39,6 @@ Human Research Protections Program Official Website
 {\sc Chung, S.-K., and Hahn, J.~K.}
 \newblock {Animation of human walking in virtual environments}.
 \newblock In {\em Computer Animation, 1999. Proceedings\/} (1999), pp.~4--15.
-
-\bibitem{spiderModel}
-{\sc DennisH2010}.
-\newblock {An image of wolf spider model}.
-\newblock original model accessed from
-  \url{http://www.blendswap.com/blends/view/26798}.
 
 \bibitem{arsimu6}
 {\sc Durr, V.}
@@ -165,9 +133,9 @@ Human Research Protections Program Official Website
 
 \bibitem{arsimu3}
 {\sc to~add}.
-\newblock {Walknet—a biologically inspired network to control six-legged
+\newblock {Walknet---a biologically inspired network to control six-legged
   walking}.
-\newblock {\em Neural Networks 11}, 7–8 (Oct. 1998), 1435--1447.
+\newblock {\em Neural Networks 11}, 7--8 (Oct. 1998), 1435--1447.
 
 \bibitem{keyframe3}
 {\sc Treuille, A., Lee, Y., and Popovi\'{c}, Z.}
@@ -178,12 +146,6 @@ Human Research Protections Program Official Website
 {\sc Vince, J.}
 \newblock {\em {3D Computer Animation}}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1992.
-
-\bibitem{spiderMesh}
-{\sc Wake, A.}
-\newblock {A simple spider mesh model}.
-\newblock original model accessed from
-  \url{http://tf3dm.com/3d-model/spider-98861.html}.
 
 \bibitem{Reference2}
 {\sc Watt, A., and Watt, M.}

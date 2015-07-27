@@ -1,14 +1,15 @@
 \BOOKMARK [0][-]{chapter.1}{Literature Review}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Attributes of a spider}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Representing an object}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.2.1}{A simple mesh model}{section.1.2}% 4
-\BOOKMARK [2][-]{subsection.1.2.2}{A complex surface mesh model}{section.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.2.3}{A complex object built from pieces}{section.1.2}% 6
-\BOOKMARK [1][-]{section.1.3}{Animation}{chapter.1}% 7
-\BOOKMARK [2][-]{subsection.1.3.1}{Keyframe Animation}{section.1.3}% 8
-\BOOKMARK [2][-]{subsection.1.3.2}{Procedural animation}{section.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.3.3}{Kinematic animation}{section.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.3.4}{Dynamics and Physics-based animation}{section.1.3}% 11
-\BOOKMARK [1][-]{section.1.4}{Arthropod Simulation}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.5}{Arthropod Rendering}{chapter.1}% 13
-\BOOKMARK [0][-]{section*.25}{Appendices}{}% 14
+\BOOKMARK [2][-]{subsection.1.1.1}{Visible body parts of a spider}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Representing an object}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{A simple mesh model}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{A complex surface mesh model}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.3}{A complex object built from pieces}{section.1.2}% 7
+\BOOKMARK [1][-]{section.1.3}{Spider Animation}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.3.1}{Keyframe Animation}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.2}{Procedural animation}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.3}{Kinematic animation}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.4}{Dynamics and Physics-based animation}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.4}{Arthropod Simulation}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.5}{Arthropod Rendering}{chapter.1}% 14
+\BOOKMARK [0][-]{section*.27}{Appendices}{}% 15

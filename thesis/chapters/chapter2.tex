@@ -9,7 +9,38 @@ manipulate these objects are also included in this part. The second
 part mainly focus on rendering techniques and animation techniques
 specifically for the arthropods.
 
-\section{Attributes of a spider}
+\section{Attributes of a spider} 
+In order to animate a spider sucessfully, there are at least three aspects need to be considered: a spider model, spider behaviours and spider rendering. Each aspect is corresponding to some attributes of a spider. In this section, the corresponding attributes will be discussed basically following the order. However, the relation is not fixed due to implementation design(e.g. To add bumps for spider, one way is to change the surface of the model; the other way is to use rendering techniques such as normal mapping to express the bumps.).
+
+
+\subsection{Visible body parts of a spider} % (fold)
+Since the primary aim of the project is to animate the spider without interest in the internal parts of the spider(e.g. brain, stomach), it is better to focus on the visible body parts of a spider. The most visible parts of a spider which marked blue in figure \ref{fig:partsOfSpider} are abdomen, cephalothorax and legs. The less visible parts of a spider which marked red in figure \ref{fig:partsOfSpider} are pedipalp, chelicera and eyes. 
+
+The spider in \ref{fig:closeViewSpider} is a wolf spider which has six eyes(most spiders have eight eyes) and most parts of it are covered with many hairs.
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=14cm]{figures/partsOfSpider.png}
+\caption{Visible body parts of a spider. \protect\footnotemark}
+\label{fig:partsOfSpider}
+\end{figure}
+\footnotetext{\url{http://photos.beilby.com/index.php?showimage=1117}. Gary Beilby. Permission from author.}
+
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=14cm]{figures/wolfspidereyes.jpg}
+\caption{Close view of a wolf spider. \protect\footnotemark}
+\label{fig:closeViewSpider}
+\end{figure}
+\footnotetext{\url{http://www.kidzone.ws/lw/spiders/facts02.htm}. photo by Anxo Resúa. licensed under CC BY-SA 2.0.}
+
+
+\subsection{Skeleton of a spider} % (fold)
+\label{sub:skeleton_of_a_spider}
+
+% subsection skeleton_of_a_spider (end)
 
 
 
