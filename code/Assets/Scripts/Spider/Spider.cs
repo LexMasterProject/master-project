@@ -118,6 +118,7 @@ public class Spider : MonoBehaviour
 	{
 		if (speed == 5) {
 			anim.SetFloat ("_speed", 0);
+			Debug.Log("normal limb");
 		} else {
 			anim.SetFloat("_speed",1);
 		}
