@@ -1,35 +1,14 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Aims and objectives}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Overview of the report}{chapter.1}% 3
-\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Arthropods}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.2.1.1}{Attributes of a spider}{section.2.1}% 6
-\BOOKMARK [1][-]{section.2.2}{Representing an object}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.1}{A simple mesh model}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.2}{A complex surface mesh model}{section.2.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.3}{A complex object built from pieces}{section.2.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Animation}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.3.1}{Keyframe Animation}{section.2.3}% 12
-\BOOKMARK [2][-]{subsection.2.3.2}{Procedural animation}{section.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.3.3}{Kinematic animation}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.4}{Dynamics and Physics-based animation}{section.2.3}% 15
-\BOOKMARK [1][-]{section.2.4}{Arthropod Simulation}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.5}{Arthropod Rendering}{chapter.2}% 17
-\BOOKMARK [0][-]{chapter.3}{Requirement and Analysis}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.2}{Modeling the spider}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.3}{Spider animation}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.4}{Spider rendering}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.5}{Oculus Rift}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.6}{Requirements Lists}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.7}{Testing and Evaluation}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.7.1}{Testing}{section.3.7}% 26
-\BOOKMARK [2][-]{subsection.3.7.2}{Evaluation}{section.3.7}% 27
-\BOOKMARK [1][-]{section.3.8}{Ethics and Legal considerations}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{Planning}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Risk analysis}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{Project plan}{chapter.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 32
-\BOOKMARK [0][-]{section*.36}{Appendices}{}% 33
-\BOOKMARK [0][-]{Appendix.a.A}{An appendix of some kind}{}% 34
-\BOOKMARK [0][-]{Appendix.a.B}{Another appendix}{}% 35
+\BOOKMARK [0][-]{chapter.1}{Literature Review}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Attributes of a spider}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Representing an object}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{A simple mesh model}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{A complex surface mesh model}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{A complex object built from pieces}{section.1.2}% 6
+\BOOKMARK [1][-]{section.1.3}{Animation}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.3.1}{Keyframe Animation}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{Procedural animation}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.3}{Kinematic animation}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.4}{Dynamics and Physics-based animation}{section.1.3}% 11
+\BOOKMARK [1][-]{section.1.4}{Arthropod Simulation}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{Arthropod Rendering}{chapter.1}% 13
+\BOOKMARK [0][-]{section*.25}{Appendices}{}% 14

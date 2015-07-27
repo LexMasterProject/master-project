@@ -1,13 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Camera/CameraSwitch.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spider/Spider.cs">
     <Files>
+      <File FileName="Assets/Scripts/Spider/Spider.cs" Line="121" Column="29" />
       <File FileName="../spider all/Assets/fantasySpider/FS_rotateThis.js" Line="1" Column="1" />
       <File FileName="../spider all/Assets/fantasySpider/Readme_spider.html" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Camera/CameraSwitch.cs" Line="31" Column="18" />
-      <File FileName="Assets/Scripts/Camera/ControllableFollowCam.cs" Line="33" Column="70" />
+      <File FileName="Assets/Scripts/Camera/ControllableFollowCam.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Camera/RoamingCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Spider/Spider.cs" Line="99" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

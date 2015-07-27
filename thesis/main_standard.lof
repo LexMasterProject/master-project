@@ -1,36 +1,20 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces A real wolf spider. \footnotemark \relax }}{2}{figure.caption.6}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces A wolf spider model \footnotemark \relax }}{2}{figure.caption.7}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Oculus Rift 2. \footnotemark \relax }}{3}{figure.caption.8}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Face-Vertex Meshes \cite {fv}\relax }}{5}{figure.caption.9}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A complex human mesh and rigging \cite {shaolinpic}\relax }}{6}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces A simple Robot and its scene graph.\relax }}{7}{figure.caption.12}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces A simple Robot and its scene graph after transformation.\relax }}{7}{figure.caption.13}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces A moving robot.\relax }}{9}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Part 1}}{9}{subfigure.5.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Part 2}}{9}{subfigure.5.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces Part 3}}{9}{subfigure.5.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces Part 4}}{9}{subfigure.5.4}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Shape interpolation of a cow.\cite {2d_shape}\relax }}{9}{figure.caption.15}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces A snapshot from classic game SuperMario\relax }}{10}{figure.caption.16}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces A human walking linked structure \cite {leganima}\relax }}{11}{figure.caption.18}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces A two link structure \cite {linkpic}\relax }}{12}{figure.caption.19}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Main components of the arthropod animation system. \cite {thesis}\relax }}{15}{figure.caption.22}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Seek and flee steering diagram. \cite {steeringImage}\relax }}{15}{figure.caption.23}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Results of spider with IK. \cite {thesis}\relax }}{16}{figure.caption.24}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Step path produced by the stride module. \cite {thesis}\relax }}{17}{figure.caption.25}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Polygon strip fur \cite {fur}\relax }}{17}{figure.caption.26}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces stages of fins \cite {thesis}\relax }}{18}{figure.caption.27}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A simple spider mesh model. \cite {spiderMesh}\relax }}{20}{figure.caption.28}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces A rigging spider example. \cite {spiderModel}\relax }}{20}{figure.caption.29}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The Tripod Gait. \cite {thesis}\relax }}{21}{figure.caption.30}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The Gait Timing. \cite {thesis}\relax }}{22}{figure.caption.31}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gantt Table\relax }}{27}{figure.caption.32}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Gantt Chart\relax }}{27}{figure.caption.33}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Future work\relax }}{29}{figure.caption.34}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Face-Vertex Meshes \cite {fv}\relax }}{2}{figure.caption.5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A complex human mesh and rigging \cite {shaolinpic}\relax }}{3}{figure.caption.6}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A simple Robot and its scene graph.\relax }}{4}{figure.caption.8}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces A simple Robot and its scene graph after transformation.\relax }}{4}{figure.caption.9}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces A moving robot.\relax }}{6}{figure.caption.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Part 1}}{6}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Part 2}}{6}{subfigure.5.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces Part 3}}{6}{subfigure.5.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces Part 4}}{6}{subfigure.5.4}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Shape interpolation of a cow.\cite {2d_shape}\relax }}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces A snapshot from classic game SuperMario\relax }}{7}{figure.caption.12}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces A human walking linked structure \cite {leganima}\relax }}{8}{figure.caption.14}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces A two link structure \cite {linkpic}\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Main components of the arthropod animation system. \cite {thesis}\relax }}{12}{figure.caption.18}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Seek and flee steering diagram. \cite {steeringImage}\relax }}{12}{figure.caption.19}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Results of spider with IK. \cite {thesis}\relax }}{13}{figure.caption.20}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Step path produced by the stride module. \cite {thesis}\relax }}{14}{figure.caption.21}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Polygon strip fur \cite {fur}\relax }}{14}{figure.caption.22}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces stages of fins \cite {thesis}\relax }}{15}{figure.caption.23}
