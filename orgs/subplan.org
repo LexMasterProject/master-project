@@ -1,0 +1,97 @@
+#+TITLE: 2 week plan
+
+* ProjectTasks[0%]
+- [ ] turning animation for the spider
+- [ ] vary speed of movement
+- [ ] walk around obstacles
+- [ ] run away
+- [ ] control priority of behaviours
+- [ ] possible approach: makes a new decision on each step rather than making a
+      long term plan
+- [ ] Possible problem: It could oscillate between two decisions, 
+      e.g. turn right, turn left, etc.... Possible solution: give 
+      the spider a short-term memory.
+- [ ] Consider use of probabilities to control continuing movement. 
+      These can change depending on inputs.
+- [ ] thesis revision
+
+
+* workToday[25%]
+
+** TODO check thesis
+
+** TODO chapter1
+
+** TODO chapter2
+
+   
+* workleft[0%]
+- [ ] research on how to add fur in unity(which is very important for spider appearance)
+- [ ] one coding contest on bestcoder
+- [ ] backup files for work
+
+
+
+* comments
+Now I already know the basics of how to add texture to a spider and export them into unity. 
+The problem is how to find the texture or how to make the texture. 
+It is not easy to find a texture for spider.
+
+possible solutions:
+1 find some texture pattern(maybe part of real spider image) and apply them to my spider.
+2 unwrap texture from other spider and apply to my spider. 
+3 change to another spider with texture(it is not worthy. Since I may still change outlook of 
+  the spider in the end)
+
+
+For this time, I will first do the 2nd solution. 
+
+
+
+
+* issues
+
+** tune animation. 
+ 
+1 after changing animation for one limb, there is nearly no effects. The reason is when the spider enter walking 
+mode, unity blend the last state in idle and the first state in walking.
+
+2 The initial state such as the angle between two segments of the limb cannot be altered. Because the animation is 
+dependent on IK provided by blender. Two possbile ways to solve it:
+
+1. use look-at IK in blender
+2. add new buffer mode.(the mode between idle mode and walking mode.)
+
+Since it is not primary concern for the moment, I will do it in the late stages.
+
+
+
+
+
+* emacs reading
+[[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org][一年成为Emacs高手]]
+[[http://planet.emacsen.org/][emacs planet]]
+
+[[http://ergoemacs.org/emacs/emacs.html][xah tutorial]]
+
+* code contest
+
+
+
+[[http://lexnewgate.blogspot.co.uk/][blog]]
+
+http://www.forbeschina.com/
+
+
+* checkmovie updates
+[[https://www.google.co.uk/webhp?sourceid%3Dchrome-instant&ion%3D1&espv%3D2&ie%3DUTF-8#newwindow%3D1&q%3D%25E9%2581%2593%25E5%25A3%25AB%25E4%25B8%258B%25E5%25B1%25B1%2B%25E5%2585%25A8%25E9%259B%2586%25E7%25BD%2591][down hill]]
+[[https://www.google.co.uk/webhp?sourceid%3Dchrome-instant&ion%3D1&espv%3D2&ie%3DUTF-8#newwindow%3D1&q%3D%25E7%2585%258E%25E9%25A5%25BC%25E4%25BE%25A0%2B%25E5%2585%25A8%25E9%259B%2586%25E7%25BD%2591][pie knight]]
+[[https://www.google.co.uk/webhp?sourceid%3Dchrome-instant&ion%3D1&espv%3D2&ie%3DUTF-8#newwindow%3D1&q%3D%25E5%2585%25A8%25E9%259B%2586%25E7%25BD%2591%2B%25E8%259A%2581%25E4%25BA%25BA][ant-man]]
+[[https://www.google.co.uk/webhp?sourceid%3Dchrome-instant&ion%3D1&espv%3D2&ie%3DUTF-8#newwindow%3D1&q%3D%25E5%2585%25A8%25E9%259B%2586%25E7%25BD%2591%2B%25E5%25A4%258D%25E4%25BB%2587%25E8%2580%2585%25E8%2581%2594%25E7%259B%259F2][revenge]]
+[[https://www.google.co.uk/webhp?sourceid%3Dchrome-instant&ion%3D1&espv%3D2&ie%3DUTF-8#q%3D%25E6%258D%2589%25E5%25A6%2596%25E8%25AE%25B0%2520%25E5%2585%25A8%25E9%259B%2586%25E7%25BD%2591][catch ghost]]
+
+
+[[http://www.9sep.org/free-xunlei-vip][xunlei vip]]
+
+
+

@@ -105,22 +105,25 @@ public class Spider : MonoBehaviour
 
 	   EyeRays (ref flyPos);
 
-			//run towards
-		if (fly!=null) {
-			runTowards(flyPos);
-		} else {
+
 			normalResponse ();
-		}
+
 	}
 
 
 	void updateLimbFreq()
 	{
-		if (speed == 5) {
-			anim.SetFloat ("_speed", 0);
-		} else {
-			anim.SetFloat("_speed",1);
-		}
+//		if (speed == 5) {
+//			anim.SetFloat ("_speed", 0.5f);
+//		} else {
+//			anim.SetFloat("_speed",1);
+//		}
+
+		anim.SetFloat ("_speed", 0.5f);
+		anim.SetFloat ("_turn", turn);
+
+
+
 	}
 
 	void resetRunTowards()
