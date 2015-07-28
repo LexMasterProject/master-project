@@ -119,8 +119,10 @@ public class Spider : MonoBehaviour
 //			anim.SetFloat("_speed",1);
 //		}
 
-		anim.SetFloat ("_speed", 0.5f);
-		anim.SetFloat ("_turn", turn);
+//		anim.SetFloat ("_speed", 0.5f);
+//		anim.SetFloat ("_turn", turn);
+
+		anim.SetFloat ("_speed", 0f);
 
 
 
@@ -235,17 +237,18 @@ public class Spider : MonoBehaviour
 		//handle velocity
 		if (anim.GetBool ("_isMoving")) {
 			changeVelocityInXZ(rb.transform.forward);
+			rb.velocity=Vector3.zero;
 			
 			switch(direction)
 			{
 			case Direction.FORWARD:
-				turn=0;
+				turn=0.4f;
 				break;
 			case Direction.RIGHT:
-				turn=0.2f;
+				turn=0.4f;
 				break;
 			case Direction.LEFT:
-				turn=-0.2f;
+				turn=0.4f;
 				break;
 				
 			}
