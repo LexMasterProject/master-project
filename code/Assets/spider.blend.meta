@@ -129,6 +129,7 @@ ModelImporter:
     7400060: R2_ud
     7400062: R3_ud
     7400064: R4_ud
+    7400066: L1_tl
     9500000: //RootNode
     13700000: spider_body
   materials:
@@ -3170,6 +3171,122 @@ ModelImporter:
     - serializedVersion: 16
       name: R4_ud
       takeName: R4_ud
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/head
+        weight: 1
+      - path: Armature/head/Bone_002
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005
+        weight: 1
+      - path: Armature/head/Bone_002/Bone_003/Bone_004/Bone_005/foot3_R
+        weight: 1
+      - path: Armature/head/Bone_008
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011
+        weight: 1
+      - path: Armature/head/Bone_008/Bone_009/Bone_010/Bone_011/foot2_R
+        weight: 1
+      - path: Armature/head/Bone_014
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017
+        weight: 1
+      - path: Armature/head/Bone_014/Bone_015/Bone_016/Bone_017/foot4_R
+        weight: 1
+      - path: Armature/head/Bone_026
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029
+        weight: 1
+      - path: Armature/head/Bone_026/Bone_027/Bone_028/Bone_029/foot3_L
+        weight: 1
+      - path: Armature/head/Bone_032
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035
+        weight: 1
+      - path: Armature/head/Bone_032/Bone_033/Bone_034/Bone_035/foot2_L
+        weight: 1
+      - path: Armature/head/Bone_038
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041
+        weight: 1
+      - path: Armature/head/Bone_038/Bone_039/Bone_040/Bone_041/foot4_L
+        weight: 1
+      - path: Armature/head/bottom
+        weight: 1
+      - path: Armature/head/leg1d_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L
+        weight: 1
+      - path: Armature/head/leg1d_L/leg1c_L/leg1b_L/leg1a_L/foot1_L
+        weight: 1
+      - path: Armature/head/leg1d_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R
+        weight: 1
+      - path: Armature/head/leg1d_R/leg1c_R/leg1b_R/leg1a_R/foot1_R
+        weight: 1
+      - path: spider_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: L1_tl
+      takeName: L1_tl
       firstFrame: 0
       lastFrame: 16
       wrapMode: 0
