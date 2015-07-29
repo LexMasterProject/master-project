@@ -100,14 +100,8 @@ public class Spider : MonoBehaviour
 		updateLimbFreq ();
 		//always detect edge
 		edgeResponse ();
-	
-
-
-	   EyeRays (ref flyPos);
-
-
-			normalResponse ();
-
+	    EyeRays (ref flyPos);
+	    normalResponse ();
 	}
 
 
@@ -228,13 +222,13 @@ public class Spider : MonoBehaviour
 			switch(direction)
 			{
 			case Direction.FORWARD:
-				turn=-0.4f;
+				turn=0.4f;
 				break;
 			case Direction.RIGHT:
-				turn=-0.4f;
+				turn=0.4f;
 				break;
 			case Direction.LEFT:
-				turn=-0.4f;
+				turn=0.4f;
 				break;
 				
 			}
@@ -255,8 +249,11 @@ public class Spider : MonoBehaviour
 		//		anim.SetFloat ("_turn", turn);
 		
 		//anim.SetFloat ("_speed", 0.3f);
-		anim.SetFloat ("_speed", 0);
 
+
+		//turn left 
+		anim.SetFloat ("_speed", 0);
+//
 		anim.SetFloat ("_turn", turn);
 		
 		
