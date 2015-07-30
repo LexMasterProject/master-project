@@ -37,8 +37,17 @@ public class Spider : MonoBehaviour
 	private Direction direction;
 	private float turn;
 	private Direction edgeHint;
+	private Direction edgeHintbuf;
+	private int  edgeHintbufCount;
 	private Vector3 flyPos;
 	private GameObject fly;
+	private Direction turnHint;
+	private float[]turningProbabilities;
+
+	private Direction directionAvoid;
+
+
+	private Vector3 newHeadingAfterEdgeHint;
 	
 	enum Direction
 	{
@@ -51,16 +60,53 @@ public class Spider : MonoBehaviour
 	}
 	;
 
-
+	enum Status
+	{
+		FREE_WALK,
+		WALK_ALONG_EDGE
+	}
 	
 	
 	//private Animation animation;
+
+//	void resetTurningProbabilities(Status status)
+//	{
+//		switch(status)
+//		{
+//		case Status.FREE_WALK:
+//			turningProbabilities [0] = 0.25;//turn right
+//			turningProbabilities [1] = 0.25;//turn left
+//			turningProbabilities [2] = 0.5;//no turn
+//			break;
+//		case Status.WALK_ALONG_EDGE:
+//			switch(directionAvoid)
+//			{
+//			case Direction.LEFT:
+//				turningProbabilities [0] = 0.5;//turn right
+//				turningProbabilities [1] = 0;//turn left
+//				turningProbabilities [2] = 0.5;//no turn
+//				break;
+//			case Direction.RIGHT:
+//				turningProbabilities [0] = 0;//turn right
+//				turningProbabilities [1] = 0.5;//turn left
+//				turningProbabilities [2] = 0.5;//no turn
+//				break;
+//			}
+//			break;
+//
+//
+//		}
+//	}
 	
 	// Use this for initialization
 	void Start ()
 	{
 		
-		
+//		turningProbabilities = new float[3];
+//		turningProbabilities [0] = 0.25;//turn right
+//		turningProbabilities [1] = 0.25;//turn left
+//		turningProbabilities [2] = 0.5;//no turn
+
 		anim = gameObject.GetComponent<Animator> ();
 		rb = GetComponent<Rigidbody> ();
 		debugSetLayerWeight ();
@@ -78,6 +124,8 @@ public class Spider : MonoBehaviour
 		maxSmallTurn = 0.2f;
 		direction = Direction.NONE;
 		edgeHint = Direction.NONE;
+		edgeHintbuf = Direction.NONE;
+		directionAvoid = Direction.NONE;
 		edgeWarningDist = 15.0f;
 		eyeScope = 40.0f;
 		edgeTask = false;
@@ -98,30 +146,119 @@ public class Spider : MonoBehaviour
 //		speed=0;changeVelocityInXZ(rb.transform.forward);
 		
 	}
-	
+
+	void setDirectionAvoid(float turn)
+	{
+		if (turn > 0) {
+			directionAvoid = Direction.LEFT;
+		} else {
+			directionAvoid = Direction.RIGHT;
+		}
+	}
+
+	bool edgeWalkDetect(float x, float y)
+	{
+
+		float [] edgeDists = new float[4];
+		
+		edgeDists [0] = Mathf.Abs (x + edgeXLength / 2);//left x dist
+		edgeDists [1] = Mathf.Abs (x - edgeXLength / 2);//right x dist
+		edgeDists [2] = Mathf.Abs (y + edgeYLength / 2);//down y dist
+		edgeDists [3] = Mathf.Abs (y - edgeYLength / 2);//up y dist
+		
+		float edgeWalkDist = edgeWarningDist + 10;
+		float edgeMax = Mathf.Max (edgeDists);
+		if (edgeWalkDist >= edgeMax) {
+			return true;
+		}
+		return false;
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
 		updateLimbFreq ();
 
-		if(false==edgeTask)
-		{
-			Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
+			Vector2 headingDirection = new Vector2 (rb.transform.forward.x, rb.transform.forward.z);
 			headingDirection.Normalize ();
-			edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
-		}
+
+			//edge turning detect
+			edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection,ref turnHint);
+			
+		/*
+		 * edge turning response
+		 */
+			//edge hint buf: add dead zone for edge detect
+			if (edgeHintbuf != edgeHint) {
+				if(edgeHintbufCount<=5)
+				{
+					rb.angularVelocity = transform.up * turn;
+					edgeHintbufCount+=1;
+				}
+				else
+				{
+					edgeHintbuf=edgeHint;
+					edgeHintbufCount=0;
+				//	setDirectionAvoid(turn);
+				}
+
+			return;
+			}
 
 		if (edgeHint != Direction.NONE) {
-			edgeTask=true;
-			rb.velocity=Vector3.zero;
-			speed=0;
-			turn=0.4f;
+			edgeHintbuf=edgeHint;
+
+			if(turnHint==Direction.RIGHT)
+			{
+				speed=0;
+				//changeVelocityInXZ(rb.transform.forward,0);
+				turn=0.4f;
+			}
+			else if(turnHint==Direction.LEFT)
+			{
+				speed=0;
+				//changeVelocityInXZ(rb.transform.forward,0);
+				turn=-0.4f;
+			}
 			rb.angularVelocity = transform.up * turn;
 		} else {
+
 			normalResponse ();
 		}
 //	    
 	}
+
+
+
+
+
+	Vector3 getNewHeadingAfterEdgeHint(Direction edgeHint)
+	{
+		Vector3 randomVec= getRandomVector();
+		switch(edgeHint)
+		{
+		case Direction.LEFT:
+			if(randomVec.x<0)
+				randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
+			break;
+		case Direction.RIGHT:
+			if(randomVec.x>0)
+				randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
+			break;
+		case Direction.DOWN:
+			if(randomVec.z<0)
+				randomVec.Set(randomVec.x,randomVec.y,-randomVec.z);
+			break;
+		case Direction.UP:
+			if(randomVec.z>0)
+				randomVec.Set(-randomVec.x,randomVec.y,-randomVec.z);
+			break;
+			
+		}
+		
+		return randomVec;
+	}
+
 	void updateLimbFreq()
 	{
 	
@@ -157,6 +294,7 @@ public class Spider : MonoBehaviour
 			
 		} else if (anim.GetBool ("_isMoving")) {
 			//moving state
+			speed=5;
 			changeVelocityInXZ(rb.transform.forward,5.0f);
 			switch(direction)
 							{
@@ -272,44 +410,44 @@ public class Spider : MonoBehaviour
 
 
 
-	void edgeResponse()
-	{
-		//the spider's heading direction
-		Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
-		headingDirection.Normalize ();
-		edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
-		if(edgeHint!=Direction.NONE)
-		{
-			Vector3 randomVec= getRandomVector();
-			Vector3 newDir=Vector3.zero;
-			switch(edgeHint)
-			{
-			case Direction.LEFT:
-				if(randomVec.x<0)
-					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
-				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				break;
-			case Direction.RIGHT:
-				if(randomVec.x>0)
-					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
-				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				break;
-			case Direction.DOWN:
-				if(randomVec.z<0)
-					randomVec.Set(randomVec.x,randomVec.y,-randomVec.z);
-				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				break;
-			case Direction.UP:
-				if(randomVec.z>0)
-					randomVec.Set(-randomVec.x,randomVec.y,-randomVec.z);
-				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-				break;
-				
-			}
-			
-			transform.rotation=Quaternion.LookRotation(newDir);
-		}
-	}
+//	void edgeResponse()
+//	{
+//		//the spider's heading direction
+//		Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
+//		headingDirection.Normalize ();
+//		edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
+//		if(edgeHint!=Direction.NONE)
+//		{
+//			Vector3 randomVec= getRandomVector();
+//			Vector3 newDir=Vector3.zero;
+//			switch(edgeHint)
+//			{
+//			case Direction.LEFT:
+//				if(randomVec.x<0)
+//					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
+//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+//				break;
+//			case Direction.RIGHT:
+//				if(randomVec.x>0)
+//					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
+//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+//				break;
+//			case Direction.DOWN:
+//				if(randomVec.z<0)
+//					randomVec.Set(randomVec.x,randomVec.y,-randomVec.z);
+//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+//				break;
+//			case Direction.UP:
+//				if(randomVec.z>0)
+//					randomVec.Set(-randomVec.x,randomVec.y,-randomVec.z);
+//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
+//				break;
+//				
+//			}
+//			
+//			transform.rotation=Quaternion.LookRotation(newDir);
+//		}
+//	}
 
 	
 	
@@ -324,7 +462,7 @@ public class Spider : MonoBehaviour
 			 * if the spider are very close to one edge but heading reverse
 			 * direction, then the function won't be triggered.
 		 	*/
-	Direction edgeWarning (float x, float y, Vector2 headingDirection)
+	Direction edgeWarning (float x, float y, Vector2 headingDirection,ref Direction turnHint)
 	{
 		
 		/*
@@ -343,45 +481,48 @@ public class Spider : MonoBehaviour
 		Direction edgeHintRet = Direction.NONE;
 		
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
-			//Debug.Log ("too close to left");
 			edgeHintRet=Direction.LEFT;
-
+			newHeadingAfterEdgeHint=getNewHeadingAfterEdgeHint(edgeHint);
 			if (headingDirection.y >= 0) {
-				
-				//edgeHintRet = 1;
+
+				turnHint=Direction.RIGHT;
+		
 			} else {
 				
-				//edgeHintRet = -1;
+				turnHint=Direction.LEFT;
 			}
 		} else if (edgeWarningDist >= edgeDists [1] && headingDirection.x > 0) {
-			//Debug.Log ("too close to right");
+		
 			edgeHintRet=Direction.RIGHT;
+			newHeadingAfterEdgeHint=getNewHeadingAfterEdgeHint(edgeHint);
 			if (headingDirection.y > 0) {
 				
 				//edgeHintRet = -1;
+				turnHint=Direction.LEFT;
 			} else {
-				//edgeHintRet = 1;
+				turnHint=Direction.RIGHT;
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [2] && headingDirection.y < 0) {
-			//Debug.Log ("too close to down");
+
 			edgeHintRet=Direction.DOWN;
+			newHeadingAfterEdgeHint=getNewHeadingAfterEdgeHint(edgeHint);
 			if (headingDirection.x > 0) {
 				//edgeHintRet = -1;
-				
+				turnHint=Direction.LEFT;
 			} else {
-				//edgeHintRet = 1;
+				turnHint=Direction.RIGHT;
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [3] && headingDirection.y > 0) {
-			//Debug.Log ("too close to up");
 			edgeHintRet=Direction.UP;
+			newHeadingAfterEdgeHint=getNewHeadingAfterEdgeHint(edgeHint);
 			if (headingDirection.x > 0) {
-				//edgeHintRet = 1;
+				turnHint=Direction.RIGHT;
 				
 			} else {
 				//edgeHintRet = -1;
-				
+				turnHint=Direction.LEFT;
 			}
 		}
 		
@@ -416,7 +557,7 @@ public class Spider : MonoBehaviour
 	}
 
 
-	Vector2 getRandomVector()
+	Vector3 getRandomVector()
 	{
 		float x = Random.Range (-1.0f, 1.0f);
 		float z= Random.Range (-1.0f, 1.0f);

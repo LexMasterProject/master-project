@@ -1,0 +1,393 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"print	function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "package insta",
+		"selected_items":
+		[
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle side",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"term",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"book",
+				"SublimeBookmarks: Goto Bookmark"
+			],
+			[
+				"su ",
+				"SublimeBookmarks: Show All Bookmarks "
+			],
+			[
+				"orgmode",
+				"Set Syntax: orgmode"
+			],
+			[
+				"orge",
+				"Set Syntax: orgmode"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"sub ",
+				"SublimeBookmarks: Add Bookmark"
+			],
+			[
+				"sub book",
+				"SublimeBookmarks: Goto Bookmark"
+			],
+			[
+				"package contr rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"add book",
+				"SublimeBookmarks: Add Bookmark"
+			],
+			[
+				"pac ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sublim",
+				"SublimeBookmarks: Show All Bookmarks "
+			],
+			[
+				"add boo",
+				"SublimeBookmarks: Add Bookmark"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"bookm",
+				"Bookmarks: Toggle"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"eve",
+				"Evernote: Send to Evernote as new note"
+			],
+			[
+				"set syntax: pl",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"e",
+				"Evernote: New empty note"
+			],
+			[
+				"evernote",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Task",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Reconfigure and migrate settings",
+				"LaTeXTools: Reconfigure and migrate settings"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 229.0,
+		"history":
+		[
+			"example",
+			"view.run_command('example')",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"Install Package",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"Install Package",
+			"install package",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"1+2",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/alex/Desktop/master-project/thesis"
+	],
+	"file_history":
+	[
+		"/Users/alex/Documents/整理.docx",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/alex/Documents/test.py",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Prefixr/Prefixr.py",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Prefixr/untitled.py",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/alex/Desktop/master-project/code/Assets/SpiderAC.controller",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/Toggl Timer.sublime-settings",
+		"/Users/alex/Desktop/master-project/code/Assets/animationMasks/L2.mask",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/alex/Desktop/master-project/orgs/subplan.org",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/Users/alex/Desktop/master-project/orgs/masterProject.todo",
+		"/Users/alex/Desktop/master-project/orgs/Package Control Messages.org",
+		"/Users/alex/Desktop/master-project/thesis/main_standard.tex",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/GitHub.sublime-settings",
+		"/Users/alex/Desktop/master-project/sublime projects/untitled.sublime-project",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/PlainTasks/messages/dffd",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/Evernote/README.md",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/PlainTasks/messages/untitled.todo.enmd",
+		"/Users/alex/Desktop/report/chapter1.pdf",
+		"/Users/alex/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/README.markdown",
+		"/Users/alex/Documents/sources/main_standard.tex",
+		"/Users/alex/Documents/untitled.tex",
+		"/Users/alex/Desktop/latex/test.tex",
+		"/Users/alex/Documents/untitled"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"remember",
+			"remember_open_files",
+			"remember",
+			"aaa",
+			"qui",
+			"completion",
+			"tab",
+			"completion",
+			"ignored",
+			"ss",
+			"ffddfsdfdddd",
+			" ",
+			"int",
+			"abc随时、",
+			";",
+			"thesis",
+			"spider",
+			"thesis"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 208.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "论文.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings"
+			],
+			[
+				"bi",
+				"mybibliography.bib"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/untitled.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
