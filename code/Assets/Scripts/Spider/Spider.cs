@@ -64,9 +64,9 @@ public class Spider : MonoBehaviour
 		rb = GetComponent<Rigidbody> ();
 		debugSetLayerWeight ();
 		setWalkGaitPattern ();
-		
+		timeRecord = 0;
 		//init spider paras
-		speed = 5.0f;
+
 
 		maxIdleDuration = 5.0f;
 		minIdleDuration = 3.0f;
@@ -83,28 +83,81 @@ public class Spider : MonoBehaviour
 		edgeXLength = plane.GetComponent<Renderer> ().bounds.size.x;
 		edgeYLength = plane.GetComponent<Renderer> ().bounds.size.z;
 
-		flyPos = Vector3.zero;
-		fly = null;
-		
-		
+//		flyPos = Vector3.zero;
+//		fly = null;
+//		
+//		
 		//set default state as IDLE
 		anim.SetBool ("_isMoving", false);
 		idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
-		direction = getRandomDirection ();
+//		direction = getRandomDirection ();
+//		speed=0;changeVelocityInXZ(rb.transform.forward);
 		
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		updateLimbFreq ();
-		//always detect edge
-		edgeResponse ();
-	    EyeRays (ref flyPos);
-	    normalResponse ();
+		normalResponse ();
+
+//	    
 	}
 
 
+	//walk and idle
+	void normalResponse()
+	{
+		timeRecord += Time.deltaTime;
+		if (!anim.GetBool ("_isMoving")) {
+			//idle state
+			if (timeRecord > idleDuration) {
+				/*
+						 * set changing state
+						 */
+				timeRecord = 0;
+				anim.SetBool ("_isMoving", true);
+				walkDuration = Random.Range (minWalkDuration, maxWalkDuration);
+				direction = getRandomDirection ();
+			}
+			
+		} else if (anim.GetBool ("_isMoving")) {
+			//moving state
+			changeVelocityInXZ(rb.transform.forward,5.0f);
+			switch(direction)
+							{
+							case Direction.FORWARD:
+								turn=0;
+								break;
+							case Direction.RIGHT:
+								turn=0.4f;
+								break;
+							case Direction.LEFT:
+								turn=-0.4f;
+								break;
+								
+							}
+							rb.angularVelocity = transform.up * turn;
+			if (timeRecord > walkDuration) {
+				//set changing state
+				timeRecord = 0;
+				anim.SetBool ("_isMoving", false);
+				idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
+				//rb.velocity=Vector3.zero;
+				
+			}
+			
+			
+		}
+		
+		
+		
+		//handle velocity
+		//		if (anim.GetBool ("_isMoving")) {
+	
+		//			
+		//			
+		//		}
+	}
 
 
 	void resetRunTowards()
@@ -118,11 +171,11 @@ public class Spider : MonoBehaviour
 		targetDir.y=0;
 		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 1.0f, 0.0F);
 		transform.rotation=Quaternion.LookRotation(newDir);
-		changeVelocityInXZ(pos-transform.position);
+		//changeVelocityInXZ(pos-transform.position);
 		anim.SetBool ("_isMoving", true);
 	}
 
-	void changeVelocityInXZ(Vector3 directionInXZ)
+	void changeVelocityInXZ(Vector3 directionInXZ,float speed)
 	{
 
 		Vector3 velocity = directionInXZ;
@@ -179,63 +232,7 @@ public class Spider : MonoBehaviour
 
 
 
-	void resetNormalState()
-	{
-		speed = 5.0f;
-	}
 
-	void normalResponse()
-	{
-		resetNormalState ();
-		//for changing states
-		timeRecord += Time.deltaTime;
-		if (!anim.GetBool ("_isMoving")) {
-			//idle state
-			if (timeRecord > idleDuration) {
-				/*
-						 * set changing state
-						 */
-				timeRecord = 0;
-				anim.SetBool ("_isMoving", true);
-				walkDuration = Random.Range (minWalkDuration, maxWalkDuration);
-				direction = getRandomDirection ();
-			}
-			
-		} else if (anim.GetBool ("_isMoving")) {
-			//moving state
-			if (timeRecord > walkDuration) {
-				//set changing state
-				timeRecord = 0;
-				anim.SetBool ("_isMoving", false);
-				idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
-			}
-			
-			
-		}
-		
-		//handle velocity
-		if (anim.GetBool ("_isMoving")) {
-			speed=3;
-			changeVelocityInXZ(rb.transform.forward);
-			//rb.velocity=Vector3.zero;
-			
-			switch(direction)
-			{
-			case Direction.FORWARD:
-				turn=-0.4f;
-				break;
-			case Direction.RIGHT:
-				turn=-0.4f;
-				break;
-			case Direction.LEFT:
-				turn=-0.4f;
-				break;
-				
-			}
-			rb.angularVelocity = transform.up * turn;
-		}
-
-	}
 
 	void updateLimbFreq()
 	{
@@ -255,9 +252,6 @@ public class Spider : MonoBehaviour
 		anim.SetFloat ("_speed", 0.3f);
 //
 		anim.SetFloat ("_turn", turn);
-		
-		
-		
 	}
 
 	void edgeResponse()
@@ -328,7 +322,7 @@ public class Spider : MonoBehaviour
 
 
 		
-		Direction edgeHintRet = Direction.NONE;//0 left,1 right,2 down,3 up
+		Direction edgeHintRet = Direction.NONE;
 		
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
 			//Debug.Log ("too close to left");
