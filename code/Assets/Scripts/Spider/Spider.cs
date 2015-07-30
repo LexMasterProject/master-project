@@ -22,6 +22,7 @@ public class Spider : MonoBehaviour
 	public float edgeWarningDist;
 	private float edgeXLength;
 	private float edgeYLength;
+	private bool edgeTask;
 
 	
 	//changing randoms
@@ -68,6 +69,8 @@ public class Spider : MonoBehaviour
 		//init spider paras
 
 
+
+
 		maxIdleDuration = 5.0f;
 		minIdleDuration = 3.0f;
 		minWalkDuration = 10.0f;
@@ -77,6 +80,7 @@ public class Spider : MonoBehaviour
 		edgeHint = Direction.NONE;
 		edgeWarningDist = 15.0f;
 		eyeScope = 40.0f;
+		edgeTask = false;
 		
 		//init env paras
 		
@@ -98,11 +102,42 @@ public class Spider : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		normalResponse ();
+		updateLimbFreq ();
 
+		if(false==edgeTask)
+		{
+			Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
+			headingDirection.Normalize ();
+			edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
+		}
+
+		if (edgeHint != Direction.NONE) {
+			edgeTask=true;
+			rb.velocity=Vector3.zero;
+			speed=0;
+			turn=0.4f;
+			rb.angularVelocity = transform.up * turn;
+		} else {
+			normalResponse ();
+		}
 //	    
 	}
+	void updateLimbFreq()
+	{
+	
 
+		if (anim.GetBool ("_isMoving") && speed > 0) {
+			anim.SetFloat ("_speed", 0.3f);
+			anim.SetFloat ("_turn", turn);
+		} else if (anim.GetBool ("_isMoving") && 0==speed) {
+			anim.SetFloat ("_speed", 0f);
+			anim.SetFloat ("_turn", turn);
+		}
+		else {
+
+			anim.SetFloat ("_turn", turn);
+		}
+	}
 
 	//walk and idle
 	void normalResponse()
@@ -141,6 +176,7 @@ public class Spider : MonoBehaviour
 				//set changing state
 				timeRecord = 0;
 				anim.SetBool ("_isMoving", false);
+				direction=Direction.FORWARD;
 				idleDuration = Random.Range (minIdleDuration, maxIdleDuration);
 				//rb.velocity=Vector3.zero;
 				
@@ -234,25 +270,7 @@ public class Spider : MonoBehaviour
 
 
 
-	void updateLimbFreq()
-	{
-		//		if (speed == 5) {
-		//			anim.SetFloat ("_speed", 0.5f);
-		//		} else {
-		//			anim.SetFloat("_speed",1);
-		//		}
-		
-		//		anim.SetFloat ("_speed", 0.5f);
-		//		anim.SetFloat ("_turn", turn);
-		
-		//anim.SetFloat ("_speed", 0.3f);
 
-
-		//turn left 
-		anim.SetFloat ("_speed", 0.3f);
-//
-		anim.SetFloat ("_turn", turn);
-	}
 
 	void edgeResponse()
 	{
