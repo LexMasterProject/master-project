@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: af0642fd0f2d64e4d857da5a5e241a23
+timeCreated: 1438305870
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: podush
+    100002: podush_001
+    100004: podush_002
+    100006: podush_003
+    100008: podush_004
+    100010: podush_005
+    100012: podush_006
+    100014: sofa
+    100016: sofa_MeshPart0
+    100018: sofa_MeshPart1
+    100020: sofa_MeshPart2
+    100022: //RootNode
+    100024: table
+    400000: podush
+    400002: podush_001
+    400004: podush_002
+    400006: podush_003
+    400008: podush_004
+    400010: podush_005
+    400012: podush_006
+    400014: sofa
+    400016: sofa_MeshPart0
+    400018: sofa_MeshPart1
+    400020: sofa_MeshPart2
+    400022: //RootNode
+    400024: table
+    2300000: podush
+    2300002: podush_001
+    2300004: podush_002
+    2300006: podush_003
+    2300008: podush_004
+    2300010: podush_005
+    2300012: podush_006
+    2300014: sofa_MeshPart0
+    2300016: sofa_MeshPart1
+    2300018: sofa_MeshPart2
+    2300020: table
+    3300000: podush
+    3300002: podush_001
+    3300004: podush_002
+    3300006: podush_003
+    3300008: podush_004
+    3300010: podush_005
+    3300012: podush_006
+    3300014: sofa_MeshPart0
+    3300016: sofa_MeshPart1
+    3300018: sofa_MeshPart2
+    3300020: table
+    4300000: podush
+    4300002: podush_001
+    4300004: podush_002
+    4300006: podush_003
+    4300008: podush_004
+    4300010: podush_005
+    4300012: podush_006
+    4300014: sofa_MeshPart0
+    4300016: sofa_MeshPart1
+    4300018: sofa_MeshPart2
+    4300020: table
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
