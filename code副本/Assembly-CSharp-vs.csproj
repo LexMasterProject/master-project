@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{61F3AF95-6282-54AD-D02A-3670D1D41033}</ProjectGuid>
+	<ProjectGuid>{FC3F145C-D39D-AA0E-1B23-FBCD4E2AFA7F}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\IKTest.cs" />
      <Compile Include="Assets\Scripts\Camera\AutoFollowCamera.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraSwitch.cs" />
      <Compile Include="Assets\Scripts\Camera\ControllableFollowCam.cs" />

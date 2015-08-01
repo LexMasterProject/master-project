@@ -24,7 +24,7 @@ public class Spider : MonoBehaviour
 	private float edgeXLength;
 	private float edgeYLength;
 
-	public Transform test;
+	
 	
 	//changing randoms
 	public float walkDuration;
@@ -263,17 +263,12 @@ public class Spider : MonoBehaviour
 		}
 		rb.angularVelocity = transform.up * turn;
 	}
-
-
 	
-	//OnAvatarMove
-
+	
 	// Update is called once per frame
 	void Update ()
 	{
-
-		test.Translate (0, 0, 0);
-
+		
 		Debug.Log(spiderStatus);
 		
 		if (Mathf.Abs (rb.velocity.y) > groundedDeadZone) {
@@ -344,13 +339,6 @@ public class Spider : MonoBehaviour
 			
 		}    
 	}
-
-
-	void LateUpdate()
-	{
-		//test.RotateAround (test.position, test.up, 20);
-		test.Translate (test.transform.position.x, test.transform.position.y + 4, test.transform.position.z);
-	}
 	
 	Direction edgeWalkDetect(float x, float y, Vector2 headingDirection,ref Direction turnAvoid)
 	{
@@ -416,9 +404,7 @@ public class Spider : MonoBehaviour
 	}
 	
 	
-	void OnAnimatorIK(int layerIndex) {
-		Debug.Log("123");
-	}
+	
 	
 	
 	Vector3 getNewHeadingAfterEdgeHint(Direction edgeHint)
