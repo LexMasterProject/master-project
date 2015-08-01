@@ -4,10 +4,27 @@
 Leg animation script from:
   \url{http://commons.wikimedia.org/wiki/File:Leg_animation_script_de.svg}.
 
+\bibitem{ushuman}
+American Psychological Association Official Website
+  \url{http://www.apa.org/science/programs/testing/index.aspx}.
+
+\bibitem{ukhuman}
+The British Psychological Society Official Website
+  \url{http://www.bps.org.uk/}.
+
+\bibitem{humanPro}
+Human Research Protections Program Official Website
+  \url{http://www.apa.org/science/programs/testing/index.aspx}.
+
 \bibitem{linkpic}
 {Animating Articulated Structures}.
 \newblock
   \url{http://web.cs.wpi.edu/~matt/courses/cs563/talks/animhtml/anim.html}.
+
+\bibitem{motionSick}
+{Oculus warns Sony to solve motion sickness before launching a VR headset}.
+\newblock Oculus Rift Official Website
+  \url{http://www.theguardian.com/technology/2014/nov/04/oculus-sony-motion-sickness-virtual-reality}.
 
 \bibitem{fv}
 {Polygon mesh - Wikipedia, the free encyclopedia}.
@@ -146,6 +163,12 @@ Leg animation script from:
 {\sc Vince, J.}
 \newblock {\em {3D Computer Animation}}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1992.
+
+\bibitem{spiderMesh}
+{\sc Wake, A.}
+\newblock {A simple spider mesh model}.
+\newblock original model accessed from
+  \url{http://tf3dm.com/3d-model/spider-98861.html}.
 
 \bibitem{Reference2}
 {\sc Watt, A., and Watt, M.}

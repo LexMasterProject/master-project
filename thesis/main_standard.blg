@@ -3,50 +3,56 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main_standard.aux
 The style file: acm.bst
 Database file #1: mybibliography.bib
+Warning--I didn't find a database entry for "spiderModel"
+Warning--I didn't find a database entry for "rift1"
 Warning--to sort, need author or key in fv
 Warning--to sort, need author or key in leganima
 Warning--to sort, need author or key in linkpic
 Warning--to sort, need author or key in facevertex
+Warning--to sort, need author or key in motionSick
+Warning--to sort, need author or key in ushuman
+Warning--to sort, need author or key in ukhuman
+Warning--to sort, need author or key in humanPro
 Warning--empty journal in fur
-You've used 32 entries,
+You've used 37 entries,
             2253 wiz_defined-function locations,
-            709 strings with 8365 characters,
-and the built_in function-call counts, 9803 in all, are:
-= -- 959
-> -- 360
+            728 strings with 9082 characters,
+and the built_in function-call counts, 10603 in all, are:
+= -- 1024
+> -- 371
 < -- 0
-+ -- 153
-- -- 120
-* -- 717
-:= -- 1495
-add.period$ -- 89
-call.type$ -- 32
-change.case$ -- 153
++ -- 160
+- -- 122
+* -- 744
+:= -- 1583
+add.period$ -- 97
+call.type$ -- 37
+change.case$ -- 166
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 385
-empty$ -- 888
-format.name$ -- 120
-if$ -- 2098
+cite$ -- 46
+duplicate$ -- 421
+empty$ -- 1003
+format.name$ -- 122
+if$ -- 2290
 int.to.chr$ -- 0
-int.to.str$ -- 32
+int.to.str$ -- 37
 missing$ -- 27
-newline$ -- 156
-num.names$ -- 56
-pop$ -- 215
+newline$ -- 174
+num.names$ -- 58
+pop$ -- 273
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 135
 quote$ -- 0
-skip$ -- 265
+skip$ -- 298
 stack$ -- 0
-substring$ -- 646
-swap$ -- 109
+substring$ -- 671
+swap$ -- 115
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 122
-warning$ -- 5
-while$ -- 96
-width$ -- 34
-write$ -- 309
-(There were 5 warnings)
+type$ -- 142
+warning$ -- 9
+while$ -- 98
+width$ -- 39
+write$ -- 340
+(There were 11 warnings)
