@@ -29,6 +29,12 @@ public class RoamingCamera : MonoBehaviour {
 	private float forwardDiff;
 	private float rightDiff;
 	private Camera camSelf;
+	public float distConstraint;
+	public float angleMinConstraint;
+	public float angleMaxConstraint;
+
+
+
 
 	
 	// Use this for initialization
@@ -46,6 +52,10 @@ public class RoamingCamera : MonoBehaviour {
 		transform.position = resetPosArr[0];
 		transform.LookAt (Vector3.zero);
 		camSelf = GetComponent<Camera> ();
+		distConstraint = 20f;
+		angleMinConstraint = 5f;
+		angleMaxConstraint = 85f;
+
 
 	
 	}
@@ -87,14 +97,16 @@ public class RoamingCamera : MonoBehaviour {
 	void LateUpdate()
 	{
 		if (camSelf.enabled) {
+
 			transform.Translate (rightDiff, 0, 0);
 			Vector3 vforwardDirection = new Vector3 (transform.forward.x, 0, transform.forward.z);
 			vforwardDirection.Normalize ();
 			transform.Translate (vforwardDirection * forwardDiff, Space.World);
 
+
 			//transform.Translate (xDiff, 0, zDiff,Space.World);
 			if (Physics.Raycast (transform.position, transform.forward, out hit, 1000)) {
-
+				
 				for (int i = 0; i < numberOfObjects; i++) {
 					Destroy (prefabHolders [i]);
 					float angle = i * Mathf.PI * 2 / numberOfObjects;
@@ -103,9 +115,48 @@ public class RoamingCamera : MonoBehaviour {
 				}
 			}
 
-			transform.position = Vector3.MoveTowards (transform.position, hit.point, distDiff);
+
+
+
+			float dist=Vector3.Distance(transform.position,hit.point);
+			//Debug.Log(dist);
+			if(dist<distConstraint&& distDiff>0)
+			{
+				//no camera forward to spider
+
+			}
+			else
+			{
+				transform.position = Vector3.MoveTowards (transform.position, hit.point, distDiff);
+				
+			}
+
+
 			transform.RotateAround (hit.point, Vector3.up, leftRighRotation);
-			transform.RotateAround (hit.point, transform.right, upDownRotation);
+
+			Vector3 cameraForwardXZ= new Vector3(transform.forward.x,0,transform.forward.z);
+			float angleToFloor=Vector3.Angle(transform.forward,cameraForwardXZ);
+			Debug.Log(angleToFloor);
+			if(angleToFloor<angleMinConstraint&&upDownRotation<0)
+			{
+
+			}
+			else if(angleToFloor>angleMaxConstraint&&upDownRotation>0)
+			{
+
+			}
+			else
+			{
+				transform.RotateAround (hit.point, transform.right, upDownRotation);
+
+			}
+
+		
+
+
+
+
+		
 		}
 	}
 }
