@@ -63,15 +63,21 @@ Human Research Protections Program Official Website
   analysis, behavioural context and simulation}.
 \newblock {\em Journal of Experimental Biology 204}, 9 (May 2001), 1589--1604.
 
+\bibitem{arsimu5}
+{\sc Gibson, D., Oziem, D., Dalton, C., and Campbell, N.}
+\newblock {A system for the capture and synthesis of insect motion}.
+\newblock {\em Graphical Models 69}, 5-6 (Sept. 2007), 231--245.
+
 \bibitem{keyframe4}
 {\sc Gibson, D., Oziem, D., Dalton, C., and Campbell, N.}
 \newblock {A system for the capture and synthesis of insect motion}.
 \newblock {\em Graphical Models 69}, 5-6 (Sept. 2007), 231--245.
 
-\bibitem{arsimu5}
-{\sc Gibson, D., Oziem, D., Dalton, C., and Campbell, N.}
-\newblock {A system for the capture and synthesis of insect motion}.
-\newblock {\em Graphical Models 69}, 5-6 (Sept. 2007), 231--245.
+\bibitem{motionCapVirtual}
+{\sc Granum, E., Qvortrup, L., Holmqvist, B., Kolstrup, S., and Madsen, K.}
+\newblock {\em Virtual Interaction: Interaction in Virtual Inhabited 3D
+  Worlds}.
+\newblock Springer London, 2013.
 
 \bibitem{skinning2}
 {\sc James, D.~L., and Twigg, C.~D.}

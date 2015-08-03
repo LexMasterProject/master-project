@@ -1,16 +1,25 @@
 % !TEX root = ../main_standard.tex
 \chapter{Literature Review}
 In this chapter, previous research and techniques relevant to the
-project are reviewed. The first part of the chapter basically describes
-the general animation techniques such as key frame animation,
-procedural animation, kinematic animation and physical animation. The
-fundamentals of animation such as how to represent an object and
-manipulate these objects are also included in this part. The second
-part mainly focus on rendering techniques and animation techniques
-specifically for the arthropods.
+project are reviewed. The first part of the chapter will introduce 
+the basic understanding of spider. Then ways to simulate the spider such 
+as modelling, animation, rendering will be discussed. The chapter is structured as
+follows: Section \ref{sec:Understanding of a spider} will give basic understanding of 
+a spider. Then techniques to model an object including how to represent an object as well 
+as how to control the model will be discussed in section \ref{sec:representing_an_object}. 
+General animation techniques such as keyframe animaiton, procedural animation, etc will be 
+included in \ref{sec:animation}. The rest of the chapter will review the previous research 
+on spider simulation and rendering techniques relevant to spider.
 
-% section aaa (end)
-\section{Understanding of a spider} 
+
+
+%------------------------------------section seperate-------------------------------
+%------------------------------------section seperate-------------------------------
+%------------------------------------section seperate-------------------------------
+
+\section{Understanding of a spider} % (fold)
+\label{sec:Understanding of a spider}
+
 Spiders belong to a class of animals called "arachnids", which also includes mites, ticks, scorpions and pseudoscorpions\footnote{\url{http://www.kidzone.ws/lw/spiders/facts01.htm}}. Arachnids are a class of joint-legged invertebrate animals called arthropods which also include insects and crustaceans(lobster, crabs, etc)\footnote{\url{https://en.wikipedia.org/wiki/Arthropod}}. A spider is not an insect and the most obvious difference is the insects have six legs and three main body parts while the spider has eight legs and two main body parts. 
 
 The most visible parts of a spider which marked blue in figure \ref{fig:partsOfSpider} are abdomen, cephalothorax and legs. The less visible parts of a spider which marked red in figure \ref{fig:partsOfSpider} are pedipalp, chelicera and eyes. 
@@ -39,8 +48,15 @@ The spider in \ref{fig:closeViewSpider} is a wolf spider which has six eyes(most
 The next section will discuss computer graphics techniques for modelling a spider. Spider simulation will be discussed in \ref{sec:arthropod_simulation}.
 
 
-\section{Representing an object} 
-There are many alternative representations of an object in computer graphics, such as polygons, parametric patches, constructive solid geometry, etc. Among these representations, the most popular method is using polygonal facets, usually a mesh of triangles which referred as a Boundary representation \cite{alan3D}.This section will discuss how to use polygon meshes to represent an object and how to manipulate them. There are three subsections in this section. In the first subsection, a simple cube model using face-vertex will be introduced. The second subsection will generally describe the control techniques(rigging and skinning) for more complex mesh models such as a human model. In the final subsection, a robot model made of basic geometric shapes such as sphere and cylinder will be built with the help of scene graph. How to manipulate the robots into different postures with scene graph will also be included in this subsection. 
+
+\section{Representing an object} % (fold)
+\label{sec:representing_an_object}
+
+There are many alternative representations of an object in computer graphics, such as polygons, parametric patches, constructive solid geometry, etc. Among these representations, the most popular method is using polygonal facets, usually a mesh of triangles which referred as a Boundary representation \cite{alan3D}.
+
+To build a spider model, one way is to directly build a complex mesh surface of the spider. Then virtual bones could be binded to different parts of the mesh to control them. The other way is to build parts of a spider(e.g. legs, body, eyes, etc) and then link them together. Scene graphs could be used to control different parts of the spider.
+
+As a result, this section will discuss how to use polygon meshes to represent an object and how to manipulate them. There are three subsections in this section. In the first subsection, a simple cube model using face-vertex will be introduced. The second subsection will generally describe the control techniques(rigging and skinning) for more complex mesh models such as a human model. In the final subsection, a robot model made of basic geometric shapes such as sphere and cylinder will be built with the help of scene graph. How to manipulate the robots into different postures with scene graph will also be included in this subsection. 
 
 
 
@@ -63,6 +79,8 @@ faces).
 \end{figure}
 The advantages of face-vertex meshes is that it is easy to traverse all structures. Moreover, locating neighboring faces and vertices is constant time because both faces and vertices are explicit. However, it is not same case for locating face given another face because the edge information is implicit. In rendering process, the face list usually transmitted into the GPU as a set of indices and each vertex usually contain three properties: position, normal and color. The advantage of this is when the shape is changed, only the vertex data need resending without updating the face connectivity.
 Despite the popularity and simplicity of polygon meshes, there are difficulties in changing the shape in animation. First, moving polygon mesh vertices will disrupt the where a shape has been converted into polygons with some degree of accuracy. Second, altering a large part of an object which may involve moving many elements at the same time. Third, the level of details should also be considered when rendering from different distances \cite{alan3D}. 
+
+
 \subsection{A complex surface mesh model}
 The left part of figure \ref{fig:rigging} is a complex human mesh model. It is easier to manipulate the complex mesh model in a hierarchical structure.
 \begin{figure}[ht!]
@@ -71,6 +89,10 @@ The left part of figure \ref{fig:rigging} is a complex human mesh model. It is e
 \caption{A complex human mesh and rigging \protect\cite{shaolinpic}}
 \label{fig:rigging}
 \end{figure}
+
+\subsection{Riggingg} % (fold)
+\label{sub:rigging}
+
 Usually to animate or pose a complex articulated structure, a set of
 bones or skeletons are added such as the right part in figure \ref{fig:rigging}.  As a result, when we want to make the angle between 
 upper arm and lower arm as 60 degrees, we could make the angle of the bones as 60 degrees.
@@ -80,7 +102,11 @@ setting constraints on the bones' movement(usually degrees of freedom
 of the joints), and set up controls such
 as inverse kinematics and forward kinematics.
 There are also many automatic rigging techniques which saves lots of
-artists' time. \cite{Rigging1} implemented a system can automatically rig and skin, in which the main method adopted is to calculate the bone iteratively based on assuption of weight-like parameters.  \cite{Rigging2}  implemented a more advanced system by adopting an example-based rigging approach where the skeleton is more compatible with most existing popular animation software.
+artists' time.   \cite{Rigging2}  implemented a more advanced system by adopting an example-based rigging approach where the skeleton is more compatible with most existing popular animation software.
+
+In addtion, rigging techniques does not require the skeleton of a rigged character match the bone in reality and also could be used for characters that does not actually have bones inside. The main reason for this is that the skeletons of rigging techniques are invisible and only apply a controlling function. For example, a snake usually has 200-400 vertebrae. Normally to rig a snake, there is no need to build so many skeletons because it is only useful when more flexibility of the snake is required. As stated in section \ref{sec:Understanding of a spider}, a spider does not have bones. Instead it has exoskeletons which are usually very hard. So it is rarely seen that a spider's leg bends. In this case, the condition is very similar to creatures that have bones. As a result, rigging techniques are also suitable for spiders.
+% subsection rigging (end)
+
 \subsubsection{Skinning}
 Skinning is to bind a skin to the skeleton which means that every
 vertex of the continuous skin mesh is attached to a joint. As a
@@ -89,9 +115,20 @@ A basic skinning approach is rigid skinning where the relative
 position of the vertex in the local joint frame does not change. It is simple but has the disadvantage
 of large distortions at bends. Vertex blending is another approach
 which tackles this problem but has the skin collapse problem
-\cite{skinning1}. \cite{skinning2} implemented an approach which could
-automatically skin deformable mesh animations with no need for
-specifying skeletons.
+\cite{skinning1}. Figure \ref{fig:skinning} is a skinning example where vertices are binded to the arm 
+skeletons using automatic weight option produced in Blender. The different color distribution shows the level of the lower arm skeleton affects the vertices. The red is the highest level while the blue parts mean lowest level. As a result, when the arm bends, the red parts move exactly as the lower arm skeleton. The green parts of the legs lifts up a little and the blue parts of the body do not move at all.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=12cm]{figures/skinning.png}
+\caption{A skinning example produced in Blender.}
+\label{fig:skinning}
+\end{figure}
+
+
+\cite{Rigging1} implemented a system can automatically rig and skin, in which the main method adopted is to calculate the bone iteratively based on assuption of weight-like parameters which is similar to the idea of the previous example. \cite{skinning2} implemented an approach which could automatically skin deformable mesh animations with no need for specifying skeletons.
+
+
 \subsection{A complex object built from pieces}
 An alternative way to build an object is to use pieces rather than a single complex mesh. As an example, we will consider building a robot from pieces. The most obvious way to do it is directly put the
 pieces in certain position. However, problems come when we want to make
@@ -132,9 +169,21 @@ Scene graphs can also combine bounding volume hierarchies, spatial
 partitioning and many other techniques. There are also a lot commercial
 software and 3D graphics libraries that use a scene graph such as Unity 3D and
 Java 3D.
-\section {Animation}
-Animation could be divided into three categories: low-level, medium-level and high-level approach\cite{alan3D}. In the low-level approach, a geometric description is given such as the position and orientation. A typical example is keyframe animation.  In the medium-level approach, an animator has to input some rules which could be borrowed from real life or exactly physical rules instead of inputing the details of the geometric description. Usually an animator could know the rough results but no details of how the animation could be in this kind animation. To get the exact results, an animator has to run the simulation and adjust the rules for lots of times. Procedural animation and physical animation could be fell into this category. The high-level approach is behavioral animation.\cite{animationSlides} It will be performed by the coeffect of the environment setup and the animation internal system. The action selection layer in \cite{steering} is an example. In sum, the advantages of lower level approach is that it has more control abilities than higher level approach, but it will need lots of mannual efforts and sometimes it is infeasible to be implemented.
+
+
+
+
+\section{Animation} % (fold)
+\label{sec:animation}
+
+
+
+Traditional computer animation could be divided into three categories: low-level, medium-level and high-level approach\cite{alan3D}. In the low-level approach, a geometric description is given such as the position and orientation. A typical example is keyframe animation.  In the medium-level approach, an animator has to input some rules which could be borrowed from real life or exactly physical rules instead of inputing the details of the geometric description. Usually an animator could know the rough results but no details of how the animation could be in this kind animation. To get the exact results, an animator has to run the simulation and adjust the rules for lots of times. Procedural animation and physical animation could be fell into this category. The high-level approach is behavioral animation.\cite{animationSlides} It will be performed by the coeffect of the environment setup and the animation internal system. The action selection layer in \cite{steering} is an example. In sum, the advantages of lower level approach is that it has more control abilities than higher level approach, but it will need lots of mannual efforts and sometimes it is infeasible to be implemented.
  
+Motion capture animaiton is an alternative way to traditional computer animation. Motion capture refers capturing a character's motion via motion capture devices. The advantages of motion capture is that it could obtain a large amount of motion data in a short a amount of time and the cost of work does not increase as the complexity of motion. While the disadvantages of motion capture is the cost of the device and the initial recording is hard to change\cite{motionCapVirtual}. It is a main reason that most movies other than video games adopt motion capture becasue it emphasizes more realism than the flexibility. \cite{arsimu5} adopted the motion capture techniques to synthesis the insect motion. The system used tracking techniques and a 3D point generating to capture the motion of the insects and developed a optimal path following approach. 
+
+
+
 \subsection{Keyframe Animation}
 In key frame animation, first the attributes of an object such as orientation, the position and joint angles between the links are at set at certain instances. Then interpolation of these attributes between these instances will be done. For example, A sequence of robot movement could be seen in figure \ref{fig:movingRobot}. Here for example first we set the attributes of the robot in \ref{fig:movingRobot-a}. Then also set the attributes of the robot in figure \ref{fig:movingRobot-d}. Then the interpolation of the position of the robot is a half circle linearly in x time. The interpolation of the orientation is 180 degree also in x time linearly. Then in-between pictures such as the pictures of figure \ref{fig:movingRobot-b} and figure \ref{fig:movingRobot-c} will be generated automatically. This idea was originated from Baecker's Genesys Computer Animation System in which the animator had to input
 parameters of curves to specify both the path and timings of the 2D
@@ -317,9 +366,7 @@ locomotion can be found in \cite{arsimu4}. They adopted a
 physics-based approach at modeling and implement functions that drive the arachnid to move
 at the minimum expense of energy.
 
-An alternative approach can be found in \cite{arsimu5} which adopted the motion capture techniques to
-synthesis the insect motion. The system used tracking techniques and a
-3D point generating to capture the motion of the insects and developed a optimal path following approach.
+
 
 \cite{thesis} adopted a novel approach, the core idea of which is instead of treating limbs as force source, it take the main body as the force source. Then the main body deliver the force to its limbs. The steps of the arthropod is triggered by the forces accepted from the main body. The idea is quite similar to inverse kinematics that given the end-effector main body, the exact posture of the legs is calculated except that the forces are also considered to regulate the speed and other constraints. The main components of the system is shown in figure \ref{fig:spider_module}. The black lines and yellow lines indicate passive and direct effects on the spider.
 \begin{figure}[ht!]

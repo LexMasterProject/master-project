@@ -5,32 +5,33 @@
 \contentsline {section}{\numberline {2.1}Understanding of a spider}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}Representing an object}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}A simple mesh model}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}A complex surface mesh model}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}A complex surface mesh model}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Riggingg}{7}{subsection.2.2.3}
 \contentsline {subsubsection}{Skinning}{8}{section*.12}
-\contentsline {subsection}{\numberline {2.2.3}A complex object built from pieces}{8}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Animation}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Keyframe Animation}{9}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Procedural animation}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Kinematic animation}{12}{subsection.2.3.3}
-\contentsline {subsubsection}{Forward Kinematics}{12}{section*.18}
-\contentsline {subsubsection}{Inverse Kinematics}{14}{section*.21}
-\contentsline {subsubsection}{Jacobian}{14}{section*.22}
-\contentsline {subsection}{\numberline {2.3.4}Dynamics and Physics-based animation}{15}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Arthropod Simulation}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}Arthropod Rendering}{18}{section.2.5}
-\contentsline {chapter}{\numberline {3}Requirement and Analysis}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Overview}{21}{section.3.1}
-\contentsline {section}{\numberline {3.2}Modeling the spider}{21}{section.3.2}
-\contentsline {section}{\numberline {3.3}Spider animation}{23}{section.3.3}
-\contentsline {section}{\numberline {3.4}Spider rendering}{24}{section.3.4}
-\contentsline {section}{\numberline {3.5}Oculus Rift}{25}{section.3.5}
-\contentsline {section}{\numberline {3.6}Requirements Lists}{25}{section.3.6}
-\contentsline {section}{\numberline {3.7}Testing and Evaluation}{26}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Testing}{26}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Evaluation}{26}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}Ethics and Legal considerations}{26}{section.3.8}
-\contentsline {chapter}{\numberline {4}Planning}{28}{chapter.4}
-\contentsline {section}{\numberline {4.1}Risk analysis}{28}{section.4.1}
-\contentsline {section}{\numberline {4.2}Project plan}{28}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusions}{30}{chapter.5}
-\contentsline {chapter}{Appendices}{35}{section*.37}
+\contentsline {subsection}{\numberline {2.2.4}A complex object built from pieces}{8}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Animation}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Keyframe Animation}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Procedural animation}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Kinematic animation}{13}{subsection.2.3.3}
+\contentsline {subsubsection}{Forward Kinematics}{13}{section*.19}
+\contentsline {subsubsection}{Inverse Kinematics}{15}{section*.22}
+\contentsline {subsubsection}{Jacobian}{15}{section*.23}
+\contentsline {subsection}{\numberline {2.3.4}Dynamics and Physics-based animation}{16}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Arthropod Simulation}{16}{section.2.4}
+\contentsline {section}{\numberline {2.5}Arthropod Rendering}{19}{section.2.5}
+\contentsline {chapter}{\numberline {3}Requirement and Analysis}{22}{chapter.3}
+\contentsline {section}{\numberline {3.1}Overview}{22}{section.3.1}
+\contentsline {section}{\numberline {3.2}Modeling the spider}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}Spider animation}{24}{section.3.3}
+\contentsline {section}{\numberline {3.4}Spider rendering}{25}{section.3.4}
+\contentsline {section}{\numberline {3.5}Oculus Rift}{26}{section.3.5}
+\contentsline {section}{\numberline {3.6}Requirements Lists}{26}{section.3.6}
+\contentsline {section}{\numberline {3.7}Testing and Evaluation}{27}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Testing}{27}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Evaluation}{27}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}Ethics and Legal considerations}{27}{section.3.8}
+\contentsline {chapter}{\numberline {4}Planning}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Risk analysis}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Project plan}{29}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusions}{31}{chapter.5}
+\contentsline {chapter}{Appendices}{36}{section*.38}
