@@ -9,14 +9,13 @@ manipulate these objects are also included in this part. The second
 part mainly focus on rendering techniques and animation techniques
 specifically for the arthropods.
 
-\section{Attributes of a spider} 
-In order to animate a spider sucessfully, there are at least three aspects need to be considered: a spider model, spider behaviours and spider rendering. Each aspect is corresponding to some attributes of a spider. In this section, the corresponding attributes will be discussed basically following the order. However, the relation is not fixed due to implementation design(e.g. To add bumps for spider, one way is to change the surface of the model; the other way is to use rendering techniques such as normal mapping to express the bumps.).
+% section aaa (end)
+\section{Understanding of a spider} 
+Spiders belong to a class of animals called "arachnids", which also includes mites, ticks, scorpions and pseudoscorpions\footnote{\url{http://www.kidzone.ws/lw/spiders/facts01.htm}}. Arachnids are a class of joint-legged invertebrate animals called arthropods which also include insects and crustaceans(lobster, crabs, etc)\footnote{\url{https://en.wikipedia.org/wiki/Arthropod}}. A spider is not an insect and the most obvious difference is the insects have six legs and three main body parts while the spider has eight legs and two main body parts. 
 
+The most visible parts of a spider which marked blue in figure \ref{fig:partsOfSpider} are abdomen, cephalothorax and legs. The less visible parts of a spider which marked red in figure \ref{fig:partsOfSpider} are pedipalp, chelicera and eyes. 
 
-\subsection{Visible body parts of a spider} % (fold)
-Since the primary aim of the project is to animate the spider without interest in the internal parts of the spider(e.g. brain, stomach), it is better to focus on the visible body parts of a spider. The most visible parts of a spider which marked blue in figure \ref{fig:partsOfSpider} are abdomen, cephalothorax and legs. The less visible parts of a spider which marked red in figure \ref{fig:partsOfSpider} are pedipalp, chelicera and eyes. 
-
-The spider in \ref{fig:closeViewSpider} is a wolf spider which has six eyes(most spiders have eight eyes) and most parts of it are covered with many hairs.
+The spider in \ref{fig:closeViewSpider} is a wolf spider which has six eyes(most spiders have eight eyes) and most parts of it are covered with many hairs. A spider does not have skeletons or bones. Instead they have a hard outer shell called an "exoskeleton". The "exoskeleton" does not grow with the spider, so when a spider grows, it has to molt.
 
 
 \begin{figure}[ht!]
@@ -37,15 +36,13 @@ The spider in \ref{fig:closeViewSpider} is a wolf spider which has six eyes(most
 \footnotetext{\url{http://www.kidzone.ws/lw/spiders/facts02.htm}. photo by Anxo Resúa. licensed under CC BY-SA 2.0.}
 
 
-\subsection{Skeleton of a spider} % (fold)
-\label{sub:skeleton_of_a_spider}
-
-% subsection skeleton_of_a_spider (end)
-
+The next section will discuss computer graphics techniques for modelling a spider. Spider simulation will be discussed in \ref{sec:arthropod_simulation}.
 
 
 \section{Representing an object} 
 There are many alternative representations of an object in computer graphics, such as polygons, parametric patches, constructive solid geometry, etc. Among these representations, the most popular method is using polygonal facets, usually a mesh of triangles which referred as a Boundary representation \cite{alan3D}.This section will discuss how to use polygon meshes to represent an object and how to manipulate them. There are three subsections in this section. In the first subsection, a simple cube model using face-vertex will be introduced. The second subsection will generally describe the control techniques(rigging and skinning) for more complex mesh models such as a human model. In the final subsection, a robot model made of basic geometric shapes such as sphere and cylinder will be built with the help of scene graph. How to manipulate the robots into different postures with scene graph will also be included in this subsection. 
+
+
 
 \subsection{A simple mesh model} 
 Polygon meshes also could be represented in various ways by using different methods to store the vertex, edge and data. 
@@ -135,7 +132,7 @@ Scene graphs can also combine bounding volume hierarchies, spatial
 partitioning and many other techniques. There are also a lot commercial
 software and 3D graphics libraries that use a scene graph such as Unity 3D and
 Java 3D.
-\section {Spider Animation}
+\section {Animation}
 Animation could be divided into three categories: low-level, medium-level and high-level approach\cite{alan3D}. In the low-level approach, a geometric description is given such as the position and orientation. A typical example is keyframe animation.  In the medium-level approach, an animator has to input some rules which could be borrowed from real life or exactly physical rules instead of inputing the details of the geometric description. Usually an animator could know the rough results but no details of how the animation could be in this kind animation. To get the exact results, an animator has to run the simulation and adjust the rules for lots of times. Procedural animation and physical animation could be fell into this category. The high-level approach is behavioral animation.\cite{animationSlides} It will be performed by the coeffect of the environment setup and the animation internal system. The action selection layer in \cite{steering} is an example. In sum, the advantages of lower level approach is that it has more control abilities than higher level approach, but it will need lots of mannual efforts and sometimes it is infeasible to be implemented.
  
 \subsection{Keyframe Animation}
@@ -278,7 +275,12 @@ approach is to derive suitable actuator control functions which is
 difficult when the muscle model is complex. The other approach is
 constraint-based approach which involves constrained optimization and
 inverse dynamics. 
-\section{Arthropod Simulation}
+
+
+\section{Arthropod Simulation} % (fold)
+\label{sec:arthropod_simulation}
+
+% section arthropod_simulation (end)
 An early research on arthropod simulation could be seen in \cite{arsimu1} where a
 forward dynamic simulation algorithm was proposed for the coordination
 of the locomotion of six-legged figure. The system has three main

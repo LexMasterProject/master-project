@@ -56,7 +56,8 @@ public class Spider : MonoBehaviour
 	private float groundedDeadZone;
 	private Status lastStatus;
 	private Direction lastTurnHint;
-	private int preparationCount;
+	private int preparationCountEdge;
+	private int preparationCountOb;
 	
 	
 	
@@ -76,16 +77,20 @@ public class Spider : MonoBehaviour
 	{
 		FREE_WALK,
 		WALK_ALONG_EDGE,
-		STOP_TURN,
 		WALK_ALONG_ABSTACLE,
-		IN_THE_AIR
+		IN_THE_AIR,
+		STOP_TURN_EDGE,
+		STOP_TURN_PREPARE_EDGE,
+		STOP_TURN_OBSTACLE,
+		STOP_TURN_PREPARE_OBSTACLE,
+		STOP_TURN,
 		
 	}
 	
 	
 	//private Animation animation;
 	
-	void resetTurningProbabilities(Status status)
+	void resetTurningProbabilities(Status status,Direction directionAvoid,Direction directionPrefer)
 	{
 		
 		switch(status)
@@ -110,7 +115,21 @@ public class Spider : MonoBehaviour
 				break;
 			}
 			break;
-			
+		case Status.WALK_ALONG_ABSTACLE:
+			switch(directionPrefer)
+			{
+			case Direction.LEFT:
+				turningProbabilities [0] = 0f;//turn right
+				turningProbabilities [1] = 0.3f;//turn left
+				turningProbabilities [2] = 0.7f;//no turn
+				break;
+			case Direction.RIGHT:
+				turningProbabilities [0] = 0.3f;//turn right
+				turningProbabilities [1] = 0f;//turn left
+				turningProbabilities [2] = 0.7f;//no turn
+				break;
+			}
+			break;
 			
 		}
 	}
@@ -146,7 +165,7 @@ public class Spider : MonoBehaviour
 		obstacleWarningDist = 15.0f;
 		eyeScope = 40.0f;
 	
-		
+		directionAvoid = Direction.NONE;
 		obstacleTooClose = false;
 		
 		//init env paras
@@ -167,18 +186,34 @@ public class Spider : MonoBehaviour
 		lastStatus = Status.IN_THE_AIR;
 		anim.SetBool ("_isMoving", false);
 		idleDuration = 0;
-		resetPreparationCount ();
+		resetPreparationCountEdge ();
+		resetPreparationCountOb ();
 
 		
 	}
 
+	void resetPreparationCountOb()
+	{
 
-	void resetPreparationCount()
+		float pro1;
+
+		pro1 = Random.Range (0, 1);
+
+
+		if (pro1 < 0.9) {
+			preparationCountOb = 30;
+		} else {
+			preparationCountOb=(int)Random.Range (30.0f, 200.0f);
+		}
+
+	}
+
+	void resetPreparationCountEdge()
 	{
 		//preparationCount = 50;
 		//preparationCount = 200;
 		//preparationCount = 300;
-		preparationCount = (int)Random.Range (50.0f, 300.0f);
+		preparationCountEdge = (int)Random.Range (50.0f, 300.0f);
 	}
 	void setDirectionAvoid(float turn)
 	{
@@ -191,20 +226,21 @@ public class Spider : MonoBehaviour
 	
 	
 	//should detect how far away and whether there are obstacles in the way(forward direction)
-	bool EyeRaysDetectObstacle()
+	bool EyeRaysDetectObstacle(ref Direction turnHint,float distOffset)
 	{
 		//Vector3 targetPos=Vector3.zero;
 		Vector3 defaultV = transform.forward;
 		Vector3 [] eyeRays=new Vector3[7];
-		eyeRays[0]=defaultV;
-		eyeRays[1]= Quaternion.AngleAxis (30, transform.up)*defaultV;
-		eyeRays[2]= Quaternion.AngleAxis (-30, transform.up)*defaultV;
-		//eyeRays[3]= Quaternion.AngleAxis (15, transform.right)*defaultV;
-		//eyeRays[4]= Quaternion.AngleAxis (-15, transform.right)*defaultV;
-		eyeRays[3]= Quaternion.AngleAxis (45, transform.up)*defaultV;
-		eyeRays[4]= Quaternion.AngleAxis (-45, transform.up)*defaultV;
-		eyeRays[5]= Quaternion.AngleAxis (15, transform.up)*defaultV;
-		eyeRays[6]= Quaternion.AngleAxis (-15, transform.up)*defaultV;
+		eyeRays[0]= Quaternion.AngleAxis (-45, transform.up)*defaultV;
+		eyeRays[1]= Quaternion.AngleAxis (-30, transform.up)*defaultV;
+		eyeRays[2]= Quaternion.AngleAxis (-15, transform.up)*defaultV;
+		eyeRays[3]=defaultV;
+		eyeRays[4]= Quaternion.AngleAxis (15, transform.up)*defaultV;
+		eyeRays[5]= Quaternion.AngleAxis (30, transform.up)*defaultV;
+		eyeRays[6]= Quaternion.AngleAxis (45, transform.up)*defaultV;
+		
+		
+		
 		
 		for (int i=0; i<eyeRays.Length; i++) {
 			Debug.DrawRay (transform.position,eyeRays[i]*eyeScope,Color.green,0,false);		
@@ -214,8 +250,8 @@ public class Spider : MonoBehaviour
 		float []dist=new float[eyeRays.Length];
 		
 		
-
-		
+		float minDist;
+		int minIndex=-1;
 		for (int i=0; i<eyeRays.Length; i++) {
 			dist[i]=1000f;
 			if (Physics.Raycast (transform.position, eyeRays[i], out hit, eyeScope)) {
@@ -231,14 +267,45 @@ public class Spider : MonoBehaviour
 				
 			}
 
+
+
 			
 			
 		}
+		minDist=Mathf.Min(dist);
+		for (int i=0; i<eyeRays.Length; i++) {
+			if(minDist==dist[i])
+			{
+				//Debug.Log(i);
+				minIndex=i;
+			}
+		}
+	
+		if(minIndex==eyeRays.Length/2)
+		{
+			if(Random.Range (0, 1)>0.5)
+			{
+				turnHint=Direction.RIGHT;
+			}
+			else
+			{
+				turnHint=Direction.LEFT;
+			}
+		}
+		else if(minIndex<eyeRays.Length/2)
+		{
+			turnHint=Direction.RIGHT;
+		}
+		else
+		{
+			turnHint=Direction.LEFT;
+		}
+
 
 
 		//Debug.Log ("min~max" + Mathf.Min (dist) + ":" + Mathf.Max (dist));
 
-		if (Mathf.Min (dist) < obstacleWarningDist) {
+		if (minDist< obstacleWarningDist+distOffset) {
 			return true;
 		}
 		
@@ -279,64 +346,100 @@ public class Spider : MonoBehaviour
 		updateLimbFreq ();
 		
 		Vector2 headingDirection = new Vector2 (rb.transform.forward.x, rb.transform.forward.z);
-		
+		obstacleTooClose=EyeRaysDetectObstacle(ref turnHint,0);
 		edgeHint = edgeWarning (rb.transform.position.x, rb.transform.position.z, headingDirection,ref turnHint);
-		obstacleTooClose=EyeRaysDetectObstacle();
+		
 		
 		
 		if (edgeHint != Direction.NONE) {
-			Debug.Log("edge too close!");
-			spiderStatus = Status.STOP_TURN;
-			lastStatus=Status.STOP_TURN;
-			lastTurnHint=turnHint;
-			spiderStopTurn(turnHint);
+
+
+			if(lastStatus==Status.STOP_TURN_EDGE&&turnHint!=lastTurnHint)
+			{
+
+				spiderStopTurn(lastTurnHint);
+			}
+			else
+			{
+				lastTurnHint=turnHint;
+				spiderStopTurn(turnHint);
+			}
+			spiderStatus = Status.STOP_TURN_EDGE;
+			lastStatus=Status.STOP_TURN_EDGE;
+
+
+
+		
 			
 		} else if(obstacleTooClose)
 		{
-			Debug.Log("ob too close!");
-			spiderStatus=Status.STOP_TURN;
-			speed=0;
-			turn=0.4f;
-			rb.angularVelocity = transform.up * turn;
+
+			if(lastStatus==Status.STOP_TURN_OBSTACLE&&turnHint!=lastTurnHint)
+			{
+				spiderStopTurn(lastTurnHint);
+			}
+			else
+			{
+				lastTurnHint=turnHint;
+				spiderStopTurn(turnHint);
+			}
+
+			spiderStatus=Status.STOP_TURN_OBSTACLE;
+			lastStatus=Status.STOP_TURN_OBSTACLE;
+
 		}
 		else {
 			
-			if(lastStatus==Status.STOP_TURN&&preparationCount>0)
+			if((lastStatus==Status.STOP_TURN_EDGE||lastStatus==Status.STOP_TURN_PREPARE_EDGE)&&preparationCountEdge>0)
 			{
-				Debug.Log("edgeHint"+edgeHint);
-				Debug.Log("stopturn to walk preparation");
+				spiderStatus=Status.STOP_TURN_PREPARE_EDGE;
+				lastStatus=Status.STOP_TURN_PREPARE_EDGE;
 				spiderStopTurn(lastTurnHint);
-				preparationCount--;
+				preparationCountEdge--;
+			}
+			else if((lastStatus==Status.STOP_TURN_OBSTACLE||lastStatus==Status.STOP_TURN_OBSTACLE)&&preparationCountOb>0)
+			{
+				spiderStatus=Status.STOP_TURN_PREPARE_OBSTACLE;
+				spiderStatus=Status.STOP_TURN_PREPARE_OBSTACLE;
+				spiderStopTurn(lastTurnHint);
+				preparationCountOb--;
+
 			}
 			else
 				
 			{
-				resetPreparationCount();
+				resetPreparationCountEdge();
+				resetPreparationCountOb();
+				Direction directionPrefer=Direction.NONE;
+				bool walkAlongOb=EyeRaysDetectObstacle(ref directionPrefer,10f);
 				Direction edgeWalkDetectDir=edgeWalkDetect(rb.transform.position.x,rb.transform.position.z,
 				                                           new Vector2(rb.transform.forward.x,rb.transform.forward.z),
 				                                           ref directionAvoid);
-				
-				if(Direction.NONE==edgeWalkDetectDir)
-				{
-					spiderStatus=Status.FREE_WALK;
-					lastStatus=Status.FREE_WALK;
-				}
-				else
+
+
+				if(edgeWalkDetectDir!=Direction.NONE)
 				{
 					spiderStatus=Status.WALK_ALONG_EDGE;
 					lastStatus=Status.WALK_ALONG_EDGE;
 				}
+				else if(walkAlongOb)
+				{
+					spiderStatus=Status.WALK_ALONG_ABSTACLE;
+					lastStatus=Status.WALK_ALONG_ABSTACLE;
+				}
+				else
+				{
+					spiderStatus=Status.FREE_WALK;
+					lastStatus=Status.FREE_WALK;
+				}
+
 				
-				resetTurningProbabilities(spiderStatus);
+				resetTurningProbabilities(spiderStatus, directionAvoid, directionPrefer);
 				
 				normalResponse ();
-				
-				
-				
+
 			}
-			
-			
-			
+
 		}    
 	}
 	
@@ -399,7 +502,7 @@ public class Spider : MonoBehaviour
 				
 			}
 		}
-		
+
 		return edgeHintRet;
 	}
 	
@@ -549,44 +652,7 @@ public class Spider : MonoBehaviour
 	
 	
 	
-	//	void edgeResponse()
-	//	{
-	//		//the spider's heading direction
-	//		Vector2 headingDirection = new Vector2 (rb.velocity.x, rb.velocity.z);
-	//		headingDirection.Normalize ();
-	//		edgeHint = edgeWarning (transform.position.x, transform.position.z, headingDirection);
-	//		if(edgeHint!=Direction.NONE)
-	//		{
-	//			Vector3 randomVec= getRandomVector();
-	//			Vector3 newDir=Vector3.zero;
-	//			switch(edgeHint)
-	//			{
-	//			case Direction.LEFT:
-	//				if(randomVec.x<0)
-	//					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
-	//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-	//				break;
-	//			case Direction.RIGHT:
-	//				if(randomVec.x>0)
-	//					randomVec.Set(-randomVec.x,randomVec.y,randomVec.z);
-	//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-	//				break;
-	//			case Direction.DOWN:
-	//				if(randomVec.z<0)
-	//					randomVec.Set(randomVec.x,randomVec.y,-randomVec.z);
-	//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-	//				break;
-	//			case Direction.UP:
-	//				if(randomVec.z>0)
-	//					randomVec.Set(-randomVec.x,randomVec.y,-randomVec.z);
-	//				newDir=Vector3.RotateTowards(transform.forward,randomVec,1.0f,0);
-	//				break;
-	//				
-	//			}
-	//			
-	//			transform.rotation=Quaternion.LookRotation(newDir);
-	//		}
-	//	}
+
 	
 	
 	
@@ -616,20 +682,24 @@ public class Spider : MonoBehaviour
 		
 		//	Debug.Log ("warning:"+edgeDists[0]+":\t"+edgeDists[1]+":\t"+edgeDists[2]+":\t"+edgeDists[3]+":\t"+edgeWarningDist);
 		
-	//	Debug.Log (Mathf.Min (edgeDists));
-		
+		//Debug.Log (Mathf.Min (edgeDists));
+		//Debug.Log (headingDirection);
 		
 		Direction edgeHintRet = Direction.NONE;
+
+
 		
 		if (edgeWarningDist >= edgeDists [0] && headingDirection.x < 0) {
 			edgeHintRet=Direction.LEFT;
 			if (headingDirection.y >= 0) {
 				
 				turnHint=Direction.RIGHT;
+				//Debug.Log("1");
 				
 			} else {
 				
 				turnHint=Direction.LEFT;
+				//Debug.Log("2");
 			}
 		} else if (edgeWarningDist >= edgeDists [1] && headingDirection.x > 0) {
 			
@@ -638,8 +708,10 @@ public class Spider : MonoBehaviour
 				
 				//edgeHintRet = -1;
 				turnHint=Direction.LEFT;
+				//Debug.Log("3");
 			} else {
 				turnHint=Direction.RIGHT;
+				//Debug.Log("4");
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [2] && headingDirection.y < 0) {
@@ -648,20 +720,27 @@ public class Spider : MonoBehaviour
 			if (headingDirection.x > 0) {
 				//edgeHintRet = -1;
 				turnHint=Direction.LEFT;
+			//	Debug.Log("5");
+			//	Debug.Log("5"+headingDirection.x);
 			} else {
 				turnHint=Direction.RIGHT;
+			//	Debug.Log("6");
 				
 			}
 		} else if (edgeWarningDist >= edgeDists [3] && headingDirection.y > 0) {
 			edgeHintRet=Direction.UP;
 			if (headingDirection.x > 0) {
 				turnHint=Direction.RIGHT;
+			//	Debug.Log("7");
 				
 			} else {
 				//edgeHintRet = -1;
 				turnHint=Direction.LEFT;
+			//	Debug.Log("8");
 			}
 		}
+
+	
 		
 		return edgeHintRet;
 		

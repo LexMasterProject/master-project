@@ -2,15 +2,13 @@
 \contentsline {section}{\numberline {1.1}Aims and objectives}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Overview of the report}{3}{section.1.2}
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Attributes of a spider}{4}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Visible body parts of a spider}{4}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Skeleton of a spider}{6}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.1}Understanding of a spider}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}Representing an object}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}A simple mesh model}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}A complex surface mesh model}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}A complex surface mesh model}{7}{subsection.2.2.2}
 \contentsline {subsubsection}{Skinning}{8}{section*.12}
 \contentsline {subsection}{\numberline {2.2.3}A complex object built from pieces}{8}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Spider Animation}{8}{section.2.3}
+\contentsline {section}{\numberline {2.3}Animation}{8}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Keyframe Animation}{9}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Procedural animation}{11}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Kinematic animation}{12}{subsection.2.3.3}

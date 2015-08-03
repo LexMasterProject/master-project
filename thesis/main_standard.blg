@@ -4,7 +4,6 @@ The top-level auxiliary file: main_standard.aux
 The style file: acm.bst
 Database file #1: mybibliography.bib
 Warning--I didn't find a database entry for "spiderModel"
-Warning--I didn't find a database entry for "rift1"
 Warning--to sort, need author or key in fv
 Warning--to sort, need author or key in leganima
 Warning--to sort, need author or key in linkpic
@@ -16,7 +15,7 @@ Warning--to sort, need author or key in humanPro
 Warning--empty journal in fur
 You've used 37 entries,
             2253 wiz_defined-function locations,
-            728 strings with 9082 characters,
+            727 strings with 9077 characters,
 and the built_in function-call counts, 10603 in all, are:
 = -- 1024
 > -- 371
@@ -55,4 +54,4 @@ warning$ -- 9
 while$ -- 98
 width$ -- 39
 write$ -- 340
-(There were 11 warnings)
+(There were 10 warnings)
