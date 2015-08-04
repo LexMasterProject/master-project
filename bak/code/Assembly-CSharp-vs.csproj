@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\IKHandling.cs" />
      <Compile Include="Assets\Scripts\Camera\AutoFollowCamera.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraSwitch.cs" />
      <Compile Include="Assets\Scripts\Camera\ControllableFollowCam.cs" />
