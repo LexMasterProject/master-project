@@ -1,0 +1,1770 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=prv_main_standard 2015.4.13)  13 APR 2015 21:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**&prv_main_standard _region_.tex
+(./_region_.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+    book.cls    2007/10/19 v1.4h Standard LaTeX document class
+    bk11.clo    2007/10/19 v1.4h Standard LaTeX file (size option)
+geometry.sty    2010/09/12 v5.6 Page Geometry
+  keyval.sty    2014/05/08 v1.15 key=value parser (DPC)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+  ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+setspace.sty    2011/12/19 v6.7a set line spacing
+appendix.sty    2009/09/02 v1.2b extra appendix facilities
+hyphenat.sty    2009/09/02 v2.3c hyphenation utilities
+graphicx.sty    2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+   color.sty    2014/04/23 v1.1a Standard LaTeX Color (DPC)
+   color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+ amsmath.sty    2013/01/14 v2.14 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+listings.sty    2014/03/04 1.5c (Carsten Heinz)
+ lstmisc.sty    2014/03/04 1.5c (Carsten Heinz)
+listings.cfg    2014/03/04 1.5c listings configuration
+algorithm.sty    2009/08/24 v0.1 Document Style `algorithm' - floating environm
+ent
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+  ifthen.sty    2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+algorithmic.sty    2009/08/24 v0.1 Document Style `algorithmic'
+  subfig.sty    2005/06/28 ver: 1.3 subfig package
+ caption.sty    2013/05/02 v3.3-89 Customizing captions (AR)
+caption3.sty    2013/05/02 v1.6-88 caption3 kernel (AR)
+hyperref.sty    2012/11/06 v6.83m Hypertext links for LaTeX
+hobsub-hyperref.sty    2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+hobsub-generic.sty    2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+  hobsub.sty    2012/05/28 v1.13 Construct package bundles (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+ intcalc.sty    2007/09/27 v1.1 Expandable calculations with integers (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+pdfescape.sty    2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+bigintcalc.sty    2012/04/08 v1.3 Expandable calculations on big integers (HO)
+  bitset.sty    2011/01/30 v1.1 Handle bit-vector datatype (HO)
+uniquecounter.sty    2011/01/30 v1.2 Provide unlimited unique counter (HO)
+letltxmacro.sty    2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+ hopatch.sty    2012/05/28 v1.2 Wrapper for package hooks (HO)
+xcolor-patch.sty    2011/01/30 xcolor patch
+atveryend.sty    2011/06/30 v1.8 Hooks at the very end of document (HO)
+atbegshi.sty    2011/10/05 v1.16 At begin shipout hook (HO)
+refcount.sty    2011/10/16 v3.4 Data extraction from label references (HO)
+ hycolor.sty    2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+ auxhook.sty    2011/03/04 v1.3 Hooks for auxiliary files (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+  pd1enc.def    2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
+ hpdftex.def    2012/11/06 v6.83m Hyperref driver for pdfTeX
+rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+        .
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/preview.sty
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prtightpage.def
+\PreviewBorder=\dimen138
+)
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count139
+\hfuzz=\dimen139
+
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prauctex.cfg))
+(/Applications/Aquamacs.app/Contents/Resources/lisp/aquamacs/edit-modes/auctex/
+latex/prfootnotes.def)
+\pr@snippet=\count140
+\pr@box=\box32
+\pr@output=\toks25
+
+Preview: Fontsize 10.95pt
+Preview: PDFoutput 1
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(86.72377pt, 440.84746pt, 86.72377pt)
+* v-part:(T,H,B)=(86.72377pt, 621.52245pt, 86.72377pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=440.84746pt
+* \textheight=621.52245pt
+* \oddsidemargin=14.45378pt
+* \evensidemargin=14.45378pt
+* \topmargin=-17.42001pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=62.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count141
+\scratchdimen=\dimen140
+\scratchbox=\box33
+\nofMPsegments=\count142
+\nofMParguments=\count143
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen141
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
+\everyMPtoPDFconversion=\toks27
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count147
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = \protected\long macro:->\pr@protect@domacro {}
+{##1{}}\pr@\caption .
+
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring ON on input line 34.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count148
+)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+
+ !name(main_standard.tex) !offset(-3) 
+! Preview: Snippet 1 started.
+<-><->
+      
+l.40 \tableofcontents
+                     
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(5242880+0x28891379).
+<-><->
+      
+l.40 \tableofcontents
+                     
+Not a real error.
+
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.52 \includegraphics
+                     [width=5cm]{images/tuoslogo.png}\\[1cm]
+Not a real error.
+
+<images/tuoslogo.png, id=9, 78.2925pt x 79.2561pt>
+File: images/tuoslogo.png Graphic file (type png)
+ <use images/tuoslogo.png>
+Package pdftex.def Info: images/tuoslogo.png used on input line 52.
+(pdftex.def)             Requested size: 142.26378pt x 144.03468pt.
+
+! Preview: Snippet 2 ended.(9439457+0x9323399).
+<-><->
+      
+l.52 ...degraphics[width=5cm]{images/tuoslogo.png}
+                                                  \\[1cm]
+Not a real error.
+
+[2 <./images/tuoslogo.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...graphics[width=5cm]{images/tuoslogo.png}\\
+                                                  [1cm]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Preview: Snippet 3 started.
+<-><->
+      
+l.68 \chapter
+             *{\Large Declaration}
+Not a real error.
+
+! Preview: Snippet 3 ended.(4456448+0x28891379).
+<-><->
+      
+l.68 \chapter*{\Large Declaration}
+                                  
+Not a real error.
+
+[3
+
+] (./chapters/abstract.tex
+! Preview: Snippet 4 started.
+<-><->
+      
+l.1 \chapter
+            *{\Large \center Abstract}
+Not a real error.
+
+! Preview: Snippet 4 ended.(5360852+0x28891379).
+<-><->
+      
+l.1 \chapter*{\Large \center Abstract}
+                                      
+Not a real error.
+
+[4
+
+])
+! Preview: Snippet 5 started.
+<-><->
+      
+l.93 \tableofcontents
+                     
+Not a real error.
+
+! Preview: Snippet 5 ended.(5439500+0x28891379).
+<-><->
+      
+l.93 \tableofcontents
+                     
+Not a real error.
+
+[5
+
+]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.94 \listoffigures
+                   
+Not a real error.
+
+! Preview: Snippet 6 ended.(5439500+317047x28891379).
+<-><->
+      
+l.94 \listoffigures
+                   
+Not a real error.
+
+[6
+
+]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.95 \listoftables
+                  
+Not a real error.
+
+! Preview: Snippet 7 ended.(5439500+0x28891379).
+<-><->
+      
+l.95 \listoftables
+                  
+Not a real error.
+
+[7
+
+] (./chapters/chapter1.tex
+! Preview: Snippet 8 started.
+<-><->
+      
+l.1 \chapter
+            {Introduction}
+Not a real error.
+
+Chapter 1.
+! Preview: Snippet 8 ended.(8552470+0x28891379).
+<-><->
+      
+l.1 \chapter{Introduction}
+                          
+Not a real error.
+
+[8
+
+
+
+
+]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.5 \section
+            {Aims and objectives}
+Not a real error.
+
+! Preview: Snippet 9 ended.(655359+183500x28891379).
+<-><->
+      
+l.5 \section{Aims and objectives}
+                                 
+Not a real error.
+
+[9
+
+]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.9 \section
+            {Overview of the report}
+Not a real error.
+
+! Preview: Snippet 10 ended.(655359+183500x28891379).
+<-><->
+      
+l.9 \section{Overview of the report}
+                                    
+Not a real error.
+
+[10
+
+]) (./chapters/chapter2.tex
+! Preview: Snippet 11 started.
+<-><->
+      
+l.1 \chapter
+            {Literature Review}
+Not a real error.
+
+Chapter 2.
+! Preview: Snippet 11 ended.(8552470+0x28891379).
+<-><->
+      
+l.1 \chapter{Literature Review}
+                               
+Not a real error.
+
+[11
+
+
+
+
+]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.12 \section
+             {Representing an object}
+Not a real error.
+
+! Preview: Snippet 12 ended.(655359+183500x28891379).
+<-><->
+      
+l.12 \section{Representing an object}
+                                     
+Not a real error.
+
+[12
+
+]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.18 \subsection
+                {A simple mesh model using Face-Vertex Meshes}
+Not a real error.
+
+! Preview: Snippet 13 ended.(546132+152916x28891379).
+<-><->
+      
+l.18 ...imple mesh model using Face-Vertex Meshes}
+                                                  
+Not a real error.
+
+[13
+
+]
+
+LaTeX Warning: Reference `fig:graph1' on page 2 undefined on input line 22.
+
+! Preview: Snippet 14 started.
+<-><->
+      
+l.28 \begin{figure}
+                   [ht]
+Not a real error.
+
+<figures/figure1.jpg, id=59, 702.625pt x 444.66125pt>
+File: figures/figure1.jpg Graphic file (type jpg)
+
+<use figures/figure1.jpg>
+Package pdftex.def Info: figures/figure1.jpg used on input line 29.
+(pdftex.def)             Requested size: 426.79134pt x 270.10309pt.
+
+! Preview: Snippet 14 ended.(19248125+0x28891379).
+<-><->
+      
+l.32 \end{figure}
+                 
+Not a real error.
+
+[14
+
+
+
+ <./figures/figure1.jpg>]
+
+LaTeX Warning: Citation `alan3D' on page 2 undefined on input line 38.
+
+! Preview: Snippet 15 started.
+<-><->
+      
+l.40 \subsection
+                {A robot build from pieces}
+Not a real error.
+
+! Preview: Snippet 15 ended.(546132+152916x28891379).
+<-><->
+      
+l.40 \subsection{A robot build from pieces}
+                                           
+Not a real error.
+
+[15
+
+]
+
+LaTeX Warning: Reference `fig:graph3' on page 3 undefined on input line 52.
+
+
+LaTeX Warning: Reference `fig:scenegraph2' on page 3 undefined on input line 60
+.
+
+! Preview: Snippet 16 started.
+<-><->
+      
+l.66 \begin{figure}
+                   [ht]
+Not a real error.
+
+<figures/figure3.png, id=69, 377.41pt x 184.69pt>
+File: figures/figure3.png Graphic file (type png)
+ <use figures/figure3.png>
+Package pdftex.def Info: figures/figure3.png used on input line 67.
+(pdftex.def)             Requested size: 426.79134pt x 208.85506pt.
+
+! Preview: Snippet 16 ended.(15234174+0x28891379).
+<-><->
+      
+l.70 \end{figure}
+                 
+Not a real error.
+
+[16
+
+
+ <./figures/figure3.png>]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.72 \begin{figure}
+                   [ht]
+Not a real error.
+
+<figures/scenegraph2.png, id=76, 422.2977pt x 168.3891pt>
+File: figures/scenegraph2.png Graphic file (type png)
+
+<use figures/scenegraph2.png>
+Package pdftex.def Info: figures/scenegraph2.png used on input line 73.
+(pdftex.def)             Requested size: 426.79134pt x 170.18468pt.
+
+! Preview: Snippet 17 ended.(12699872+0x28891379).
+<-><->
+      
+l.76 \end{figure}
+                 
+Not a real error.
+
+[17
+
+
+ <./figures/scenegraph2.png>]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.84 \subsection
+                {A complex surface mesh model}
+Not a real error.
+
+! Preview: Snippet 18 ended.(546132+152916x28891379).
+<-><->
+      
+l.84 \subsection{A complex surface mesh model}
+                                              
+Not a real error.
+
+[18
+
+]
+
+LaTeX Warning: Reference `fig:rigging' on page 3 undefined on input line 85.
+
+! Preview: Snippet 19 started.
+<-><->
+      
+l.93 \begin{figure}
+                   [ht]
+Not a real error.
+
+<figures/rigging.png, id=85, 452.69125pt x 305.14pt>
+File: figures/rigging.png Graphic file (type png)
+ <use figures/rigging.png>
+Package pdftex.def Info: figures/rigging.png used on input line 94.
+(pdftex.def)             Requested size: 422.12444pt x 284.52756pt.
+
+! Preview: Snippet 19 ended.(20193447+0x28891379).
+<-><->
+      
+l.97 \end{figure}
+                 
+Not a real error.
+
+[19
+
+
+ <./figures/rigging.png>]
+
+LaTeX Warning: Reference `fig:rigging' on page 3 undefined on input line 100.
+
+
+LaTeX Warning: Citation `Rigging1' on page 3 undefined on input line 107.
+
+
+LaTeX Warning: Citation `Rigging2' on page 3 undefined on input line 107.
+
+! Preview: Snippet 20 started.
+<-><->
+      
+l.111 \subsubsection
+                    {Skinning}
+Not a real error.
+
+! Preview: Snippet 20 ended.(498346+139537x28891379).
+<-><->
+      
+l.111 \subsubsection{Skinning}
+                              
+Not a real error.
+
+[20
+
+]
+
+LaTeX Warning: Citation `skinning1' on page 3 undefined on input line 119.
+
+
+LaTeX Warning: Citation `skinning2' on page 3 undefined on input line 119.
+
+! Preview: Snippet 21 started.
+<-><->
+      
+l.124 \section
+               {Animation}
+Not a real error.
+
+! Preview: Snippet 21 ended.(655359+0x28891379).
+<-><->
+      
+l.124 \section {Animation}
+                          
+Not a real error.
+
+[21
+
+]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.125 \subsection
+                 {Keyframe Animation}
+Not a real error.
+
+! Preview: Snippet 22 ended.(546132+152916x28891379).
+<-><->
+      
+l.125 \subsection{Keyframe Animation}
+                                     
+Not a real error.
+
+[22
+
+]
+
+LaTeX Warning: Reference `fig:movingRobot' on page 4 undefined on input line 13
+2.
+
+! Preview: Snippet 23 started.
+<-><->
+      
+l.136 \begin{figure}
+                    
+Not a real error.
+
+<figures/rb1.png, id=104, 547.04375pt x 323.2075pt>
+File: figures/rb1.png Graphic file (type png)
+ <use figures/rb1.png>
+Package pdftex.def Info: figures/rb1.png used on input line 138.
+(pdftex.def)             Requested size: 180.67523pt x 108.40463pt.
+
+<figures/rb2.png, id=105, 509.905pt x 344.28625pt>
+File: figures/rb2.png Graphic file (type png)
+ <use figures/rb2.png>
+Package pdftex.def Info: figures/rb2.png used on input line 139.
+(pdftex.def)             Requested size: 180.67908pt x 108.40346pt.
+
+<figures/rb3.png, id=106, 455.7025pt x 271.0125pt>
+File: figures/rb3.png Graphic file (type png)
+ <use figures/rb3.png>
+Package pdftex.def Info: figures/rb3.png used on input line 140.
+(pdftex.def)             Requested size: 180.67847pt x 108.40306pt.
+
+<figures/rb4.png, id=107, 495.8525pt x 282.05376pt>
+File: figures/rb4.png Graphic file (type png)
+ <use figures/rb4.png>
+Package pdftex.def Info: figures/rb4.png used on input line 141.
+(pdftex.def)             Requested size: 180.67065pt x 108.40381pt.
+
+! Preview: Snippet 23 ended.(19097666+0x28891379).
+<-><->
+      
+l.144 \end{figure}
+                  
+Not a real error.
+
+[23
+
+
+
+
+
+
+
+
+
+
+ <./figures/rb1.png> <./figures/rb2.png> <./figures/rb3.png> <./figures/rb4.png
+>]
+
+LaTeX Warning: Citation `keyframe1' on page 4 undefined on input line 149.
+
+
+LaTeX Warning: Citation `keyframe2' on page 4 undefined on input line 152.
+
+
+LaTeX Warning: Citation `keyframe3' on page 4 undefined on input line 152.
+
+
+LaTeX Warning: Citation `keyframe4' on page 4 undefined on input line 155.
+
+! Preview: Snippet 24 started.
+<-><->
+      
+l.159 \subsection
+                 {Procedural animation}
+Not a real error.
+
+! Preview: Snippet 24 ended.(546132+0x28891379).
+<-><->
+      
+l.159 \subsection{Procedural animation}
+                                       
+Not a real error.
+
+[24
+
+]
+
+LaTeX Warning: Citation `Reference2' on page 4 undefined on input line 160.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no † in font cmr10!
+
+LaTeX Warning: Citation `loco1' on page 4 undefined on input line 162.
+
+
+LaTeX Warning: Citation `loco2' on page 4 undefined on input line 165.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no † in font cmr10!
+! Preview: Snippet 25 started.
+<-><->
+      
+l.169 \subsection
+                 {Kinematic animation}
+Not a real error.
+
+! Preview: Snippet 25 ended.(546132+0x28891379).
+<-><->
+      
+l.169 \subsection{Kinematic animation}
+                                      
+Not a real error.
+
+[25
+
+]
+
+LaTeX Warning: Reference `fig:fk_ik' on page 4 undefined on input line 175.
+
+! Preview: Snippet 26 started.
+<-><->
+      
+l.176 ...ered as calculating the Cartesian space $
+                                                  \mathbf{x}$ through
+Not a real error.
+
+! Preview: Snippet 26 ended.(318941+0x435552).
+<-><->
+      
+l.176 ...culating the Cartesian space $\mathbf{x}$
+                                                   through
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.177   the joint space $
+                         \mathbf{\theta}$ while the inverse kinematics are
+Not a real error.
+
+! Preview: Snippet 27 ended.(498346+0x356816).
+<-><->
+      
+l.177   the joint space $\mathbf{\theta}$
+                                          while the inverse kinematics are
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.180 \begin{figure}
+                    [ht]
+Not a real error.
+
+<figures/fk_ik.png, id=133, 566.115pt x 429.605pt>
+File: figures/fk_ik.png Graphic file (type png)
+ <use figures/fk_ik.png>
+Package pdftex.def Info: figures/fk_ik.png used on input line 182.
+(pdftex.def)             Requested size: 187.46638pt x 142.26378pt.
+
+! Preview: Snippet 28 ended.(10870048+0x28891379).
+<-><->
+      
+l.185 \end{figure}
+                  
+Not a real error.
+
+[28
+
+
+ <./figures/fk_ik.png>]
+! Preview: Snippet 29 started.
+<-><->
+      
+l.187 \subsubsection
+                    {Forward Kinematics}
+Not a real error.
+
+! Preview: Snippet 29 ended.(498346+0x28891379).
+<-><->
+      
+l.187 \subsubsection{Forward Kinematics}
+                                        
+Not a real error.
+
+[29
+
+]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.193   vector $
+                \Theta{}$ which is the set of independent parameters defining a
+
+Not a real error.
+
+! Preview: Snippet 30 ended.(490372+0x558150).
+<-><->
+      
+l.193   vector $\Theta{}$
+                          which is the set of independent parameters defining a
+
+Not a real error.
+
+[30]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.194 ...articulated structure. The state vector $
+                                                  \Theta{}$ could be
+Not a real error.
+
+! Preview: Snippet 31 ended.(490372+0x558150).
+<-><->
+      
+l.194 ...ed structure. The state vector $\Theta{}$
+                                                   could be
+Not a real error.
+
+[31]
+! Preview: Snippet 32 started.
+<-><->
+      
+l.196   \begin{equation}
+                        
+Not a real error.
+
+! Preview: Snippet 32 ended.(717618+0x28891379).
+<-><->
+      
+l.198   \end{equation}
+                      
+Not a real error.
+
+[32]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.204 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 33 ended.(717618+0x28891379).
+<-><->
+      
+l.206 \end{equation}
+                    
+Not a real error.
+
+[33]
+
+LaTeX Warning: Reference `fig:twolink' on page 5 undefined on input line 208.
+
+! Preview: Snippet 34 started.
+<-><->
+      
+l.210 \begin{equation}
+                      
+Not a real error.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.210 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.210 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.210 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.210 \begin{equation}
+                      
+! Preview: Snippet 34 ended.(717618+0x28891379).
+<-><->
+      
+l.212 \end{equation}
+                    
+Not a real error.
+
+[34]
+! Preview: Snippet 35 started.
+<-><->
+      
+l.214 \begin{figure}
+                    [ht]
+Not a real error.
+
+<figures/twolink.png, id=165, 381.425pt x 250.9375pt>
+File: figures/twolink.png Graphic file (type png)
+
+<use figures/twolink.png>
+Package pdftex.def Info: figures/twolink.png used on input line 216.
+(pdftex.def)             Requested size: 216.25049pt x 142.26378pt.
+
+
+LaTeX Warning: Citation `linkpic' on page 5 undefined on input line 217.
+
+
+LaTeX Warning: Citation `linkpic' on page 5 undefined on input line 217.
+
+! Preview: Snippet 35 ended.(10870048+0x28891379).
+<-><->
+      
+l.219 \end{figure}
+                  
+Not a real error.
+
+[35
+
+
+ <./figures/twolink.png (PNG copy)>]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.221 \subsubsection
+                    {Inverse Kinematics}
+Not a real error.
+
+! Preview: Snippet 36 ended.(498346+0x28891379).
+<-><->
+      
+l.221 \subsubsection{Inverse Kinematics}
+                                        
+Not a real error.
+
+[36
+
+]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+
+LaTeX Warning: Citation `Reference2' on page 5 undefined on input line 225.
+
+! Preview: Snippet 37 started.
+<-><->
+      
+l.227   \textbf{X}, calculate the state vector $
+                                                \Theta{}$:
+Not a real error.
+
+! Preview: Snippet 37 ended.(490372+0x558150).
+<-><->
+      
+l.227 ...X}, calculate the state vector $\Theta{}$
+                                                  :
+Not a real error.
+
+[37]
+! Preview: Snippet 38 started.
+<-><->
+      
+l.228 \begin{equation}
+                      
+Not a real error.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.228 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.228 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.228 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.228 \begin{equation}
+                      
+! Preview: Snippet 38 ended.(766975+0x28891379).
+<-><->
+      
+l.230 \end{equation}
+                    
+Not a real error.
+
+[38]
+
+LaTeX Warning: Reference `fig:twolink' on page 5 undefined on input line 231.
+
+! Preview: Snippet 39 started.
+<-><->
+      
+l.232 \begin{equation}
+                      
+Not a real error.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.2.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.2.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \begin{equation}
+                      
+! Preview: Snippet 39 ended.(4883714+0x28891379).
+<-><->
+      
+l.237 \end{equation}
+                    
+Not a real error.
+
+[39]
+! Preview: Snippet 40 started.
+<-><->
+      
+l.239 \subsubsection
+                    {Jacobian}
+Not a real error.
+
+! Preview: Snippet 40 ended.(498346+0x28891379).
+<-><->
+      
+l.239 \subsubsection{Jacobian}
+                              
+Not a real error.
+
+[40
+
+]
+! Preview: Snippet 41 started.
+<-><->
+      
+l.240 Given $
+             \mathbf{X}= f(\Theta)$ where $\mathbf{X}$ is of dimension n and...
+
+Not a real error.
+
+! Preview: Snippet 41 ended.(538214+179404x3125626).
+<-><->
+      
+l.240 Given $\mathbf{X}= f(\Theta)$
+                                    where $\mathbf{X}$ is of dimension n and...
+
+Not a real error.
+
+[41]
+! Preview: Snippet 42 started.
+<-><->
+      
+l.240 Given $\mathbf{X}= f(\Theta)$ where $
+                                           \mathbf{X}$ is of dimension n and...
+
+Not a real error.
+
+! Preview: Snippet 42 ended.(492366+0x623926).
+<-><->
+      
+l.240 ...\mathbf{X}= f(\Theta)$ where $\mathbf{X}$
+                                                   is of dimension n and $\T...
+
+Not a real error.
+
+[42]
+! Preview: Snippet 43 started.
+<-><->
+      
+l.240 ...here $\mathbf{X}$ is of dimension n and $
+                                                  \Theta{}$ is of dimension ...
+
+Not a real error.
+
+! Preview: Snippet 43 ended.(490372+0x558150).
+<-><->
+      
+l.240 ...thbf{X}$ is of dimension n and $\Theta{}$
+                                                   is of dimension m, the
+Not a real error.
+
+[43]
+! Preview: Snippet 44 started.
+<-><->
+      
+l.241 Jacobian is the $
+                       n * m$ matrix of partial derivatives relating
+Not a real error.
+
+! Preview: Snippet 44 ended.(333892+0x1738565).
+<-><->
+      
+l.241 Jacobian is the $n * m$
+                              matrix of partial derivatives relating
+Not a real error.
+
+[44]
+! Preview: Snippet 45 started.
+<-><->
+      
+l.242 differential changes of $
+                               \Theta$($d\Theta{}$) to differential
+Not a real error.
+
+! Preview: Snippet 45 ended.(490372+0x558150).
+<-><->
+      
+l.242 differential changes of $\Theta$
+                                      ($d\Theta{}$) to differential
+Not a real error.
+
+[45]
+! Preview: Snippet 46 started.
+<-><->
+      
+l.242 differential changes of $\Theta$($
+                                        d\Theta{}$) to differential
+Not a real error.
+
+! Preview: Snippet 46 ended.(498346+0x931661).
+<-><->
+      
+l.242 differential changes of $\Theta$($d\Theta{}$
+                                                  ) to differential
+Not a real error.
+
+[46]
+! Preview: Snippet 47 started.
+<-><->
+      
+l.243 changes in $
+                  \mathbf{X}$ ($dx$), that is:\\
+Not a real error.
+
+! Preview: Snippet 47 ended.(492366+0x623926).
+<-><->
+      
+l.243 changes in $\mathbf{X}$
+                              ($dx$), that is:\\
+Not a real error.
+
+[47]
+! Preview: Snippet 48 started.
+<-><->
+      
+l.243 changes in $\mathbf{X}$ ($
+                                dx$), that is:\\
+Not a real error.
+
+! Preview: Snippet 48 ended.(498346+0x783650).
+<-><->
+      
+l.243 changes in $\mathbf{X}$ ($dx$
+                                   ), that is:\\
+Not a real error.
+
+[48]
+! Preview: Snippet 49 started.
+<-><->
+      
+l.245 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 49 ended.(717618+0x28891379).
+<-><->
+      
+l.247 \end{equation}
+                    
+Not a real error.
+
+[49]
+! Preview: Snippet 50 started.
+<-><->
+      
+l.253 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 50 ended.(813578+0x28891379).
+<-><->
+      
+l.255 \end{equation}
+                    
+Not a real error.
+
+[50]
+
+LaTeX Warning: Citation `alan3D' on page 5 undefined on input line 259.
+
+! Preview: Snippet 51 started.
+<-><->
+      
+l.261 \begin{algorithm}
+                       
+Not a real error.
+
+! Extra }, or forgotten \endgroup.
+\sf@endfloatbox ...gefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.273 \end{algorithm}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Preview: Snippet 51 ended.(6694661+139537x28891379).
+<-><->
+      
+l.273 \end{algorithm}
+                     
+Not a real error.
+
+[51]
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.273 \end{algorithm}
+                     
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.273 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.273 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+
+LaTeX Warning: Reference `fig:twolink' on page 5 undefined on input line 275.
+
+! Preview: Snippet 52 started.
+<-><->
+      
+l.276 \begin{equation}
+                      
+Not a real error.
+
+! Preview: Snippet 52 ended.(2152878+0x28891379).
+<-><->
+      
+l.281 \end{equation}
+                    
+Not a real error.
+
+[52]
+! Preview: Snippet 53 started.
+<-><->
+      
+l.288 \subsection
+                 {Dynamics and Physics-based animation}
+Not a real error.
+
+! Preview: Snippet 53 ended.(546132+152916x28891379).
+<-><->
+      
+l.288 ...ion{Dynamics and Physics-based animation}
+                                                  
+Not a real error.
+
+[53
+
+]
+
+LaTeX Warning: Citation `dy1' on page 5 undefined on input line 295.
+
+
+LaTeX Warning: Citation `dy2' on page 5 undefined on input line 298.
+
+! Preview: Snippet 54 started.
+<-><->
+      
+l.308 \section
+              {Arthropod Simulation}
+Not a real error.
+
+! Preview: Snippet 54 ended.(655359+183500x28891379).
+<-><->
+      
+l.308 \section{Arthropod Simulation}
+                                    
+Not a real error.
+
+[54
+
+]
+
+LaTeX Warning: Citation `arsimu1' on page 5 undefined on input line 309.
+
+
+LaTeX Warning: Citation `arsimu2' on page 5 undefined on input line 317.
+
+
+LaTeX Warning: Citation `arsimu3' on page 6 undefined on input line 334.
+
+
+LaTeX Warning: Citation `arsimu6' on page 6 undefined on input line 338.
+
+
+LaTeX Warning: Citation `arsimu4' on page 6 undefined on input line 341.
+
+
+LaTeX Warning: Citation `arsimu5' on page 6 undefined on input line 346.
+
+
+LaTeX Warning: Citation `thesis' on page 6 undefined on input line 351.
+
+! Preview: Snippet 55 started.
+<-><->
+      
+l.397 \section
+              {Arthropod Rendering}
+Not a real error.
+
+! Preview: Snippet 55 ended.(655359+183500x28891379).
+<-><->
+      
+l.397 \section{Arthropod Rendering}
+                                   
+Not a real error.
+
+[55
+
+]
+
+LaTeX Warning: Reference `fig:fur' on page 7 undefined on input line 411.
+
+! Preview: Snippet 56 started.
+<-><->
+      
+l.413 \begin{figure}
+                    [ht]
+Not a real error.
+
+<figures/fur.png, id=254, 794.97pt x 276.03125pt>
+File: figures/fur.png Graphic file (type png)
+ <use figures/fur.png>
+Package pdftex.def Info: figures/fur.png used on input line 414.
+(pdftex.def)             Requested size: 409.73558pt x 142.26378pt.
+
+
+LaTeX Warning: Citation `fur' on page 7 undefined on input line 415.
+
+
+LaTeX Warning: Citation `fur' on page 7 undefined on input line 415.
+
+! Preview: Snippet 56 ended.(10870048+0x28891379).
+<-><->
+      
+l.417 \end{figure}
+                  
+Not a real error.
+
+[56
+
+
+ <./figures/fur.png>]
+
+LaTeX Warning: Citation `fur' on page 7 undefined on input line 424.
+
+
+LaTeX Warning: Citation `thesis' on page 7 undefined on input line 431.
+
+
+LaTeX Warning: Reference `fig:fins' on page 7 undefined on input line 432.
+
+! Preview: Snippet 57 started.
+<-><->
+      
+l.435 \begin{figure}
+                    [ht]
+Not a real error.
+
+<figures/fins.png, id=259, 530.98375pt x 393.47pt>
+File: figures/fins.png Graphic file (type png)
+ <use figures/fins.png>
+Package pdftex.def Info: figures/fins.png used on input line 437.
+(pdftex.def)             Requested size: 383.96083pt x 284.52756pt.
+
+
+LaTeX Warning: Citation `thesis' on page 7 undefined on input line 438.
+
+
+LaTeX Warning: Citation `thesis' on page 7 undefined on input line 438.
+
+! Preview: Snippet 57 ended.(20193447+0x28891379).
+<-><->
+      
+l.440 \end{figure}
+                  
+Not a real error.
+
+[57
+
+
+ <./figures/fins.png>]
+! Preview: Snippet 58 started.
+<-><->
+      
+l.452 DOF of the fur is 45$
+                           ^\circ$ \cite{fur}.
+Not a real error.
+
+! Preview: Snippet 58 ended.(499808+0x311300).
+<-><->
+      
+l.452 DOF of the fur is 45$^\circ$
+                                   \cite{fur}.
+Not a real error.
+
+[58]
+
+LaTeX Warning: Citation `fur' on page 7 undefined on input line 452.
+
+) (./chapters/chapter3.tex
+! Preview: Snippet 59 started.
+<-><->
+      
+l.1 \chapter
+            {Analysis}
+Not a real error.
+
+Chapter 3.
+! Preview: Snippet 59 ended.(8552470+317047x28891379).
+<-><->
+      
+l.1 \chapter{Analysis}
+                      
+Not a real error.
+
+[59
+
+
+
+
+]
+! Preview: Snippet 60 started.
+<-><->
+      
+l.5 \section
+            {Project requirements}
+Not a real error.
+
+! Preview: Snippet 60 ended.(655359+183500x28891379).
+<-><->
+      
+l.5 \section{Project requirements}
+                                  
+Not a real error.
+
+[60
+
+]
+! Preview: Snippet 61 started.
+<-><->
+      
+l.9 \section
+            {Another section}
+Not a real error.
+
+! Preview: Snippet 61 ended.(655359+0x28891379).
+<-><->
+      
+l.9 \section{Another section}
+                             
+Not a real error.
+
+[61
+
+]
+! Preview: Snippet 62 started.
+<-><->
+      
+l.12 \section
+             {Ethical, professional and legal issues}
+Not a real error.
+
+! Preview: Snippet 62 ended.(655359+183500x28891379).
+<-><->
+      
+l.12 ...on{Ethical, professional and legal issues}
+                                                  
+Not a real error.
+
+[62
+
+]) (./chapters/chapter4.tex
+! Preview: Snippet 63 started.
+<-><->
+      
+l.1 \chapter
+            {Planning}
+Not a real error.
+
+Chapter 4.
+! Preview: Snippet 63 ended.(8552470+317047x28891379).
+<-><->
+      
+l.1 \chapter{Planning}
+                      
+Not a real error.
+
+[63
+
+
+
+
+]
+! Preview: Snippet 64 started.
+<-><->
+      
+l.3 \section
+            {Risk analysis}
+Not a real error.
+
+! Preview: Snippet 64 ended.(655359+183500x28891379).
+<-><->
+      
+l.3 \section{Risk analysis}
+                           
+Not a real error.
+
+[64
+
+]
+! Preview: Snippet 65 started.
+<-><->
+      
+l.7 \section
+            {Project plan}
+Not a real error.
+
+! Preview: Snippet 65 ended.(655359+183500x28891379).
+<-><->
+      
+l.7 \section{Project plan}
+                          
+Not a real error.
+
+[65
+
+]
+! Preview: Snippet 66 started.
+<-><->
+      
+l.11 \section
+             {Another section if you need it}
+Not a real error.
+
+! Preview: Snippet 66 ended.(655359+183500x28891379).
+<-><->
+      
+l.11 \section{Another section if you need it}
+                                             
+Not a real error.
+
+[66
+
+]) (./chapters/chapter5.tex
+! Preview: Snippet 67 started.
+<-><->
+      
+l.1 \chapter
+            {Conclusions}
+Not a real error.
+
+Chapter 5.
+! Preview: Snippet 67 ended.(8552470+0x28891379).
+<-><->
+      
+l.1 \chapter{Conclusions}
+                         
+Not a real error.
+
+[67
+
+
+
+
+])
+No file _region_.bbl.
+(./chapters/appendixA.tex
+! Preview: Snippet 68 started.
+<-><->
+      
+l.1 \chapter
+            {An appendix of some kind}
+Not a real error.
+
+Appendix A.
+! Preview: Snippet 68 ended.(8552470+317047x28891379).
+<-><->
+      
+l.1 \chapter{An appendix of some kind}
+                                      
+Not a real error.
+
+[68
+
+
+
+
+]) (./chapters/appendixB.tex
+! Preview: Snippet 69 started.
+<-><->
+      
+l.1 \chapter
+            {Another appendix}
+Not a real error.
+
+Appendix B.
+! Preview: Snippet 69 ended.(8552470+317047x28891379).
+<-><->
+      
+l.1 \chapter{Another appendix}
+                              
+Not a real error.
+
+[69
+
+
+
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 115.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
+ ) 
+Here is how much of TeX's memory you used:
+ 985 strings out of 484825
+ 14933 string characters out of 6010336
+ 239380 words of memory out of 5000000
+ 12505 multiletter control sequences out of 15000+600000
+ 12533 words of font info for 44 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 28i,13n,47p,1433b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on _region_.pdf (69 pages, 3783846 bytes).
+PDF statistics:
+ 364 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+

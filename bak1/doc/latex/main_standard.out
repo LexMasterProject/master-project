@@ -1,0 +1,33 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Aims and objectives}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Overview of the report}{chapter.1}% 3
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Representing an object}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.1.1}{A simple mesh model}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.2}{A complex surface mesh model}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.3}{A complex object built from pieces}{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Animation}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Keyframe Animation}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Procedural animation}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Kinematic animation}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.4}{Dynamics and Physics-based animation}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Arthropod Simulation}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Arthropod Rendering}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Requirement and Analysis}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Modeling the spider}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.3}{Spider animation}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Spider rendering}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.5}{Oculus Rift}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.6}{Requirements Lists}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.7}{Testing and Evaluation}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.7.1}{Testing}{section.3.7}% 24
+\BOOKMARK [2][-]{subsection.3.7.2}{Evaluation}{section.3.7}% 25
+\BOOKMARK [1][-]{section.3.8}{Ethics and Legal considerations}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Planning}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Risk analysis}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{Project plan}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 30
+\BOOKMARK [0][-]{section*.35}{Appendices}{}% 31
+\BOOKMARK [0][-]{Appendix.a.A}{An appendix of some kind}{}% 32
+\BOOKMARK [0][-]{Appendix.a.B}{Another appendix}{}% 33

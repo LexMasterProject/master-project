@@ -1,0 +1,210 @@
+\begin{thebibliography}{10}
+
+\bibitem{leganima}
+Leg animation script from:
+  \url{http://commons.wikimedia.org/wiki/File:Leg_animation_script_de.svg}.
+
+\bibitem{ushuman}
+American Psychological Association Official Website
+  \url{http://www.apa.org/science/programs/testing/index.aspx}.
+
+\bibitem{ukhuman}
+The British Psychological Society Official Website
+  \url{http://www.bps.org.uk/}.
+
+\bibitem{humanPro}
+Human Research Protections Program Official Website
+  \url{http://www.apa.org/science/programs/testing/index.aspx}.
+
+\bibitem{realSpider}
+{An image of a real wolf spider}.
+\newblock accessed from
+  \url{http://photos.beilby.com/index.php?showimage=1117}.
+
+\bibitem{linkpic}
+{Animating Articulated Structures}.
+\newblock
+  \url{http://web.cs.wpi.edu/~matt/courses/cs563/talks/animhtml/anim.html}.
+
+\bibitem{rift1}
+{Oculus Rift}.
+\newblock Oculus Rift Official Website \url{https://www.oculus.com/rift/}.
+
+\bibitem{motionSick}
+{Oculus warns Sony to solve motion sickness before launching a VR headset}.
+\newblock Oculus Rift Official Website
+  \url{http://www.theguardian.com/technology/2014/nov/04/oculus-sony-motion-sickness-virtual-reality}.
+
+\bibitem{fv}
+{Polygon mesh - Wikipedia, the free encyclopedia}.
+\newblock acessed from \url{http://en.wikipedia.org/wiki/Polygon\_mesh}.
+
+\bibitem{facevertex}
+{Polygon mesh - Wikipedia, the free encyclopedia}.
+\newblock \url{http://en.wikipedia.org/wiki/Polygon\_mesh}.
+
+\bibitem{arsimu4}
+{\sc Alshurafa, N.~I., and Harmon, J.~T.}
+\newblock Artificial spider: eight-legged arachnid and autonomous learning of
+  locomotion.
+\newblock In {\em Defense and Security Symposium\/} (2006), International
+  Society for Optics and Photonics, pp.~62301E--62301E.
+
+\bibitem{Rigging1}
+{\sc Baran, I., and Popovi\'{c}, J.}
+\newblock {Automatic Rigging and Animation of 3D Characters}.
+\newblock In {\em ACM SIGGRAPH 2007 Papers\/} (New York, NY, USA, 2007),
+  SIGGRAPH '07, ACM.
+
+\bibitem{thesis}
+{\sc Cenydd, L.~A., and Teahan, B.}
+\newblock {An embodied approach to arthropod animation thesis: To fixed}.
+\newblock {\em Computers \& Graphics\/} (to add).
+
+\bibitem{loco1}
+{\sc Chung, S.-K., and Hahn, J.~K.}
+\newblock {Animation of human walking in virtual environments}.
+\newblock In {\em Computer Animation, 1999. Proceedings\/} (1999), pp.~4--15.
+
+\bibitem{spiderModel}
+{\sc DennisH2010}.
+\newblock {An image of wolf spider model}.
+\newblock original model accessed from
+  \url{http://www.blendswap.com/blends/view/26798}.
+
+\bibitem{arsimu6}
+{\sc Durr, V.}
+\newblock {Stereotypic leg searching movements in the stick insect: kinematic
+  analysis, behavioural context and simulation}.
+\newblock {\em Journal of Experimental Biology 204}, 9 (May 2001), 1589--1604.
+
+\bibitem{keyframe4}
+{\sc Gibson, D., Oziem, D., Dalton, C., and Campbell, N.}
+\newblock {A system for the capture and synthesis of insect motion}.
+\newblock {\em Graphical Models 69}, 5-6 (Sept. 2007), 231--245.
+
+\bibitem{arsimu5}
+{\sc Gibson, D., Oziem, D., Dalton, C., and Campbell, N.}
+\newblock {A system for the capture and synthesis of insect motion}.
+\newblock {\em Graphical Models 69}, 5-6 (Sept. 2007), 231--245.
+
+\bibitem{skinning2}
+{\sc James, D.~L., and Twigg, C.~D.}
+\newblock Skinning mesh animations.
+\newblock {\em ACM Trans. Graph. 24}, 3 (July 2005), 399--407.
+
+\bibitem{Rigging2}
+{\sc Le, B.~H., and Deng, Z.}
+\newblock {Robust and Accurate Skeletal Rigging from Mesh Sequences}.
+\newblock {\em ACM Trans. Graph. 33}, 4 (July 2014), 84:1----84:10.
+
+\bibitem{skinning1}
+{\sc Lewis, J.~P., Cordner, M., and Fong, N.}
+\newblock Pose space deformation: A unified approach to shape interpolation and
+  skeleton-driven deformation.
+\newblock In {\em Proceedings of the 27th Annual Conference on Computer
+  Graphics and Interactive Techniques\/} (New York, NY, USA, 2000), SIGGRAPH
+  '00, ACM Press/Addison-Wesley Publishing Co., pp.~165--172.
+
+\bibitem{animationSlides}
+{\sc Maddock, S.}
+\newblock {Animation Slides}, 2015.
+
+\bibitem{arsimu1}
+{\sc McKenna, M., and Zeltzer, D.}
+\newblock {Dynamic Simulation of Autonomous Legged Locomotion}.
+\newblock {\em SIGGRAPH Comput. Graph. 24}, 4 (Sept. 1990), 29--38.
+
+\bibitem{loco2}
+{\sc Multon, F., France, L., Cani-Gascuel, M.-P., and Debunne, G.}
+\newblock {Computer animation of human walking: a survey}.
+\newblock {\em The Journal of Visualization and Computer Animation 10}, 1
+  (1999), 39--54.
+
+\bibitem{shaolinpic}
+{\sc Mute}.
+\newblock {Shaolin}.
+\newblock original model from \url{http://www.blendswap.com/blends/view/7130}.
+
+\bibitem{steeringImage}
+{\sc Reynolds, C.~W.}
+\newblock {Steering Behaviors For Autonomous Characters }.
+\newblock \url{http://www.red3d.com/cwr/steer/gdc99/}.
+
+\bibitem{steering}
+{\sc Reynolds, C.~W.}
+\newblock Steering behaviors for autonomous characters.
+\newblock In {\em Game developers conference\/} (1999), vol.~1999,
+  pp.~763--782.
+
+\bibitem{2d_shape}
+{\sc Sederberg, T.~W., and Greenwood, E.}
+\newblock A physically based approach to 2\&ndash;d shape blending.
+\newblock {\em SIGGRAPH Comput. Graph. 26}, 2 (July 1992), 25--34.
+
+\bibitem{dy2}
+{\sc Shapiro, A., Pighin, F., and Faloutsos, P.}
+\newblock {Hybrid control for interactive character animation}.
+\newblock In {\em Computer Graphics and Applications, 2003. Proceedings. 11th
+  Pacific Conference on\/} (Oct. 2003), pp.~455--461.
+
+\bibitem{fur}
+{\sc Sheppard, G.}
+\newblock Real--time rendering of fur.
+
+\bibitem{keyframe2}
+{\sc Skrba, L., Reveret, L., H\'{e}troy, F., Cani, M.-P., and O'Sullivan, C.}
+\newblock {Quadruped Animation}, 2008.
+
+\bibitem{keyframe1}
+{\sc Terra, S. C.~L., and Metoyer, R.~A.}
+\newblock {Performance Timing for Keyframe Animation}.
+\newblock In {\em Proceedings of the 2004 ACM SIGGRAPH/Eurographics Symposium
+  on Computer Animation\/} (Aire-la-Ville, Switzerland, Switzerland, 2004), SCA
+  '04, Eurographics Association, pp.~253--258.
+
+\bibitem{arsimu3}
+{\sc to~add}.
+\newblock {Walknet—a biologically inspired network to control six-legged
+  walking}.
+\newblock {\em Neural Networks 11}, 7–8 (Oct. 1998), 1435--1447.
+
+\bibitem{keyframe3}
+{\sc Treuille, A., Lee, Y., and Popovi\'{c}, Z.}
+\newblock {Near-optimal Character Animation with Continuous Control}.
+\newblock {\em ACM Trans. Graph. 26}, 3 (July 2007).
+
+\bibitem{vince3D}
+{\sc Vince, J.}
+\newblock {\em {3D Computer Animation}}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1992.
+
+\bibitem{spiderMesh}
+{\sc Wake, A.}
+\newblock {A simple spider mesh model}.
+\newblock original model accessed from
+  \url{http://tf3dm.com/3d-model/spider-98861.html}.
+
+\bibitem{Reference2}
+{\sc Watt, A., and Watt, M.}
+\newblock {\em {Advanced Animation and Rendering Techniques}}.
+\newblock ACM, New York, NY, USA, 1991.
+
+\bibitem{alan3D}
+{\sc Watt, A.~H., and Watt, Alan~H., .-. F. o. t.-d.~g.}
+\newblock {\em 3D computer graphics}, 2nd ed~ed.
+\newblock Wokingham, England : Addison-Wesley, 1993.
+\newblock Previous ed. published under title: Fundamentals of three-dimensional
+  computer grahics, 1989.
+
+\bibitem{dy1}
+{\sc Wilhelms, J., Moore, M., and Skinner, R.}
+\newblock {Dynamic animation: Interaction and control}.
+\newblock {\em The Visual Computer 4}, 6 (1988), 283--295.
+
+\bibitem{arsimu2}
+{\sc Wilson, D.~M.}
+\newblock Insect walking.
+\newblock {\em Annual review of entomology 11}, 1 (1966), 103--122.
+
+\end{thebibliography}
